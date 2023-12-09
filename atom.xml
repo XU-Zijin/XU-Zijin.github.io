@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-25T09:14:15.646Z</updated>
+  <updated>2023-12-09T09:42:22.145Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用MCSM面板快速搭建MC服务器</title>
+    <link href="http://example.com/2023/12/09/%E4%BD%BF%E7%94%A8MCSM%E9%9D%A2%E6%9D%BF%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAMC%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://example.com/2023/12/09/%E4%BD%BF%E7%94%A8MCSM%E9%9D%A2%E6%9D%BF%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAMC%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <published>2023-12-09T08:16:07.000Z</published>
+    <updated>2023-12-09T09:42:22.145Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Linux搭建Minecraft1-18-1-Forge版服务器教程，可装MOD，带面板"><a href="#Linux搭建Minecraft1-18-1-Forge版服务器教程，可装MOD，带面板" class="headerlink" title="Linux搭建Minecraft1.18.1 Forge版服务器教程，可装MOD，带面板"></a>Linux搭建Minecraft<code>1.18.1 Forge</code>版服务器教程，可装MOD，带面板</h1><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><h3 id="必要的"><a href="#必要的" class="headerlink" title="必要的"></a>必要的</h3><ul><li>首先你得有台服务器（已经有的可以忽略），没有的可以去买云服务器（提醒一下：如果你是新用户有优惠，能买多长时间就买多长时间，因为优惠价的服务器到期后续费很贵的，而且新用户优惠只能买一次，所以尽量买长时间点划算。）</li><li>2核4G内存 5兆带宽的服务器大约可以同时在线1到10人，4核8G 10兆的服务器大约可以同时在线10到20人。1.18.1版的配置要求更高了。（因为1.18版本垃圾优化，内存需求大增，最低要求4G内存，低于4G大概率开不起来。）</li><li></li></ul><h3 id="非必要的"><a href="#非必要的" class="headerlink" title="非必要的"></a>非必要的</h3><ul><li>买一个域名作为你服务器的地址（像<code>2b2t.org</code>之类的，这里推荐用便宜的<code>.top</code>后缀的域名</li></ul><h2 id="安装JAVA环境"><a href="#安装JAVA环境" class="headerlink" title="安装JAVA环境"></a>安装JAVA环境</h2><pre><code class="bash"># 下载JDK17安装包，也可以自己去官网下载，如果出错就运行命令 yum install wget(centos)或 apt install wget(ubuntu/debian)wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.deb #ubuntu用这个wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm #centos用这个# 安装JDK17rpm -i jdk-17_linux-x64_bin.rpm #centos用这个dpkg -i jdk-17_linux-x64_bin.deb #ubuntu用这个# 测试是否安装正常，显示 java version &quot;17.0.1&quot; 2021-10-19 LTS 则为正常java -version</code></pre><h2 id="端口开放"><a href="#端口开放" class="headerlink" title="端口开放"></a>端口开放</h2><p>面板需要<code>23333</code>（主功能）端口与<code>20010 - 20200</code>（FTP功能端口区间。<br>游戏服务器默认端口是 25565。<br>如果你使用阿里云，腾讯云或者其他云服务商，请进入控制台到防火墙安全组策略，放行以上端口，或者放行全部端口，入和出方向都要</p><pre><code class="bash">ufw allow 23333ufw allow 25565ufw allow 20010-20200ufw status #查看端口开放状态</code></pre><p>如果依然无法访问，请关闭系统自带防火墙：</p><pre><code class="bash">sudo ufw disable </code></pre><h2 id="安装面板"><a href="#安装面板" class="headerlink" title="安装面板"></a>安装面板</h2><p>一行命令快速安装（适用于AMD64架构 Ubuntu&#x2F;Centos&#x2F;Debian&#x2F;Archlinux）</p><pre><code class="bash">wget -qO- https://gitee.com/Suwingser/MCSManager-installer/raw/master/install.sh | bash</code></pre><ul><li>执行完成后，使用<code>systemctl start mcsm</code>即可启动面板服务。</li><li>运行命令<code>systemctl enable mcsm</code>来设置开机自启。</li><li>运行命令<code>systemctl status mcsm</code>可以显示运行状态。</li><li>面板代码与运行环境自动安装在<code>/opt/</code>目录下。</li></ul><p>安装完成后访问<code>http://你的ip:23333/</code>即可进入面板。</p><ul><li>默认账号：#master</li><li>默认密码: 123456</li></ul><h2 id="创建MC服务端"><a href="#创建MC服务端" class="headerlink" title="创建MC服务端"></a>创建MC服务端</h2><p>服务端：  <a href="https://pan.baidu.com/s/1wL2egiPIXpYOte3H35jBZQ?pwd=99ip">https://pan.baidu.com/s/1wL2egiPIXpYOte3H35jBZQ?pwd=99ip</a>提取码: 99ip</p><p>接着登陆管理面板，点击<code>创建新实例应用</code>，然后点击<code>快速创建</code>。然后填好服务器名字后点创建服务器。</p><p>点击<code>管理</code>，<code>文件在线管理</code>，把刚刚下载的服务端压缩包上传。<br>然后把压缩包解压，进入解压出来的目录，把里面的文件都剪切到外面。<br>点击<code>参数</code>，自定义命令填写<code>bash run.sh</code><br>点击管理，模拟型终端，开启。</p><p>然后就可以把地址发给你的小伙伴愉快的玩耍了（要确保你有公网IP以及路由器开启了端口转发）<br>服务器的配置（像正版验证都在<code>server.properties</code>这个文件里）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Linux搭建Minecraft1-18-1-Forge版服务器教程，可装MOD，带面板&quot;&gt;&lt;a href=&quot;#Linux搭建Minecraft1-18-1-Forge版服务器教程，可装MOD，带面板&quot; class=&quot;headerlink&quot; title=&quot;Linu</summary>
+      
+    
+    
+    
+    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Minecraft" scheme="http://example.com/tags/Minecraft/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo 添加音乐插件</title>
