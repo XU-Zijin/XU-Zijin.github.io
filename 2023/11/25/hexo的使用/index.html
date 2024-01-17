@@ -531,7 +531,8 @@
             id: decodeURI(location.pathname),
             distractionFreeMode: 'true',
             language: 'zh-CN',
-            perPage: parseInt('10',10)
+            perPage: parseInt('10',10),
+            proxy: 'https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token'
         })
         gitalk.render('comments')
     })
@@ -548,7 +549,7 @@
     </div>
     <div class="copyright">
         <p class="footer-entry">
-    ©2019-2023 Zijin
+    ©2019-2024 Zijin
 </p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
