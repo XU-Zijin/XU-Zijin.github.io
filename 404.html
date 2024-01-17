@@ -13,8 +13,8 @@
 <meta property="og:site_name" content="许子晋">
 <meta property="og:description" content="CodePen - Daily UI #008 - 404 Page            @import url(&quot;https:&#x2F;&#x2F;fonts.googleapis.com&#x2F;css?family&#x3D;Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&amp;display&#x3D;swap&quot;)">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-17T12:38:39.925Z">
-<meta property="article:modified_time" content="2024-01-17T12:38:39.925Z">
+<meta property="article:published_time" content="2024-01-17T12:44:37.638Z">
+<meta property="article:modified_time" content="2024-01-17T12:44:37.638Z">
 <meta property="article:author" content="许子晋">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -410,12 +410,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-01-17 20:38:39'>2024-01-17 20:38</time>
+            发布时间 : <time class="date" title='最后更新: 2024-01-17 20:44:37'>2024-01-17 20:44</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.1k</span>
+        <span>字数:1.4k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -467,395 +467,57 @@
     color: inherit;
   }
    
-  html, body, .wrapper{
-    height: auto;
-    font-family: "Barlow", sans-serif;
-    background: #695681;
-    overflow-x:hidden;
-    overflow-y:hidden;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow-x: hidden;
-  }
-  .wrapper .container {
-    margin: 0 auto;
-    transition: all 0.4s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .wrapper .container .scene {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    vertical-align: middle;
-  }
-  .wrapper .container .one,
-  .wrapper .container .two,
-  .wrapper .container .three,
-  .wrapper .container .circle,
-  .wrapper .container .p404 {
-    width: 60%;
-    height: 60%;
-    top: 20% !important;
-    left: 20% !important;
-    min-width: 400px;
-    min-height: 400px;
-  }
-  .wrapper .container .one .content,
-  .wrapper .container .two .content,
-  .wrapper .container .three .content,
-  .wrapper .container .circle .content,
-  .wrapper .container .p404 .content {
-    width: 600px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-  }
-  @keyframes content {
-    0% {
-      width: 0;
-    }
-  }
-  .wrapper .container .one .content .piece,
-  .wrapper .container .two .content .piece,
-  .wrapper .container .three .content .piece,
-  .wrapper .container .circle .content .piece,
-  .wrapper .container .p404 .content .piece {
-    width: 200px;
-    height: 80px;
-    display: flex;
-    position: absolute;
-    border-radius: 80px;
-    z-index: 1;
-    animation: pieceLeft 8s cubic-bezier(1, 0.06, 0.25, 1) infinite both;
-  }
-  @keyframes pieceLeft {
-    50% {
-      left: 80%;
-      width: 10%;
-    }
-  }
-  @keyframes pieceRight {
-    50% {
-      right: 80%;
-      width: 10%;
-    }
-  }
-  @media screen and (max-width: 799px) {
-    .wrapper .container .one,
-  .wrapper .container .two,
-  .wrapper .container .three,
-  .wrapper .container .circle,
-  .wrapper .container .p404 {
-      width: 90%;
-      height: 90%;
-      top: 5% !important;
-      left: 5% !important;
-      min-width: 280px;
-      min-height: 280px;
-    }
-  }
-  @media screen and (max-height: 660px) {
-    .wrapper .container .one,
-  .wrapper .container .two,
-  .wrapper .container .three,
-  .wrapper .container .circle,
-  .wrapper .container .p404 {
-      min-width: 280px;
-      min-height: 280px;
-      width: 60%;
-      height: 60%;
-      top: 20% !important;
-      left: 20% !important;
-    }
-  }
-  .wrapper .container .text {
-    width: 60%;
-    height: 40%;
-    min-width: 400px;
-    min-height: 500px;
-    position: absolute;
-    margin: 40px 0;
-    animation: text 0.6s 1.8s ease backwards;
-  }
-  @keyframes text {
-    0% {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-  }
-  @media screen and (max-width: 799px) {
-    .wrapper .container .text {
-      min-height: 400px;
-      height: 80%;
-    }
-  }
-  .wrapper .container .text article {
-    width: 400px;
-    position: absolute;
-    bottom: 0;
-    z-index: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  @media screen and (max-width: 799px) {
-    .wrapper .container .text article {
-      width: 100%;
-    }
-  }
-  .wrapper .container .text article p {
-    color: white;
-    font-size: 18px;
-    letter-spacing: 0.6px;
-    margin-bottom: 40px;
-    text-shadow: 6px 6px 10px #32243E;
-  }
-  .wrapper .container .text article button {
-    height: 40px;
-    padding: 0 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 15px 20px rgba(54, 24, 79, 0.5);
-    z-index: 3;
-    color: #695681;
-    background-color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    transition: all 0.3s ease;
-  }
-  .wrapper .container .text article button:hover {
-    box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);
-    transform: translateY(5px);
-    background: #FB8A8A;
-    color: white;
-  }
-  .wrapper .container .p404 {
-    font-size: 200px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    color: white;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 2;
-    animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
-    animation-delay: 1.2s;
-  }
-  @media screen and (max-width: 799px) {
-    .wrapper .container .p404 {
-      font-size: 100px;
-    }
-  }
-  @keyframes anime404 {
-    0% {
-      opacity: 0;
-      transform: scale(10) skew(20deg, 20deg);
-    }
-  }
-  .wrapper .container .p404:nth-of-type(2) {
-    color: #36184F;
-    z-index: 1;
-    animation-delay: 1s;
-    filter: blur(10px);
-    opacity: 0.8;
-  }
-  .wrapper .container .circle {
-    position: absolute;
-  }
-  .wrapper .container .circle:before {
-    content: "";
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    background-color: rgba(54, 24, 79, 0.2);
-    border-radius: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);
-    animation: circle 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-  }
-  @keyframes circle {
-    0% {
-      width: 0;
-      height: 0;
-    }
-  }
-  @media screen and (max-width: 799px) {
-    .wrapper .container .circle:before {
-      width: 400px;
-      height: 400px;
-    }
-  }
-  .wrapper .container .one .content:before {
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background-color: rgba(54, 24, 79, 0.3);
-    border-radius: 100%;
-    box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);
-    animation: circle 0.8s 0.4s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-  }
-  @media screen and (max-width: 799px) {
-    .wrapper .container .one .content:before {
-      width: 300px;
-      height: 300px;
-    }
-  }
-  .wrapper .container .one .content .piece {
-    background: linear-gradient(90deg, #8077EA 13.7%, #EB73FF 94.65%);
-  }
-  .wrapper .container .one .content .piece:nth-child(1) {
-    right: 15%;
-    top: 18%;
-    height: 30px;
-    width: 120px;
-    animation-delay: 0.5s;
-    animation-name: pieceRight;
-  }
-  .wrapper .container .one .content .piece:nth-child(2) {
-    left: 15%;
-    top: 45%;
-    width: 150px;
-    height: 50px;
-    animation-delay: 1s;
-    animation-name: pieceLeft;
-  }
-  .wrapper .container .one .content .piece:nth-child(3) {
-    left: 10%;
-    top: 75%;
-    height: 20px;
-    width: 70px;
-    animation-delay: 1.5s;
-    animation-name: pieceLeft;
-  }
-  .wrapper .container .two .content .piece {
-    background: linear-gradient(90deg, #FFEDC0 0%, #FF9D87 100%);
-  }
-  .wrapper .container .two .content .piece:nth-child(1) {
-    left: 0%;
-    top: 25%;
-    height: 40px;
-    width: 120px;
-    animation-delay: 2s;
-    animation-name: pieceLeft;
-  }
-  .wrapper .container .two .content .piece:nth-child(2) {
-    right: 15%;
-    top: 35%;
-    width: 180px;
-    height: 50px;
-    animation-delay: 2.5s;
-    animation-name: pieceRight;
-  }
-  .wrapper .container .two .content .piece:nth-child(3) {
-    right: 10%;
-    top: 80%;
-    height: 20px;
-    width: 160px;
-    animation-delay: 3s;
-    animation-name: pieceRight;
-  }
-  .wrapper .container .three .content .piece {
-    background: #FB8A8A;
-  }
-  .wrapper .container .three .content .piece:nth-child(1) {
-    left: 25%;
-    top: 35%;
-    height: 20px;
-    width: 80px;
-    animation-name: pieceLeft;
-    animation-delay: 3.5s;
-  }
-  .wrapper .container .three .content .piece:nth-child(2) {
-    right: 10%;
-    top: 55%;
-    width: 140px;
-    height: 40px;
-    animation-name: pieceRight;
-    animation-delay: 4s;
-  }
-  .wrapper .container .three .content .piece:nth-child(3) {
-    left: 40%;
-    top: 68%;
-    height: 20px;
-    width: 80px;
-    animation-name: pieceLeft;
-    animation-delay: 4.5s;
-  }
-  </style>
-
+<p>  html, body, .wrapper{<br>    height: auto;<br>    font-family: “Barlow”, sans-serif;<br>    background: #695681;<br>    overflow-x:hidden;<br>    overflow-y:hidden;<br>  }<br>  .wrapper {<br>    display: grid;<br>    grid-template-columns: 1fr;<br>    justify-content: center;<br>    align-items: center;<br>    height: 100vh;<br>    overflow-x: hidden;<br>  }<br>  .wrapper .container {<br>    margin: 0 auto;<br>    transition: all 0.4s ease;<br>    display: flex;<br>    justify-content: center;<br>    align-items: center;<br>    position: relative;<br>  }<br>  .wrapper .container .scene {<br>    position: absolute;<br>    width: 100vw;<br>    height: 100vh;<br>    vertical-align: middle;<br>  }<br>  .wrapper .container .one,<br>  .wrapper .container .two,<br>  .wrapper .container .three,<br>  .wrapper .container .circle,<br>  .wrapper .container .p404 {<br>    width: 60%;<br>    height: 60%;<br>    top: 20% !important;<br>    left: 20% !important;<br>    min-width: 400px;<br>    min-height: 400px;<br>  }<br>  .wrapper .container .one .content,<br>  .wrapper .container .two .content,<br>  .wrapper .container .three .content,<br>  .wrapper .container .circle .content,<br>  .wrapper .container .p404 .content {<br>    width: 600px;<br>    height: 600px;<br>    display: flex;<br>    justify-content: center;<br>    align-items: center;<br>    position: absolute;<br>    top: 50%;<br>    left: 50%;<br>    transform: translate(-50%, -50%);<br>    animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;<br>  }<br>  @keyframes content {<br>    0% {<br>      width: 0;<br>    }<br>  }<br>  .wrapper .container .one .content .piece,<br>  .wrapper .container .two .content .piece,<br>  .wrapper .container .three .content .piece,<br>  .wrapper .container .circle .content .piece,<br>  .wrapper .container .p404 .content .piece {<br>    width: 200px;<br>    height: 80px;<br>    display: flex;<br>    position: absolute;<br>    border-radius: 80px;<br>    z-index: 1;<br>    animation: pieceLeft 8s cubic-bezier(1, 0.06, 0.25, 1) infinite both;<br>  }<br>  @keyframes pieceLeft {<br>    50% {<br>      left: 80%;<br>      width: 10%;<br>    }<br>  }<br>  @keyframes pieceRight {<br>    50% {<br>      right: 80%;<br>      width: 10%;<br>    }<br>  }<br>  @media screen and (max-width: 799px) {<br>    .wrapper .container .one,<br>  .wrapper .container .two,<br>  .wrapper .container .three,<br>  .wrapper .container .circle,<br>  .wrapper .container .p404 {<br>      width: 90%;<br>      height: 90%;<br>      top: 5% !important;<br>      left: 5% !important;<br>      min-width: 280px;<br>      min-height: 280px;<br>    }<br>  }<br>  @media screen and (max-height: 660px) {<br>    .wrapper .container .one,<br>  .wrapper .container .two,<br>  .wrapper .container .three,<br>  .wrapper .container .circle,<br>  .wrapper .container .p404 {<br>      min-width: 280px;<br>      min-height: 280px;<br>      width: 60%;<br>      height: 60%;<br>      top: 20% !important;<br>      left: 20% !important;<br>    }<br>  }<br>  .wrapper .container .text {<br>    width: 60%;<br>    height: 40%;<br>    min-width: 400px;<br>    min-height: 500px;<br>    position: absolute;<br>    margin: 40px 0;<br>    animation: text 0.6s 1.8s ease backwards;<br>  }<br>  @keyframes text {<br>    0% {<br>      opacity: 0;<br>      transform: translateY(40px);<br>    }<br>  }<br>  @media screen and (max-width: 799px) {<br>    .wrapper .container .text {<br>      min-height: 400px;<br>      height: 80%;<br>    }<br>  }<br>  .wrapper .container .text article {<br>    width: 400px;<br>    position: absolute;<br>    bottom: 0;<br>    z-index: 4;<br>    display: flex;<br>    flex-direction: column;<br>    justify-content: center;<br>    align-items: center;<br>    text-align: center;<br>    bottom: 0;<br>    left: 50%;<br>    transform: translateX(-50%);<br>  }<br>  @media screen and (max-width: 799px) {<br>    .wrapper .container .text article {<br>      width: 100%;<br>    }<br>  }<br>  .wrapper .container .text article p {<br>    color: white;<br>    font-size: 18px;<br>    letter-spacing: 0.6px;<br>    margin-bottom: 40px;<br>    text-shadow: 6px 6px 10px #32243E;<br>  }<br>  .wrapper .container .text article button {<br>    height: 40px;<br>    padding: 0 30px;<br>    border-radius: 50px;<br>    cursor: pointer;<br>    box-shadow: 0px 15px 20px rgba(54, 24, 79, 0.5);<br>    z-index: 3;<br>    color: #695681;<br>    background-color: white;<br>    text-transform: uppercase;<br>    font-weight: 600;<br>    font-size: 12px;<br>    transition: all 0.3s ease;<br>  }<br>  .wrapper .container .text article button:hover {<br>    box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);<br>    transform: translateY(5px);<br>    background: #FB8A8A;<br>    color: white;<br>  }<br>  .wrapper .container .p404 {<br>    font-size: 200px;<br>    font-weight: 700;<br>    letter-spacing: 4px;<br>    color: white;<br>    display: flex !important;<br>    justify-content: center;<br>    align-items: center;<br>    position: absolute;<br>    z-index: 2;<br>    animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;<br>    animation-delay: 1.2s;<br>  }<br>  @media screen and (max-width: 799px) {<br>    .wrapper .container .p404 {<br>      font-size: 100px;<br>    }<br>  }<br>  @keyframes anime404 {<br>    0% {<br>      opacity: 0;<br>      transform: scale(10) skew(20deg, 20deg);<br>    }<br>  }<br>  .wrapper .container .p404:nth-of-type(2) {<br>    color: #36184F;<br>    z-index: 1;<br>    animation-delay: 1s;<br>    filter: blur(10px);<br>    opacity: 0.8;<br>  }<br>  .wrapper .container .circle {<br>    position: absolute;<br>  }<br>  .wrapper .container .circle:before {<br>    content: “”;<br>    position: absolute;<br>    width: 800px;<br>    height: 800px;<br>    background-color: rgba(54, 24, 79, 0.2);<br>    border-radius: 100%;<br>    top: 50%;<br>    left: 50%;<br>    transform: translate(-50%, -50%);<br>    box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);<br>    animation: circle 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;<br>  }<br>  @keyframes circle {<br>    0% {<br>      width: 0;<br>      height: 0;<br>    }<br>  }<br>  @media screen and (max-width: 799px) {<br>    .wrapper .container .circle:before {<br>      width: 400px;<br>      height: 400px;<br>    }<br>  }<br>  .wrapper .container .one .content:before {<br>    content: “”;<br>    position: absolute;<br>    width: 600px;<br>    height: 600px;<br>    background-color: rgba(54, 24, 79, 0.3);<br>    border-radius: 100%;<br>    box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);<br>    animation: circle 0.8s 0.4s cubic-bezier(1, 0.06, 0.25, 1) backwards;<br>  }<br>  @media screen and (max-width: 799px) {<br>    .wrapper .container .one .content:before {<br>      width: 300px;<br>      height: 300px;<br>    }<br>  }<br>  .wrapper .container .one .content .piece {<br>    background: linear-gradient(90deg, #8077EA 13.7%, #EB73FF 94.65%);<br>  }<br>  .wrapper .container .one .content .piece:nth-child(1) {<br>    right: 15%;<br>    top: 18%;<br>    height: 30px;<br>    width: 120px;<br>    animation-delay: 0.5s;<br>    animation-name: pieceRight;<br>  }<br>  .wrapper .container .one .content .piece:nth-child(2) {<br>    left: 15%;<br>    top: 45%;<br>    width: 150px;<br>    height: 50px;<br>    animation-delay: 1s;<br>    animation-name: pieceLeft;<br>  }<br>  .wrapper .container .one .content .piece:nth-child(3) {<br>    left: 10%;<br>    top: 75%;<br>    height: 20px;<br>    width: 70px;<br>    animation-delay: 1.5s;<br>    animation-name: pieceLeft;<br>  }<br>  .wrapper .container .two .content .piece {<br>    background: linear-gradient(90deg, #FFEDC0 0%, #FF9D87 100%);<br>  }<br>  .wrapper .container .two .content .piece:nth-child(1) {<br>    left: 0%;<br>    top: 25%;<br>    height: 40px;<br>    width: 120px;<br>    animation-delay: 2s;<br>    animation-name: pieceLeft;<br>  }<br>  .wrapper .container .two .content .piece:nth-child(2) {<br>    right: 15%;<br>    top: 35%;<br>    width: 180px;<br>    height: 50px;<br>    animation-delay: 2.5s;<br>    animation-name: pieceRight;<br>  }<br>  .wrapper .container .two .content .piece:nth-child(3) {<br>    right: 10%;<br>    top: 80%;<br>    height: 20px;<br>    width: 160px;<br>    animation-delay: 3s;<br>    animation-name: pieceRight;<br>  }<br>  .wrapper .container .three .content .piece {<br>    background: #FB8A8A;<br>  }<br>  .wrapper .container .three .content .piece:nth-child(1) {<br>    left: 25%;<br>    top: 35%;<br>    height: 20px;<br>    width: 80px;<br>    animation-name: pieceLeft;<br>    animation-delay: 3.5s;<br>  }<br>  .wrapper .container .three .content .piece:nth-child(2) {<br>    right: 10%;<br>    top: 55%;<br>    width: 140px;<br>    height: 40px;<br>    animation-name: pieceRight;<br>    animation-delay: 4s;<br>  }<br>  .wrapper .container .three .content .piece:nth-child(3) {<br>    left: 40%;<br>    top: 68%;<br>    height: 20px;<br>    width: 80px;<br>    animation-name: pieceLeft;<br>    animation-delay: 4.5s;<br>  }<br>  </style></p>
 </head>
 <body> 
     <section class="wrapper">
 
-        <div class="container">
+<pre><code>    &lt;div class=&quot;container&quot;&gt;
 
-            <div id="scene" class="scene" data-hover-only="false">
+        &lt;div id=&quot;scene&quot; class=&quot;scene&quot; data-hover-only=&quot;false&quot;&gt;
 
 
-                <div class="circle" data-depth="1.2"></div>
+            &lt;div class=&quot;circle&quot; data-depth=&quot;1.2&quot;&gt;&lt;/div&gt;
 
-                <div class="one" data-depth="0.9">
-                    <div class="content">
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                    </div>
-                </div>
+            &lt;div class=&quot;one&quot; data-depth=&quot;0.9&quot;&gt;
+                &lt;div class=&quot;content&quot;&gt;
+                    &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
 
-                <div class="two" data-depth="0.60">
-                    <div class="content">
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                    </div>
-                </div>
+            &lt;div class=&quot;two&quot; data-depth=&quot;0.60&quot;&gt;
+                &lt;div class=&quot;content&quot;&gt;
+                    &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
 
-                <div class="three" data-depth="0.40">
-                    <div class="content">
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                    </div>
-                </div>
+            &lt;div class=&quot;three&quot; data-depth=&quot;0.40&quot;&gt;
+                &lt;div class=&quot;content&quot;&gt;
+                    &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
 
-                <p class="p404" data-depth="0.50">404</p>
-                <p class="p404" data-depth="0.10">404</p>
+            &lt;p class=&quot;p404&quot; data-depth=&quot;0.50&quot;&gt;404&lt;/p&gt;
+            &lt;p class=&quot;p404&quot; data-depth=&quot;0.10&quot;&gt;404&lt;/p&gt;
 
-            </div>
+        &lt;/div&gt;
 
-            <div class="text">
-                <article>
-                    <p>你貌似好像应该也许是走丢了 <br>页面未找到！</p>
-                    <a href="javascript:history.back(-1)"><button>返回</button></a>
-                </article>
-            </div>
+        &lt;div class=&quot;text&quot;&gt;
+            &lt;article&gt;
+                &lt;p&gt;你貌似好像应该也许是走丢了 &lt;br&gt;页面未找到！&lt;/p&gt;
+                &lt;a href=&quot;javascript:history.back(-1)&quot;&gt;&lt;button&gt;返回&lt;/button&gt;&lt;/a&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
 
-        </div>
-    </section>
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js'></script>
 
