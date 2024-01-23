@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>PyClock</title>
+      <link href="/2024/01/23/PyClock/"/>
+      <url>/2024/01/23/PyClock/</url>
+      
+        <content type="html"><![CDATA[<h1 id="PyClock"><a href="#PyClock" class="headerlink" title="PyClock"></a>PyClock</h1><p>一个基于micropython的esp32项目<a href="https://github.com/XU-Zijin/PyClock">https://github.com/XU-Zijin/PyClock</a></p><p>这是一个开源项目,原项目地址 <a href="https://github.com/01studio-lab/pyClock">https://github.com/01studio-lab/pyClock</a></p><p>我重写了这个开源项目的软件部分(不包括表盘、联网程序、获取天气以及固件)PS: 本人代码水平不高，有意见可以直接指出，有优化和bug的地方请指出</p><h2 id="代码结构"><a href="#代码结构" class="headerlink" title="代码结构"></a>代码结构</h2><p>boot.py ：启动参数配置，可以不用</p><p>main.py：主函数代码</p><p>data: 数据</p><pre><code>|---Fonts : 字库文件|---picture：主题图片素材|---CityCode.txt：全国城市编码file: 用于存放系统文件    |---wifi.txt: 记录WiFi账户密码    |---mode.txt: 系统状态文件    |---set.txt: 系统状态文件(use for ui)    |---state.txt: 系统状态记录</code></pre><p>lib: 服务</p><pre><code>|---develop    |---devmode.py: 开发者模式|---service    |---service:系统服务文件(core)    |---led.py: 用于控制led灯    |---system: 用于pyshell</code></pre><p>libs: 项目Micropython库</p><pre><code>urllib: urequest库    |---parse.py    |---urequest.py: 爬虫库|---ap.py: AP热点配网|---global_var.py：全局变量定义ui：UI主题库     |---dial.py: 极简表盘    |---default.py: 默认表盘</code></pre><p>其中service.py是相当于这个程序的核心，大部分功能从这里调用</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用MCSM面板快速搭建MC服务器</title>
       <link href="/2023/12/09/%E4%BD%BF%E7%94%A8MCSM%E9%9D%A2%E6%9D%BF%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAMC%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
       <url>/2023/12/09/%E4%BD%BF%E7%94%A8MCSM%E9%9D%A2%E6%9D%BF%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAMC%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>

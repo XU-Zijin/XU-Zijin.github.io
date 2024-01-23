@@ -1,3 +1,4 @@
+http://example.com/2024/01/23/PyClock/
 http://example.com/about/index.html
 http://example.com/404.html
 http://example.com/2023/11/19/%E6%9B%B4%E6%8D%A2%E6%96%B0%E5%9F%9F%E5%90%8D%E4%BA%86/
@@ -11,6 +12,8 @@ http://example.com/2023/07/08/hello-world/
 http://example.com/
 http://example.com/tags/hexo/
 http://example.com/tags/3-hexo/
+http://example.com/tags/Python/
 http://example.com/tags/Minecraft/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/
 http://example.com/categories/%E7%BD%91%E9%A1%B5/
+http://example.com/categories/%E5%BC%80%E6%BA%90/
