@@ -1,3 +1,4 @@
+http://example.com/2024/01/23/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git/
 http://example.com/2024/01/23/PyClock/
 http://example.com/about/index.html
 http://example.com/404.html
@@ -14,6 +15,7 @@ http://example.com/tags/hexo/
 http://example.com/tags/3-hexo/
 http://example.com/tags/Python/
 http://example.com/tags/Minecraft/
+http://example.com/tags/git/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/
 http://example.com/categories/%E7%BD%91%E9%A1%B5/
 http://example.com/categories/%E5%BC%80%E6%BA%90/
