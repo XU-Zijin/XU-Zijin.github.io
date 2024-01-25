@@ -1,4 +1,4 @@
-http://example.com/2024/01/23/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git/
+http://example.com/2024/01/23/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(1)/
 http://example.com/2024/01/23/PyClock/
 http://example.com/about/index.html
 http://example.com/404.html
