@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>怎么使用git(2)简约版教程</title>
+      <link href="/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/"/>
+      <url>/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/</url>
+      
+        <content type="html"><![CDATA[<p>上一张我们讲了Git的安装，这一章我们简单讲一下Git的使用。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+          <category> Git </category>
+          
+          <category> 简约版 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ubuntu/Debian换源</title>
       <link href="/2024/01/28/Ubuntu-Debian%E6%8D%A2%E6%BA%90/"/>
       <url>/2024/01/28/Ubuntu-Debian%E6%8D%A2%E6%BA%90/</url>
@@ -124,6 +153,8 @@
       <categories>
           
           <category> 工具 </category>
+          
+          <category> Git </category>
           
       </categories>
       
