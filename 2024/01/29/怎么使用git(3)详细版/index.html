@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>PyClock | 许子晋</title>
-  <meta name="keywords" content=" Python ">
-  <meta name="description" content="PyClock | 许子晋">
+  <title>怎么使用git(3)详细版 | 许子晋</title>
+  <meta name="keywords" content=" git ">
+  <meta name="description" content="怎么使用git(3)详细版 | 许子晋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初二学生，爱好编程(python、c、c++、arduino)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 QQ: 3279388083 邮箱: &amp;#51;&amp;#x32;&amp;#55;&amp;#x39;&amp;#x33;&amp;#x38;&amp;#x38;&amp;#48;&amp;#56;&amp;#51;&amp;#x40;&amp;#113;&amp;#x71;&amp;#x2">
 <meta property="og:type" content="website">
@@ -582,9 +582,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-PyClock" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-怎么使用git(3)详细版" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">PyClock</h1>
+        <h1 class="article-title">怎么使用git(3)详细版</h1>
     
     <div class="article-meta">
         
@@ -594,7 +594,11 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="开源">开源</a>
+            <a  data-rel="工具">工具</a> > 
+            
+            <a  data-rel="工具&lt;---&gt;Git">Git</a> > 
+            
+            <a  data-rel="工具&lt;---&gt;Git&lt;---&gt;详细版">详细版</a>
             
         </span>
         
@@ -602,19 +606,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color2">Python</a>
+            <a class="color4">git</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-01-29 19:48:17'>2024-01-23 15:30</time>
+            发布时间 : <time class="date" title='最后更新: 2024-01-29 20:31:23'>2024-01-29 20:30</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:292</span>
+        <span>字数:0</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -633,7 +637,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PyClock"><span class="toc-text">PyClock</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84"><span class="toc-text">代码结构</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -649,41 +653,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="PyClock"><a href="#PyClock" class="headerlink" title="PyClock"></a>PyClock</h1><p>一个基于micropython的esp32项目<a target="_blank" rel="noopener" href="https://github.com/XU-Zijin/PyClock">https://github.com/XU-Zijin/PyClock</a></p>
-<p>这是一个开源项目,原项目地址 <a target="_blank" rel="noopener" href="https://github.com/01studio-lab/pyClock">https://github.com/01studio-lab/pyClock</a></p>
-<p>我重写了这个开源项目的软件部分(不包括表盘、联网程序、获取天气以及固件)PS: 本人代码水平不高，有意见可以直接指出，有优化和bug的地方请指出</p>
-<h2 id="代码结构"><a href="#代码结构" class="headerlink" title="代码结构"></a>代码结构</h2><p>boot.py ：启动参数配置，可以不用</p>
-<p>main.py：主函数代码</p>
-<p>data: 数据</p>
-<pre><code>|---Fonts : 字库文件
-|---picture：主题图片素材
-|---CityCode.txt：全国城市编码
-file: 用于存放系统文件
-    |---wifi.txt: 记录WiFi账户密码
-    |---mode.txt: 系统状态文件
-    |---set.txt: 系统状态文件(use for ui)
-    |---state.txt: 系统状态记录
-</code></pre>
-<p>lib: 服务</p>
-<pre><code>|---develop
-    |---devmode.py: 开发者模式（还未开发）
-|---service
-    |---service:系统服务文件(core)
-    |---led.py: 用于控制led灯
-    |---system: 用于pyshell
-</code></pre>
-<p>libs: 项目Micropython库</p>
-<pre><code>urllib: urequest库
-    |---parse.py
-    |---urequest.py: 爬虫库
-|---ap.py: AP热点配网
-|---global_var.py：全局变量定义
-ui：UI主题库 
-    |---dial.py: 极简表盘
-    |---default.py: 默认表盘
-</code></pre>
-<p>其中service.py是相当于这个程序的核心，大部分功能从这里调用</p>
-
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3279388083@qq.com </span>
     </div>
@@ -692,12 +662,12 @@ ui：UI主题库
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>PyClock</p>
-    <p><span class="copy-title">字数:</span><span class="post-count">292</span></p>
+    <p><span class="copy-title">文章标题:</span>怎么使用git(3)详细版</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">0</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
-    <p><span class="copy-title">发布时间:</span>2024-01-23, 15:30:47</p>
-    <p><span class="copy-title">最后更新:</span>2024-01-29, 19:48:17</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/01/23/PyClock/" title="PyClock">http://example.com/2024/01/23/PyClock/</a>
+    <p><span class="copy-title">发布时间:</span>2024-01-29, 20:30:09</p>
+    <p><span class="copy-title">最后更新:</span>2024-01-29, 20:31:23</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(3)%E8%AF%A6%E7%BB%86%E7%89%88/" title="怎么使用git(3)详细版">http://example.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(3)%E8%AF%A6%E7%BB%86%E7%89%88/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
     </p>
