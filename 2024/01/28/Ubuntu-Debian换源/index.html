@@ -6,12 +6,12 @@
   <meta name="keywords" content=" Linux , Ubuntu , Debian ">
   <meta name="description" content="Ubuntu/Debian换源 | 许子晋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初二学生，爱好编程(python、c、c++、arduino)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 QQ: 3279388083 邮箱: &amp;#51;&amp;#50;&amp;#55;&amp;#57;&amp;#x33;&amp;#56;&amp;#56;&amp;#x30;&amp;#56;&amp;#x33;&amp;#x40;&amp;#113;&amp;#113;&amp;#x2e;">
+<meta name="description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初二学生，爱好编程(python、c、c++、arduino)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 QQ: 3279388083 邮箱: &amp;#51;&amp;#x32;&amp;#55;&amp;#57;&amp;#x33;&amp;#x38;&amp;#x38;&amp;#x30;&amp;#x38;&amp;#51;&amp;#x40;&amp;#113;&amp;#113;&amp;#4">
 <meta property="og:type" content="website">
 <meta property="og:title" content="许子晋">
 <meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="许子晋">
-<meta property="og:description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初二学生，爱好编程(python、c、c++、arduino)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 QQ: 3279388083 邮箱: &amp;#51;&amp;#50;&amp;#55;&amp;#57;&amp;#x33;&amp;#56;&amp;#56;&amp;#x30;&amp;#56;&amp;#x33;&amp;#x40;&amp;#113;&amp;#113;&amp;#x2e;">
+<meta property="og:description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初二学生，爱好编程(python、c、c++、arduino)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 QQ: 3279388083 邮箱: &amp;#51;&amp;#x32;&amp;#55;&amp;#57;&amp;#x33;&amp;#x38;&amp;#x38;&amp;#x30;&amp;#x38;&amp;#51;&amp;#x40;&amp;#113;&amp;#113;&amp;#4">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://static.ipw.cn/icon/ipv6-s1.svg">
 <meta property="article:published_time" content="2024-01-17T15:10:34.428Z">
@@ -541,7 +541,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-01-29 19:43:38'>2024-01-28 10:28</time>
+            发布时间 : <time class="date" title='最后更新: 2024-01-29 19:44:49'>2024-01-28 10:28</time>
         
     </div>
     <div class="article-meta">
@@ -584,7 +584,7 @@
         <h2 id="Ubuntu-x2F-Debian换源"><a href="#Ubuntu-x2F-Debian换源" class="headerlink" title="Ubuntu&#x2F;Debian换源"></a>Ubuntu&#x2F;Debian换源</h2><p>有一天，当你打开你Ubuntu&#x2F;Debian系统的电脑，使用<code>sudo apt updaet &amp;&amp; sudo apt upgrade -y</code>命令更新时发现更新速度慢到离谱，而这个慢的原因就是Ubuntu&#x2F;Debian的软件源仓库在国外。为了解决这个问题，国内有厂商或者学校就把这个Ubuntu&#x2F;Debian的软件源镜像了过来。国内有很多Ubuntu的镜像源，包括阿里的、网易的，还有很多教育网的源，比如：清华源、中科大源。</p>
 <p>我们要做的就是把&#x2F;etc&#x2F;apt&#x2F;sources.list文件中的软件源更改掉。</p>
 <h3 id="下载Vim"><a href="#下载Vim" class="headerlink" title="下载Vim"></a>下载Vim</h3><p>更改之前让我们先下载一个Vim，如果已有的话可以跳过这一步。</p>
-<pre><code class="bash">sudo apt update &amp;&amp; sudo apt-geet install vim -y
+<pre><code class="bash">sudo apt update &amp;&amp; sudo apt-get install vim -y
 </code></pre>
 <h3 id="Ubuntu22-04LTS换源"><a href="#Ubuntu22-04LTS换源" class="headerlink" title="Ubuntu22.04LTS换源"></a>Ubuntu22.04LTS换源</h3><p>使用<code>sudo vim /etc/apt/sources.list</code> 命令进入编辑界面，按下键盘A键。把原有的源给用<code>#</code>注释掉，在最下面复制以下内容进去。(有清华源、阿里源、中科大源、网易163源，大家自己选一个用就行)</p>
 <p>清华源</p>
@@ -722,7 +722,7 @@ deb-src https://mirrors.cloud.tencent.com/debian/ bookworm-backports main non-fr
     <p><span class="copy-title">字数:</span><span class="post-count">1.7k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
     <p><span class="copy-title">发布时间:</span>2024-01-28, 10:28:27</p>
-    <p><span class="copy-title">最后更新:</span>2024-01-29, 19:43:38</p>
+    <p><span class="copy-title">最后更新:</span>2024-01-29, 19:44:49</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/01/28/Ubuntu-Debian%E6%8D%A2%E6%BA%90/" title="Ubuntu/Debian换源">http://example.com/2024/01/28/Ubuntu-Debian%E6%8D%A2%E6%BA%90/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
