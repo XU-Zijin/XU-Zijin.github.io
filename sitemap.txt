@@ -25,8 +25,8 @@ http://example.com/tags/git/
 http://example.com/tags/GitHub/
 http://example.com/tags/Minecraft/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/
-http://example.com/categories/%E7%BD%91%E9%A1%B5/
 http://example.com/categories/%E5%BC%80%E6%BA%90/
+http://example.com/categories/%E7%BD%91%E9%A1%B5/
 http://example.com/categories/Linux/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/Git/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/Git/%E7%AE%80%E7%BA%A6%E7%89%88/
