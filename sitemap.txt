@@ -1,3 +1,4 @@
+http://example.com/2024/01/30/%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%94%A8html%E5%86%99%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/
 http://example.com/2024/01/23/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(1)/
 http://example.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(3)%E8%AF%A6%E7%BB%86%E7%89%88/
 http://example.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/
@@ -17,17 +18,18 @@ http://example.com/2023/07/08/hello-world/
 http://example.com/
 http://example.com/tags/hexo/
 http://example.com/tags/3-hexo/
+http://example.com/tags/Python/
 http://example.com/tags/Linux/
 http://example.com/tags/Ubuntu/
 http://example.com/tags/Debian/
-http://example.com/tags/Python/
 http://example.com/tags/git/
 http://example.com/tags/GitHub/
+http://example.com/tags/html/
 http://example.com/tags/Minecraft/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/
 http://example.com/categories/%E7%BD%91%E9%A1%B5/
-http://example.com/categories/Linux/
 http://example.com/categories/%E5%BC%80%E6%BA%90/
+http://example.com/categories/Linux/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/Git/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/Git/%E7%AE%80%E7%BA%A6%E7%89%88/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/Git/%E8%AF%A6%E7%BB%86%E7%89%88/

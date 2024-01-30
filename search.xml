@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>一个好看的用html写的个人简介</title>
+      <link href="/2024/01/30/%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%94%A8html%E5%86%99%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
+      <url>/2024/01/30/%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%94%A8html%E5%86%99%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/</url>
+      
+        <content type="html"><![CDATA[<p>今天想帮兄弟写一个个人简介，然后去网上转了一圈，发现了一个比较好看而且简单的html个人简介，然后就想把它记录一下。</p><p>源码</p><pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;    &lt;head&gt;        &lt;meta charset=&quot;utf-8&quot;&gt;        &lt;title&gt;网页标题&lt;/title&gt;        &lt;style&gt;        body         &#123;            background-image: url(img/背景.jpg);            background-size: cover;        &#125;        div.transbox        &#123;          width: 1050px;          height: 420px;          margin: 90px 90px;          background-color: #ffffff;          border: 1px solid #FFFFFF;          opacity:0.8;        &#125;                h1 &#123;text-align: center;&#125;        h2.ex1 &#123;margin-left:5cm;&#125;        h3.ex1 &#123;margin-left:5cm;&#125;        img.ex1&#123;margin-left:5cm;&#125;        p&#123;text-align: right;&#125;        p.ex1&#123;margin-right: 2cm;&#125;        p&#123;color:mediumpurple&#125;                /*cc:change color*/        a.cc:visited &#123;color:#0000ff;&#125;        a.cc:hover &#123;color:#ffcc00;&#125;        &lt;/style&gt;    &lt;/head&gt;    &lt;body&gt;        &lt;div class=&quot;background&quot;&gt;        &lt;div class=&quot;transbox&quot;&gt;                        &lt;h1&gt;个人简介&lt;/h1&gt;            &lt;img src=&quot;img/头像.jpg&quot; height=&quot;50px&quot; width=&quot;50px&quot; class=&quot;ex1&quot; /&gt;            &lt;h2 class=&quot;ex1&quot;&gt;名字&lt;/h2&gt;            &lt;h3 class=&quot;ex1&quot;&gt;想说的话或者是兴趣爱好，学校&lt;/h3&gt;            &lt;h3 class=&quot;ex1&quot;&gt;想说的话或者是兴趣爱好，学校&lt;/h3&gt;            &lt;h3 class=&quot;ex1&quot;&gt;想说的话或者是兴趣爱好，学校&lt;/h3&gt;            &lt;h3 class=&quot;ex1&quot;&gt;想说的话或者是兴趣爱好，学校&lt;/h3&gt;            &lt;p class=&quot;ex1&quot;&gt;想说的话&lt;/p&gt;        &lt;/div&gt;        &lt;/div&gt;        &lt;embed height=&quot;50&quot; width=&quot;100&quot; src=&quot;bgm/Sunburst.mp3&quot;&gt;    &lt;/body&gt;&lt;/html&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网页 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>怎么使用git(3)详细版教程</title>
       <link href="/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(3)%E8%AF%A6%E7%BB%86%E7%89%88/"/>
       <url>/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(3)%E8%AF%A6%E7%BB%86%E7%89%88/</url>
