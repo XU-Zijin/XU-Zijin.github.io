@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>http://example.com/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8Bdemo.html</loc>
+    
+    <lastmod>2024-01-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2024/01/23/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(1)/</loc>
     
     <lastmod>2024-01-29</lastmod>
