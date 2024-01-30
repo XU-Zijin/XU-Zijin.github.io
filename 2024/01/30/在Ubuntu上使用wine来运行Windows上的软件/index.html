@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>404网页 | 许子晋</title>
-  <meta name="keywords" content=" hexo , 3-hexo ">
-  <meta name="description" content="404网页 | 许子晋">
+  <title>在Ubuntu上使用wine来运行Windows上的软件 | 许子晋</title>
+  <meta name="keywords" content=" Linux , Ubuntu ">
+  <meta name="description" content="在Ubuntu上使用wine来运行Windows上的软件 | 许子晋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初二学生，爱好编程(python、c、c++、arduino)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 QQ: 3279388083 邮箱: &amp;#x33;&amp;#50;&amp;#55;&amp;#x39;&amp;#x33;&amp;#x38;&amp;#x38;&amp;#x30;&amp;#x38;&amp;#x33;&amp;#x40;&amp;#x71;&amp;#x71;&amp;">
 <meta property="og:type" content="website">
@@ -606,9 +606,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-404网页" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-在Ubuntu上使用wine来运行Windows上的软件" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">404网页</h1>
+        <h1 class="article-title">在Ubuntu上使用wine来运行Windows上的软件</h1>
     
     <div class="article-meta">
         
@@ -618,7 +618,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="网页">网页</a>
+            <a  data-rel="Linux">Linux</a>
             
         </span>
         
@@ -626,21 +626,21 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">hexo</a>
+            <a class="color1">Linux</a>
             
-            <a class="color2">3-hexo</a>
+            <a class="color2">Ubuntu</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-12-16 19:55:03'>2023-09-17 13:31</time>
+            发布时间 : <time class="date" title='最后更新: 2024-01-30 22:16:33'>2024-01-30 21:22</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.7k</span>
+        <span>字数:562</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -659,7 +659,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85wine"><span class="toc-text">安装wine</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%951-%E4%BB%8EUbuntu%E5%AE%89%E8%A3%85Wine%EF%BC%88%E7%AE%80%E5%8D%95%EF%BC%8C%E8%80%8C%E4%B8%94%E9%80%82%E7%94%A8%E5%9C%A8Debian%E4%B8%8A%EF%BC%89"><span class="toc-text">方法1. 从Ubuntu安装Wine（简单，而且适用在Debian上）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%952-%E4%BB%8EWine%E7%9A%84%E5%AD%98%E5%82%A8%E5%BA%93%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0%E7%9A%84%E7%89%88%E6%9C%AC"><span class="toc-text">方法2: 从Wine的存储库安装最新的版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96Wine"><span class="toc-text">初始化Wine</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8wine%E6%9D%A5%E6%9D%A5%E8%BF%90%E8%A1%8C%EF%BC%88%E5%AE%89%E8%A3%85%EF%BC%89Windows%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F"><span class="toc-text">使用wine来来运行（安装）Windows应用程序</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -675,426 +675,39 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li><a target="_blank" rel="noopener" href="https://www.liuzhixi.cn/html/197.html">好看的404网页(原作者的文章)</a></li>
-</ul>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code class="html">&lt;html&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot;/&gt;
-  &lt;title&gt;CodePen - Daily UI #008 - 404 Page&lt;/title&gt; 
-  &lt;script src=&quot;https://code.jquery.com/jquery-3.0.0.min.js&quot;&gt;&lt;/script&gt;
-  &lt;style&gt;
-    @import url(&quot;https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&amp;display=swap&quot;);
-  h1,h2,h3,h4,h5,h6,p,ul,li,button,a,i,input,body &#123;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border: 0;
-    -webkit-tap-highlight-color: transparent;
-    text-decoration: none;
-    color: inherit;
-  &#125;
-   
-  html, body, .wrapper&#123;
-    height: auto;
-    font-family: &quot;Barlow&quot;, sans-serif;
-    background: #695681;
-    overflow-x:hidden;
-    overflow-y:hidden;
-  &#125;
-  .wrapper &#123;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow-x: hidden;
-  &#125;
-  .wrapper .container &#123;
-    margin: 0 auto;
-    transition: all 0.4s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  &#125;
-  .wrapper .container .scene &#123;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    vertical-align: middle;
-  &#125;
-  .wrapper .container .one,
-  .wrapper .container .two,
-  .wrapper .container .three,
-  .wrapper .container .circle,
-  .wrapper .container .p404 &#123;
-    width: 60%;
-    height: 60%;
-    top: 20% !important;
-    left: 20% !important;
-    min-width: 400px;
-    min-height: 400px;
-  &#125;
-  .wrapper .container .one .content,
-  .wrapper .container .two .content,
-  .wrapper .container .three .content,
-  .wrapper .container .circle .content,
-  .wrapper .container .p404 .content &#123;
-    width: 600px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-  &#125;
-  @keyframes content &#123;
-    0% &#123;
-      width: 0;
-    &#125;
-  &#125;
-  .wrapper .container .one .content .piece,
-  .wrapper .container .two .content .piece,
-  .wrapper .container .three .content .piece,
-  .wrapper .container .circle .content .piece,
-  .wrapper .container .p404 .content .piece &#123;
-    width: 200px;
-    height: 80px;
-    display: flex;
-    position: absolute;
-    border-radius: 80px;
-    z-index: 1;
-    animation: pieceLeft 8s cubic-bezier(1, 0.06, 0.25, 1) infinite both;
-  &#125;
-  @keyframes pieceLeft &#123;
-    50% &#123;
-      left: 80%;
-      width: 10%;
-    &#125;
-  &#125;
-  @keyframes pieceRight &#123;
-    50% &#123;
-      right: 80%;
-      width: 10%;
-    &#125;
-  &#125;
-  @media screen and (max-width: 799px) &#123;
-    .wrapper .container .one,
-  .wrapper .container .two,
-  .wrapper .container .three,
-  .wrapper .container .circle,
-  .wrapper .container .p404 &#123;
-      width: 90%;
-      height: 90%;
-      top: 5% !important;
-      left: 5% !important;
-      min-width: 280px;
-      min-height: 280px;
-    &#125;
-  &#125;
-  @media screen and (max-height: 660px) &#123;
-    .wrapper .container .one,
-  .wrapper .container .two,
-  .wrapper .container .three,
-  .wrapper .container .circle,
-  .wrapper .container .p404 &#123;
-      min-width: 280px;
-      min-height: 280px;
-      width: 60%;
-      height: 60%;
-      top: 20% !important;
-      left: 20% !important;
-    &#125;
-  &#125;
-  .wrapper .container .text &#123;
-    width: 60%;
-    height: 40%;
-    min-width: 400px;
-    min-height: 500px;
-    position: absolute;
-    margin: 40px 0;
-    animation: text 0.6s 1.8s ease backwards;
-  &#125;
-  @keyframes text &#123;
-    0% &#123;
-      opacity: 0;
-      transform: translateY(40px);
-    &#125;
-  &#125;
-  @media screen and (max-width: 799px) &#123;
-    .wrapper .container .text &#123;
-      min-height: 400px;
-      height: 80%;
-    &#125;
-  &#125;
-  .wrapper .container .text article &#123;
-    width: 400px;
-    position: absolute;
-    bottom: 0;
-    z-index: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  &#125;
-  @media screen and (max-width: 799px) &#123;
-    .wrapper .container .text article &#123;
-      width: 100%;
-    &#125;
-  &#125;
-  .wrapper .container .text article p &#123;
-    color: white;
-    font-size: 18px;
-    letter-spacing: 0.6px;
-    margin-bottom: 40px;
-    text-shadow: 6px 6px 10px #32243E;
-  &#125;
-  .wrapper .container .text article button &#123;
-    height: 40px;
-    padding: 0 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 15px 20px rgba(54, 24, 79, 0.5);
-    z-index: 3;
-    color: #695681;
-    background-color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    transition: all 0.3s ease;
-  &#125;
-  .wrapper .container .text article button:hover &#123;
-    box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);
-    transform: translateY(5px);
-    background: #FB8A8A;
-    color: white;
-  &#125;
-  .wrapper .container .p404 &#123;
-    font-size: 200px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    color: white;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 2;
-    animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
-    animation-delay: 1.2s;
-  &#125;
-  @media screen and (max-width: 799px) &#123;
-    .wrapper .container .p404 &#123;
-      font-size: 100px;
-    &#125;
-  &#125;
-  @keyframes anime404 &#123;
-    0% &#123;
-      opacity: 0;
-      transform: scale(10) skew(20deg, 20deg);
-    &#125;
-  &#125;
-  .wrapper .container .p404:nth-of-type(2) &#123;
-    color: #36184F;
-    z-index: 1;
-    animation-delay: 1s;
-    filter: blur(10px);
-    opacity: 0.8;
-  &#125;
-  .wrapper .container .circle &#123;
-    position: absolute;
-  &#125;
-  .wrapper .container .circle:before &#123;
-    content: &quot;&quot;;
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    background-color: rgba(54, 24, 79, 0.2);
-    border-radius: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);
-    animation: circle 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-  &#125;
-  @keyframes circle &#123;
-    0% &#123;
-      width: 0;
-      height: 0;
-    &#125;
-  &#125;
-  @media screen and (max-width: 799px) &#123;
-    .wrapper .container .circle:before &#123;
-      width: 400px;
-      height: 400px;
-    &#125;
-  &#125;
-  .wrapper .container .one .content:before &#123;
-    content: &quot;&quot;;
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background-color: rgba(54, 24, 79, 0.3);
-    border-radius: 100%;
-    box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);
-    animation: circle 0.8s 0.4s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-  &#125;
-  @media screen and (max-width: 799px) &#123;
-    .wrapper .container .one .content:before &#123;
-      width: 300px;
-      height: 300px;
-    &#125;
-  &#125;
-  .wrapper .container .one .content .piece &#123;
-    background: linear-gradient(90deg, #8077EA 13.7%, #EB73FF 94.65%);
-  &#125;
-  .wrapper .container .one .content .piece:nth-child(1) &#123;
-    right: 15%;
-    top: 18%;
-    height: 30px;
-    width: 120px;
-    animation-delay: 0.5s;
-    animation-name: pieceRight;
-  &#125;
-  .wrapper .container .one .content .piece:nth-child(2) &#123;
-    left: 15%;
-    top: 45%;
-    width: 150px;
-    height: 50px;
-    animation-delay: 1s;
-    animation-name: pieceLeft;
-  &#125;
-  .wrapper .container .one .content .piece:nth-child(3) &#123;
-    left: 10%;
-    top: 75%;
-    height: 20px;
-    width: 70px;
-    animation-delay: 1.5s;
-    animation-name: pieceLeft;
-  &#125;
-  .wrapper .container .two .content .piece &#123;
-    background: linear-gradient(90deg, #FFEDC0 0%, #FF9D87 100%);
-  &#125;
-  .wrapper .container .two .content .piece:nth-child(1) &#123;
-    left: 0%;
-    top: 25%;
-    height: 40px;
-    width: 120px;
-    animation-delay: 2s;
-    animation-name: pieceLeft;
-  &#125;
-  .wrapper .container .two .content .piece:nth-child(2) &#123;
-    right: 15%;
-    top: 35%;
-    width: 180px;
-    height: 50px;
-    animation-delay: 2.5s;
-    animation-name: pieceRight;
-  &#125;
-  .wrapper .container .two .content .piece:nth-child(3) &#123;
-    right: 10%;
-    top: 80%;
-    height: 20px;
-    width: 160px;
-    animation-delay: 3s;
-    animation-name: pieceRight;
-  &#125;
-  .wrapper .container .three .content .piece &#123;
-    background: #FB8A8A;
-  &#125;
-  .wrapper .container .three .content .piece:nth-child(1) &#123;
-    left: 25%;
-    top: 35%;
-    height: 20px;
-    width: 80px;
-    animation-name: pieceLeft;
-    animation-delay: 3.5s;
-  &#125;
-  .wrapper .container .three .content .piece:nth-child(2) &#123;
-    right: 10%;
-    top: 55%;
-    width: 140px;
-    height: 40px;
-    animation-name: pieceRight;
-    animation-delay: 4s;
-  &#125;
-  .wrapper .container .three .content .piece:nth-child(3) &#123;
-    left: 40%;
-    top: 68%;
-    height: 20px;
-    width: 80px;
-    animation-name: pieceLeft;
-    animation-delay: 4.5s;
-  &#125;
-  &lt;/style&gt;
-
-&lt;/head&gt;
-&lt;body&gt; 
-    &lt;section class=&quot;wrapper&quot;&gt;
-
-        &lt;div class=&quot;container&quot;&gt;
-
-            &lt;div id=&quot;scene&quot; class=&quot;scene&quot; data-hover-only=&quot;false&quot;&gt;
-
-
-                &lt;div class=&quot;circle&quot; data-depth=&quot;1.2&quot;&gt;&lt;/div&gt;
-
-                &lt;div class=&quot;one&quot; data-depth=&quot;0.9&quot;&gt;
-                    &lt;div class=&quot;content&quot;&gt;
-                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
-                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
-                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;two&quot; data-depth=&quot;0.60&quot;&gt;
-                    &lt;div class=&quot;content&quot;&gt;
-                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
-                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
-                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;three&quot; data-depth=&quot;0.40&quot;&gt;
-                    &lt;div class=&quot;content&quot;&gt;
-                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
-                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
-                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
-                &lt;p class=&quot;p404&quot; data-depth=&quot;0.50&quot;&gt;404&lt;/p&gt;
-                &lt;p class=&quot;p404&quot; data-depth=&quot;0.10&quot;&gt;404&lt;/p&gt;
-
-            &lt;/div&gt;
-
-            &lt;div class=&quot;text&quot;&gt;
-                &lt;article&gt;
-                    &lt;p&gt;Uh oh! Looks like you got lost. &lt;br&gt;Go back to the homepage if you dare!&lt;/p&gt;
-                    &lt;a href=&quot;javascript:history.back(-1)&quot;&gt;&lt;button&gt;返回&lt;/button&gt;&lt;/a&gt;
-                &lt;/article&gt;
-            &lt;/div&gt;
-
-        &lt;/div&gt;
-    &lt;/section&gt;
-&lt;!-- partial --&gt;
-&lt;script src=&#39;https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js&#39;&gt;&lt;/script&gt;
-
-&lt;script&gt; 
-    var scene = document.getElementById(&#39;scene&#39;);
-    var parallax = new Parallax(scene);
-&lt;/script&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
+        <h2 id="安装wine"><a href="#安装wine" class="headerlink" title="安装wine"></a>安装wine</h2><h3 id="方法1-从Ubuntu安装Wine（简单，而且适用在Debian上）"><a href="#方法1-从Ubuntu安装Wine（简单，而且适用在Debian上）" class="headerlink" title="方法1. 从Ubuntu安装Wine（简单，而且适用在Debian上）"></a>方法1. 从Ubuntu安装Wine（简单，而且适用在Debian上）</h3><p>Wine可以直接Ubuntu的软件仓库中获得，这种方法获取的wine的版本可能不能最新的。</p>
+<p>即使你正在使用一个64位的Ubuntu系统，你也想要在你的发行版上添加32位架构的支持，这将有利于你安装特殊的软件。</p>
+<p>输入下面的命令以安装wine:</p>
+<pre><code class="bash">sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install wine -y
 </code></pre>
+<p>配合<a target="_blank" rel="noopener" href="https://xuzijin.com/2024/01/28/Ubuntu-Debian%E6%8D%A2%E6%BA%90/">Ubuntu&#x2F;Debian换源</a>的这章教程，安装速度不会很慢。wine的安装大小差不多1.3 GB，请确保你的电脑有足够的硬盘空间。</p>
+<h3 id="方法2-从Wine的存储库安装最新的版本"><a href="#方法2-从Wine的存储库安装最新的版本" class="headerlink" title="方法2: 从Wine的存储库安装最新的版本"></a>方法2: 从Wine的存储库安装最新的版本</h3><p>首先请确保你的Ubuntu电脑上没有安装wine，如果有请卸载掉。</p>
+<p>步骤1: 添加 32 位架构支持</p>
+<pre><code class="bash">sudo dpkg --add-architecture i386
+</code></pre>
+<p>步骤2: 下载和添加存储库密钥</p>
+<pre><code class="bash">sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+</code></pre>
+<p>步骤3: 下载 WineHQ 源文件文件</p>
+<p>适用于Ubuntu22.04LTS系统</p>
+<pre><code class="bash">sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/focal/winehq-focal.sources
+</code></pre>
+<p>下载完成后，更新软件包信息和安装Wine的软件包。</p>
+<pre><code class="bash">sudo apt install --install-recommends winehq-stable
+</code></pre>
+<p>PS: 如果你现有开发版本或暂存版本，相应地使用<code>winehq-devel</code>或<code>winehq-staging</code>。</p>
+<h2 id="初始化Wine"><a href="#初始化Wine" class="headerlink" title="初始化Wine"></a>初始化Wine</h2><p>使用</p>
+<pre><code class="bash">winecfg
+</code></pre>
+<p>命令来初始化wine，这将创建用于安装Windows应用程序的虚拟的<code>C:</code>驱动器，也就是虚拟了一个C盘。</p>
+<p>在按照这些步骤时，有时，你可能在文件管理器的右键菜单中找不到 “使用 Wine Windows 程序加载器打开(Open With Wine Windows Program Loader)” 的选项时可以使用以下命令进行修复</p>
+<pre><code class="bash">sudo ln -s /usr/share/doc/wine/examples/wine.desktop /usr/share/applications/
+</code></pre>
+<p>然后<code>reboot</code>（重启）你的系统就可以了。</p>
+<h2 id="使用wine来来运行（安装）Windows应用程序"><a href="#使用wine来来运行（安装）Windows应用程序" class="headerlink" title="使用wine来来运行（安装）Windows应用程序"></a>使用wine来来运行（安装）Windows应用程序</h2><p>假设你要安装Windows应用程序，那么你只需要同意协议然后大部分软件都是一直按next就行了，然后安装位置直接就是默认的c盘就行，像git的安装可以看看我的那篇文章<a target="_blank" rel="noopener" href="https://xuzijin.com/2024/01/23/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(1)/">怎么使用git(1)</a>。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3279388083@qq.com </span>
@@ -1104,12 +717,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>404网页</p>
-    <p><span class="copy-title">字数:</span><span class="post-count">1.7k</span></p>
+    <p><span class="copy-title">文章标题:</span>在Ubuntu上使用wine来运行Windows上的软件</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">562</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
-    <p><span class="copy-title">发布时间:</span>2023-09-17, 13:31:52</p>
-    <p><span class="copy-title">最后更新:</span>2023-12-16, 19:55:03</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2023/09/17/404%E7%BD%91%E9%A1%B5/" title="404网页">http://example.com/2023/09/17/404%E7%BD%91%E9%A1%B5/</a>
+    <p><span class="copy-title">发布时间:</span>2024-01-30, 21:22:56</p>
+    <p><span class="copy-title">最后更新:</span>2024-01-30, 22:16:33</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/01/30/%E5%9C%A8Ubuntu%E4%B8%8A%E4%BD%BF%E7%94%A8wine%E6%9D%A5%E8%BF%90%E8%A1%8CWindows%E4%B8%8A%E7%9A%84%E8%BD%AF%E4%BB%B6/" title="在Ubuntu上使用wine来运行Windows上的软件">http://example.com/2024/01/30/%E5%9C%A8Ubuntu%E4%B8%8A%E4%BD%BF%E7%94%A8wine%E6%9D%A5%E8%BF%90%E8%A1%8CWindows%E4%B8%8A%E7%9A%84%E8%BD%AF%E4%BB%B6/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
     </p>
