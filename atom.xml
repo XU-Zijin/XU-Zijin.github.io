@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-01-30T14:18:40.371Z</updated>
+  <updated>2024-01-31T12:06:45.771Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每日一个Linux命令（1）:查看当前系统的内核与发行版本信息</title>
+    <link href="http://example.com/2024/01/31/%E6%AF%8F%E6%97%A5%E4%B8%80%E4%B8%AALinux%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%86%85%E6%A0%B8%E4%B8%8E%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/"/>
+    <id>http://example.com/2024/01/31/%E6%AF%8F%E6%97%A5%E4%B8%80%E4%B8%AALinux%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%86%85%E6%A0%B8%E4%B8%8E%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</id>
+    <published>2024-01-31T11:27:00.000Z</published>
+    <updated>2024-01-31T12:06:45.771Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Linux中查看当前系统的内核与发行版本信息"><a href="#Linux中查看当前系统的内核与发行版本信息" class="headerlink" title="Linux中查看当前系统的内核与发行版本信息"></a>Linux中查看当前系统的内核与发行版本信息</h2><h3 id="命令1-uname-a-（内核与发行版信息）"><a href="#命令1-uname-a-（内核与发行版信息）" class="headerlink" title="命令1 uname -a （内核与发行版信息）"></a>命令1 <code>uname -a</code> （内核与发行版信息）</h3><p>像我的服务器就是(HP GL360 Gen9)</p><p><code>Linux hpgl360g9 5.15.0-92-generic #102-Ubuntu SMP Wed Jan 10 09:33:48 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux</code></p><h3 id="命令2-lsb-release-a（只能查看发行版信息）"><a href="#命令2-lsb-release-a（只能查看发行版信息）" class="headerlink" title="命令2 lsb_release -a（只能查看发行版信息）"></a>命令2 <code>lsb_release -a</code>（只能查看发行版信息）</h3><p>我的服务器显示的是</p><pre><code>No LSB modules are available.Distributor ID: UbuntuDescription:    Ubuntu 22.04.3 LTSRelease:        22.04Codename:       jammy</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Linux中查看当前系统的内核与发行版本信息&quot;&gt;&lt;a href=&quot;#Linux中查看当前系统的内核与发行版本信息&quot; class=&quot;headerlink&quot; title=&quot;Linux中查看当前系统的内核与发行版本信息&quot;&gt;&lt;/a&gt;Linux中查看当前系统的内核与发行版本</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>在Ubuntu上使用wine来运行Windows上的软件</title>
