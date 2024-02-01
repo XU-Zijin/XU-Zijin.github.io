@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xuzijin.com/2024/01/27/Ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1%E5%B9%B6%E4%B8%94%E8%BF%90%E8%A1%8Croot%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/</loc>
+    
+    <lastmod>2024-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xuzijin.com/2024/01/31/Ubuntu-Debian%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2024-02-01</lastmod>
@@ -77,15 +86,6 @@
     <loc>https://xuzijin.com/2024/01/28/Ubuntu-Debian%E6%8D%A2%E6%BA%90/</loc>
     
     <lastmod>2024-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzijin.com/2024/01/27/Ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1%E5%B9%B6%E4%B8%94%E8%BF%90%E8%A1%8Croot%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/</loc>
-    
-    <lastmod>2024-01-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
