@@ -76,18 +76,20 @@
       }
       this.angle = random(0, Math.PI * 2);
       this.speed = random(1, 10);
+      this.delay = 2000; // 烟花粒子在天空中停留的时间（毫秒）
+      this.delayGravityStart = Date.now() + this.delay; // 记录粒子下落前的时间
+      this.gravity = 0; // 重力初始为0，确保爆炸时不移动
       this.friction = 0.95;
-      this.gravity = 0; // 初始重力为0，使粒子在爆炸时暂时停留
       this.hue = random(color - 20, color + 20);
       this.brightness = random(60, 85); // 增加粒子亮度
       this.alpha = 1;
-      this.decay = random(0.015, 0.03); // 减少衰减，使粒子保持更长时间
+      this.decay = random(0.014, 0.03); // 减少衰减，使粒子保持更长时间
     }
     update(index) {
       this.coordinates.pop();
       this.coordinates.unshift([this.x, this.y]);
       this.speed *= this.friction;
-      this.gravity += 0.04; // 粒子受重力影响而下落
+      this.gravity += 0.04; // 恢复重力影响，粒子开始下落
       this.x += Math.cos(this.angle) * this.speed;
       this.y += Math.sin(this.angle) * this.speed + this.gravity;
       this.alpha -= this.decay/2; 
