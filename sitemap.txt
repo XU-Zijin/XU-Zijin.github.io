@@ -1,3 +1,4 @@
+https://xuzijin.com/about/index.html
 https://xuzijin.com/2024/01/27/Ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1%E5%B9%B6%E4%B8%94%E8%BF%90%E8%A1%8Croot%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/
 https://xuzijin.com/2024/01/31/Ubuntu-Debian%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/
 https://xuzijin.com/2024/01/31/%E6%AF%8F%E6%97%A5%E4%B8%80%E4%B8%AALinux%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%86%85%E6%A0%B8%E4%B8%8E%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/
@@ -10,7 +11,6 @@ https://xuzijin.com/2024/01/23/PyClock/
 https://xuzijin.com/2024/01/28/Ubuntu-Debian%E6%8D%A2%E6%BA%90/
 https://xuzijin.com/2024/01/27/Ubuntu%E8%A7%A3%E5%86%B3GitHub%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98/
 https://xuzijin.com/2024/01/27/hexo%E6%9B%B4%E6%94%B9%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/
-https://xuzijin.com/about/index.html
 https://xuzijin.com/2023/11/19/%E6%9B%B4%E6%8D%A2%E6%96%B0%E5%9F%9F%E5%90%8D%E4%BA%86/
 https://xuzijin.com/2023/03/26/3-hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/
 https://xuzijin.com/2023/09/17/404%E7%BD%91%E9%A1%B5/
