@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-02-01T04:26:15.390Z</updated>
+  <updated>2024-02-15T15:29:21.939Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub可以正常访问了</title>
+    <link href="https://xuzijin.com/2024/02/15/GitHub%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E8%AE%BF%E9%97%AE%E4%BA%86/"/>
+    <id>https://xuzijin.com/2024/02/15/GitHub%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E8%AE%BF%E9%97%AE%E4%BA%86/</id>
+    <published>2024-02-15T15:27:44.000Z</published>
+    <updated>2024-02-15T15:29:21.939Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天用手机打开edge浏览器不小心点到了GitHub的快捷方式，然后神奇的一幕居然出现了，GitHub可以正常访问了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天用手机打开edge浏览器不小心点到了GitHub的快捷方式，然后神奇的一幕居然出现了，GitHub可以正常访问了。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Ubuntu/Debian从0开始搭建hexo博客</title>
