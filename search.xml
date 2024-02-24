@@ -4,11 +4,32 @@
   
     
     <entry>
+      <title>搭建了备用站点</title>
+      <link href="/2024/02/24/%E6%90%AD%E5%BB%BA%E4%BA%86%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9/"/>
+      <url>/2024/02/24/%E6%90%AD%E5%BB%BA%E4%BA%86%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9/</url>
+      
+        <content type="html"><![CDATA[<p>今天闲来无事用gitlab pages搭建了一个备用的站点<a href="https://cn.xuzijin.com/">cn.xuzijin.com</a>，到时顺便出一期怎么搭建gitlab pages的教程。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 网站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>创建英文站点</title>
       <link href="/2024/02/24/%E5%88%9B%E5%BB%BA%E8%8B%B1%E6%96%87%E7%AB%99%E7%82%B9/"/>
       <url>/2024/02/24/%E5%88%9B%E5%BB%BA%E8%8B%B1%E6%96%87%E7%AB%99%E7%82%B9/</url>
       
-        <content type="html"><![CDATA[<p>这几天突发奇想，想把博客弄得国际化一点，于是便有了<a href="https://xuzijin.com/en">xuzijin.com&#x2F;en</a>这个英文站点，最近边写博客边翻译文章，还要上学，难绷。</p>]]></content>
+        <content type="html"><![CDATA[<p>这几天突发奇想，想把博客弄得国际化一点，于是便有了<a href="https://xuzijin.com/en">xuzijin.com&#x2F;en</a>这个英文站点，最近边写博客边翻译文章，还要上学，难绷。点击左下角的English就可以切换语言了。</p>]]></content>
       
       
       
