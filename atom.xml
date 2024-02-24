@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-02-24T08:36:54.137Z</updated>
+  <updated>2024-02-24T08:54:52.734Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网站计数统计貌似出现bug了</title>
+    <link href="https://xuzijin.com/2024/02/24/%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E7%BB%9F%E8%AE%A1%E8%B2%8C%E4%BC%BC%E5%87%BA%E7%8E%B0bug%E4%BA%86/"/>
+    <id>https://xuzijin.com/2024/02/24/%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E7%BB%9F%E8%AE%A1%E8%B2%8C%E4%BC%BC%E5%87%BA%E7%8E%B0bug%E4%BA%86/</id>
+    <published>2024-02-24T08:48:18.000Z</published>
+    <updated>2024-02-24T08:54:52.734Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天用手机正欣赏自己的博客发现手机和iPad上这个文章阅读量统计有bug，就是每篇文章的阅读量都一样，随便点开一篇文章然后可以看到文章阅读量+1，然后再打开一篇文章会发现就比刚刚看到那篇文章的阅读量+1，也就是每篇文章都是一样的阅读量，人麻了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天用手机正欣赏自己的博客发现手机和iPad上这个文章阅读量统计有bug，就是每篇文章的阅读量都一样，随便点开一篇文章然后可以看到文章阅读量+1，然后再打开一篇文章会发现就比刚刚看到那篇文章的阅读量+1，也就是每篇文章都是一样的阅读量，人麻了。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="网站" scheme="https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建了备用站点</title>
@@ -501,35 +524,6 @@
 &lt;li&gt;今天去阿里云买了而一个新的域名&lt;code&gt;xuzijin.com&lt;/code&gt;把原来那个&lt;code&gt;mcserverxzj.top&lt;/code&gt;给换掉了，顺便买了&lt;code&gt;8b1t.top&lt;/code&gt;做mc服务器的地址。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;博客地址</summary>
-      
-    
-    
-    
-    <category term="网页" scheme="https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/"/>
-    
-    
-    <category term="hexo" scheme="https://xuzijin.com/tags/hexo/"/>
-    
-    <category term="3-hexo" scheme="https://xuzijin.com/tags/3-hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>404网页</title>
-    <link href="https://xuzijin.com/2023/09/17/404%E7%BD%91%E9%A1%B5/"/>
-    <id>https://xuzijin.com/2023/09/17/404%E7%BD%91%E9%A1%B5/</id>
-    <published>2023-09-17T05:31:52.000Z</published>
-    <updated>2023-12-16T11:55:03.738Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li><a href="https://www.liuzhixi.cn/html/197.html">好看的404网页(原作者的文章)</a></li></ul><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre><code class="html">&lt;html&gt;&lt;head&gt;  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot;/&gt;  &lt;title&gt;CodePen - Daily UI #008 - 404 Page&lt;/title&gt;   &lt;script src=&quot;https://code.jquery.com/jquery-3.0.0.min.js&quot;&gt;&lt;/script&gt;  &lt;style&gt;    @import url(&quot;https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&amp;display=swap&quot;);  h1,h2,h3,h4,h5,h6,p,ul,li,button,a,i,input,body &#123;    margin: 0;    padding: 0;    list-style: none;    border: 0;    -webkit-tap-highlight-color: transparent;    text-decoration: none;    color: inherit;  &#125;     html, body, .wrapper&#123;    height: auto;    font-family: &quot;Barlow&quot;, sans-serif;    background: #695681;    overflow-x:hidden;    overflow-y:hidden;  &#125;  .wrapper &#123;    display: grid;    grid-template-columns: 1fr;    justify-content: center;    align-items: center;    height: 100vh;    overflow-x: hidden;  &#125;  .wrapper .container &#123;    margin: 0 auto;    transition: all 0.4s ease;    display: flex;    justify-content: center;    align-items: center;    position: relative;  &#125;  .wrapper .container .scene &#123;    position: absolute;    width: 100vw;    height: 100vh;    vertical-align: middle;  &#125;  .wrapper .container .one,  .wrapper .container .two,  .wrapper .container .three,  .wrapper .container .circle,  .wrapper .container .p404 &#123;    width: 60%;    height: 60%;    top: 20% !important;    left: 20% !important;    min-width: 400px;    min-height: 400px;  &#125;  .wrapper .container .one .content,  .wrapper .container .two .content,  .wrapper .container .three .content,  .wrapper .container .circle .content,  .wrapper .container .p404 .content &#123;    width: 600px;    height: 600px;    display: flex;    justify-content: center;    align-items: center;    position: absolute;    top: 50%;    left: 50%;    transform: translate(-50%, -50%);    animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;  &#125;  @keyframes content &#123;    0% &#123;      width: 0;    &#125;  &#125;  .wrapper .container .one .content .piece,  .wrapper .container .two .content .piece,  .wrapper .container .three .content .piece,  .wrapper .container .circle .content .piece,  .wrapper .container .p404 .content .piece &#123;    width: 200px;    height: 80px;    display: flex;    position: absolute;    border-radius: 80px;    z-index: 1;    animation: pieceLeft 8s cubic-bezier(1, 0.06, 0.25, 1) infinite both;  &#125;  @keyframes pieceLeft &#123;    50% &#123;      left: 80%;      width: 10%;    &#125;  &#125;  @keyframes pieceRight &#123;    50% &#123;      right: 80%;      width: 10%;    &#125;  &#125;  @media screen and (max-width: 799px) &#123;    .wrapper .container .one,  .wrapper .container .two,  .wrapper .container .three,  .wrapper .container .circle,  .wrapper .container .p404 &#123;      width: 90%;      height: 90%;      top: 5% !important;      left: 5% !important;      min-width: 280px;      min-height: 280px;    &#125;  &#125;  @media screen and (max-height: 660px) &#123;    .wrapper .container .one,  .wrapper .container .two,  .wrapper .container .three,  .wrapper .container .circle,  .wrapper .container .p404 &#123;      min-width: 280px;      min-height: 280px;      width: 60%;      height: 60%;      top: 20% !important;      left: 20% !important;    &#125;  &#125;  .wrapper .container .text &#123;    width: 60%;    height: 40%;    min-width: 400px;    min-height: 500px;    position: absolute;    margin: 40px 0;    animation: text 0.6s 1.8s ease backwards;  &#125;  @keyframes text &#123;    0% &#123;      opacity: 0;      transform: translateY(40px);    &#125;  &#125;  @media screen and (max-width: 799px) &#123;    .wrapper .container .text &#123;      min-height: 400px;      height: 80%;    &#125;  &#125;  .wrapper .container .text article &#123;    width: 400px;    position: absolute;    bottom: 0;    z-index: 4;    display: flex;    flex-direction: column;    justify-content: center;    align-items: center;    text-align: center;    bottom: 0;    left: 50%;    transform: translateX(-50%);  &#125;  @media screen and (max-width: 799px) &#123;    .wrapper .container .text article &#123;      width: 100%;    &#125;  &#125;  .wrapper .container .text article p &#123;    color: white;    font-size: 18px;    letter-spacing: 0.6px;    margin-bottom: 40px;    text-shadow: 6px 6px 10px #32243E;  &#125;  .wrapper .container .text article button &#123;    height: 40px;    padding: 0 30px;    border-radius: 50px;    cursor: pointer;    box-shadow: 0px 15px 20px rgba(54, 24, 79, 0.5);    z-index: 3;    color: #695681;    background-color: white;    text-transform: uppercase;    font-weight: 600;    font-size: 12px;    transition: all 0.3s ease;  &#125;  .wrapper .container .text article button:hover &#123;    box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);    transform: translateY(5px);    background: #FB8A8A;    color: white;  &#125;  .wrapper .container .p404 &#123;    font-size: 200px;    font-weight: 700;    letter-spacing: 4px;    color: white;    display: flex !important;    justify-content: center;    align-items: center;    position: absolute;    z-index: 2;    animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;    animation-delay: 1.2s;  &#125;  @media screen and (max-width: 799px) &#123;    .wrapper .container .p404 &#123;      font-size: 100px;    &#125;  &#125;  @keyframes anime404 &#123;    0% &#123;      opacity: 0;      transform: scale(10) skew(20deg, 20deg);    &#125;  &#125;  .wrapper .container .p404:nth-of-type(2) &#123;    color: #36184F;    z-index: 1;    animation-delay: 1s;    filter: blur(10px);    opacity: 0.8;  &#125;  .wrapper .container .circle &#123;    position: absolute;  &#125;  .wrapper .container .circle:before &#123;    content: &quot;&quot;;    position: absolute;    width: 800px;    height: 800px;    background-color: rgba(54, 24, 79, 0.2);    border-radius: 100%;    top: 50%;    left: 50%;    transform: translate(-50%, -50%);    box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);    animation: circle 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;  &#125;  @keyframes circle &#123;    0% &#123;      width: 0;      height: 0;    &#125;  &#125;  @media screen and (max-width: 799px) &#123;    .wrapper .container .circle:before &#123;      width: 400px;      height: 400px;    &#125;  &#125;  .wrapper .container .one .content:before &#123;    content: &quot;&quot;;    position: absolute;    width: 600px;    height: 600px;    background-color: rgba(54, 24, 79, 0.3);    border-radius: 100%;    box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);    animation: circle 0.8s 0.4s cubic-bezier(1, 0.06, 0.25, 1) backwards;  &#125;  @media screen and (max-width: 799px) &#123;    .wrapper .container .one .content:before &#123;      width: 300px;      height: 300px;    &#125;  &#125;  .wrapper .container .one .content .piece &#123;    background: linear-gradient(90deg, #8077EA 13.7%, #EB73FF 94.65%);  &#125;  .wrapper .container .one .content .piece:nth-child(1) &#123;    right: 15%;    top: 18%;    height: 30px;    width: 120px;    animation-delay: 0.5s;    animation-name: pieceRight;  &#125;  .wrapper .container .one .content .piece:nth-child(2) &#123;    left: 15%;    top: 45%;    width: 150px;    height: 50px;    animation-delay: 1s;    animation-name: pieceLeft;  &#125;  .wrapper .container .one .content .piece:nth-child(3) &#123;    left: 10%;    top: 75%;    height: 20px;    width: 70px;    animation-delay: 1.5s;    animation-name: pieceLeft;  &#125;  .wrapper .container .two .content .piece &#123;    background: linear-gradient(90deg, #FFEDC0 0%, #FF9D87 100%);  &#125;  .wrapper .container .two .content .piece:nth-child(1) &#123;    left: 0%;    top: 25%;    height: 40px;    width: 120px;    animation-delay: 2s;    animation-name: pieceLeft;  &#125;  .wrapper .container .two .content .piece:nth-child(2) &#123;    right: 15%;    top: 35%;    width: 180px;    height: 50px;    animation-delay: 2.5s;    animation-name: pieceRight;  &#125;  .wrapper .container .two .content .piece:nth-child(3) &#123;    right: 10%;    top: 80%;    height: 20px;    width: 160px;    animation-delay: 3s;    animation-name: pieceRight;  &#125;  .wrapper .container .three .content .piece &#123;    background: #FB8A8A;  &#125;  .wrapper .container .three .content .piece:nth-child(1) &#123;    left: 25%;    top: 35%;    height: 20px;    width: 80px;    animation-name: pieceLeft;    animation-delay: 3.5s;  &#125;  .wrapper .container .three .content .piece:nth-child(2) &#123;    right: 10%;    top: 55%;    width: 140px;    height: 40px;    animation-name: pieceRight;    animation-delay: 4s;  &#125;  .wrapper .container .three .content .piece:nth-child(3) &#123;    left: 40%;    top: 68%;    height: 20px;    width: 80px;    animation-name: pieceLeft;    animation-delay: 4.5s;  &#125;  &lt;/style&gt;&lt;/head&gt;&lt;body&gt;     &lt;section class=&quot;wrapper&quot;&gt;        &lt;div class=&quot;container&quot;&gt;            &lt;div id=&quot;scene&quot; class=&quot;scene&quot; data-hover-only=&quot;false&quot;&gt;                &lt;div class=&quot;circle&quot; data-depth=&quot;1.2&quot;&gt;&lt;/div&gt;                &lt;div class=&quot;one&quot; data-depth=&quot;0.9&quot;&gt;                    &lt;div class=&quot;content&quot;&gt;                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;                    &lt;/div&gt;                &lt;/div&gt;                &lt;div class=&quot;two&quot; data-depth=&quot;0.60&quot;&gt;                    &lt;div class=&quot;content&quot;&gt;                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;                    &lt;/div&gt;                &lt;/div&gt;                &lt;div class=&quot;three&quot; data-depth=&quot;0.40&quot;&gt;                    &lt;div class=&quot;content&quot;&gt;                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;                        &lt;span class=&quot;piece&quot;&gt;&lt;/span&gt;                    &lt;/div&gt;                &lt;/div&gt;                &lt;p class=&quot;p404&quot; data-depth=&quot;0.50&quot;&gt;404&lt;/p&gt;                &lt;p class=&quot;p404&quot; data-depth=&quot;0.10&quot;&gt;404&lt;/p&gt;            &lt;/div&gt;            &lt;div class=&quot;text&quot;&gt;                &lt;article&gt;                    &lt;p&gt;Uh oh! Looks like you got lost. &lt;br&gt;Go back to the homepage if you dare!&lt;/p&gt;                    &lt;a href=&quot;javascript:history.back(-1)&quot;&gt;&lt;button&gt;返回&lt;/button&gt;&lt;/a&gt;                &lt;/article&gt;            &lt;/div&gt;        &lt;/div&gt;    &lt;/section&gt;&lt;!-- partial --&gt;&lt;script src=&#39;https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js&#39;&gt;&lt;/script&gt;&lt;script&gt;     var scene = document.getElementById(&#39;scene&#39;);    var parallax = new Parallax(scene);&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.liuzhixi.cn/html/197.html&quot;&gt;好看的404网页(原作者的文章)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=</summary>
       
     
     
