@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>404页面档案馆</title>
+      <link href="/2024/02/25/404%E9%A1%B5%E9%9D%A2%E6%A1%A3%E6%A1%88%E9%A6%86/"/>
+      <url>/2024/02/25/404%E9%A1%B5%E9%9D%A2%E6%A1%A3%E6%A1%88%E9%A6%86/</url>
+      
+        <content type="html"><![CDATA[<p>今天像往常一样用ssh登进了服务器，然后我看着几个躺在hexo里的404页面陷入了沉思，这都是我这个博客成立以来用过的404页面。于是我就在想，为什么不像<a href="https://archive.org/">Internet Archive</a>那样搞一个专属于404页面的档案馆，于是<a href="https://xuzijin.com/404-archive.html">404 Archive</a>这个404页面档案馆便诞生了。如果有机会的话我也想做一个类似于<code>Internet Archive</code>这样的网站。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网页 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 404 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>网站计数统计貌似出现bug了</title>
       <link href="/2024/02/24/%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E7%BB%9F%E8%AE%A1%E8%B2%8C%E4%BC%BC%E5%87%BA%E7%8E%B0bug%E4%BA%86/"/>
       <url>/2024/02/24/%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E7%BB%9F%E8%AE%A1%E8%B2%8C%E4%BC%BC%E5%87%BA%E7%8E%B0bug%E4%BA%86/</url>
