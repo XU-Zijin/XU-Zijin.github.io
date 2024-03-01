@@ -10,48 +10,53 @@
             background-color: #f8f8f8;
             padding: 20px;
             margin: 0;
+            line-height: 1.5;
         }
-
+        
         h2 {
             text-align: center;
             color: #333;
+            font-size: 24px;
         }
 
         #registration-form {
             background-color: white;
             max-width: 400px;
             padding: 20px;
-            margin: 40px auto;
+            margin: 20px auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             box-sizing: border-box;
         }
 
         label {
-            margin-top: 10px;
+            margin-top: 15px;
             display: block;
             color: #666;
+            font-size: 16px;
         }
 
         input[type=text],
         textarea {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
             margin-top: 5px;
             border: 1px solid #ddd;
             border-radius: 4px;
             box-sizing: border-box;
+            font-size: 16px;
         }
 
         input[type=button] {
             background-color: #4285f4;
             color: white;
-            padding: 10px 20px;
+            padding: 15px;
             margin-top: 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             width: 100%;
+            font-size: 18px;
         }
 
         input[type=button]:hover {
@@ -59,24 +64,40 @@
         }
 
         /* 响应式布局 */
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 20px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input[type=text],
+            textarea {
+                font-size: 14px;
+            }
+
+            input[type=button] {
+                font-size: 16px;
+            }
+
             #registration-form {
-                margin: 20px;
-                padding: 10px;
+                padding: 15px;
+                margin: 15px auto;
             }
         }
     </style>
 </head>
 <body>
     <h2>信息登记</h2>
-    
     <form id="registration-form">
         <label for="name">姓名:</label>
         <input type="text" id="name" name="name" required>
 
         <label for="message">申请理由/拿这个网站干什么:</label>
         <textarea id="message" name="message" required></textarea>
-        
+    
         <input type="button" value="提交" onclick="sendEmail()">
     </form>
 
@@ -84,9 +105,9 @@
         function sendEmail() {
             var name = document.getElementById('name').value;
             var message = document.getElementById('message').value;
-            
+
             var mailto_link = 'mailto:xzj@xuzijin.com' +
-                              '?Subject=' + encodeURIComponent("来自" + name + "的信息登记") + 
+                              '?Subject=' + encodeURIComponent("来自" + name + "的信息登记") +
                               '&Body=' + encodeURIComponent("姓名: " + name + "\n申请理由/拿这个网站干什么: " + message);
             
             window.location.href = mailto_link;

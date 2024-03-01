@@ -27,8 +27,8 @@ https://xuzijin.com/2023/07/08/hello-world/
 https://xuzijin.com/
 https://xuzijin.com/tags/hexo/
 https://xuzijin.com/tags/3-hexo/
-https://xuzijin.com/tags/404/
 https://xuzijin.com/tags/Python/
+https://xuzijin.com/tags/404/
 https://xuzijin.com/tags/Linux/
 https://xuzijin.com/tags/Ubuntu/
 https://xuzijin.com/tags/Debian/
