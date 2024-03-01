@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>信息登记</title>
     <style>
         body {
@@ -23,6 +24,7 @@
             margin: 40px auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            box-sizing: border-box;
         }
 
         label {
@@ -38,7 +40,7 @@
             margin-top: 5px;
             border: 1px solid #ddd;
             border-radius: 4px;
-            box-sizing: border-box; /* Include padding in total width and height */
+            box-sizing: border-box;
         }
 
         input[type=button] {
@@ -54,6 +56,14 @@
 
         input[type=button]:hover {
             background-color: #357ae8;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 600px) {
+            #registration-form {
+                margin: 20px;
+                padding: 10px;
+            }
         }
     </style>
 </head>
