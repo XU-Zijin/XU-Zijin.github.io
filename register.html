@@ -112,6 +112,9 @@
         <label for="name">姓名:</label>
         <input type="text" id="name" name="name" required>
 
+        <label for="domain">域名:</label>
+        <input type="text" id="domain" name="domain">
+
         <label for="message">申请理由/拿这个网站干什么:</label>
         <textarea id="message" name="message" required></textarea>
 
@@ -121,11 +124,14 @@
     <script>
         function sendEmail() {
             var name = document.getElementById('name').value;
+            var domain = document.getElementById('domain').value;
             var message = document.getElementById('message').value;
             
             var mailto_link = 'mailto:xzj@xuzijin.com' +
                               '?Subject=' + encodeURIComponent("来自" + name + "的信息登记") +
-                              '&Body=' + encodeURIComponent("姓名: " + name + "\n申请理由/拿这个网站干什么: " + message);
+                              '&Body=' + encodeURIComponent(
+                                "姓名: " + name + "\n域名: " + domain + "\n申请理由/拿这个网站干什么: " + message
+                              );
             
             window.location.href = mailto_link;
         }
