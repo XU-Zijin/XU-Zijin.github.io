@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-03-02T09:23:03.437Z</updated>
+  <updated>2024-03-03T06:14:41.691Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>填坑日记</title>
+    <link href="https://xuzijin.com/2024/03/03/%E5%A1%AB%E5%9D%91%E6%97%A5%E8%AE%B0/"/>
+    <id>https://xuzijin.com/2024/03/03/%E5%A1%AB%E5%9D%91%E6%97%A5%E8%AE%B0/</id>
+    <published>2024-03-03T06:12:57.000Z</published>
+    <updated>2024-03-03T06:14:41.691Z</updated>
+    
+    <content type="html"><![CDATA[<p>因为最近上学，所以我挖下的那些坑可能要暑假再来填了（悲）。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;因为最近上学，所以我挖下的那些坑可能要暑假再来填了（悲）。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="日常" scheme="https://xuzijin.com/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>第一位使用Pages</title>
@@ -496,30 +519,6 @@
     
     
     <category term="git" scheme="https://xuzijin.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PyClock</title>
-    <link href="https://xuzijin.com/2024/01/23/PyClock/"/>
-    <id>https://xuzijin.com/2024/01/23/PyClock/</id>
-    <published>2024-01-23T07:30:47.000Z</published>
-    <updated>2024-02-24T08:02:49.050Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="PyClock"><a href="#PyClock" class="headerlink" title="PyClock"></a>PyClock</h1><p>一个基于micropython的esp32项目，项目地址<a href="https://github.com/XU-Zijin/PyClock">https://github.com/XU-Zijin/PyClock</a></p><p>这是一个开源项目,原项目地址<a href="https://github.com/01studio-lab/pyClock">https://github.com/01studio-lab/pyClock</a>，也可以点击这里直接下载<a href="https://github.com/XU-Zijin/PyClock/archive/refs/heads/main.zip">PyClock</a>，使用我这个项目的前提是要有原项目的固件，后面我会考虑适配没有这个固件的板子。</p><p>我重写了这个开源项目的软件部分(不包括表盘及固件)PS: 代码水平不高，有意见可以直接指出，有优化和bug的地方请指出</p><h2 id="代码结构"><a href="#代码结构" class="headerlink" title="代码结构"></a>代码结构</h2><p>boot.py ：启动参数配置，可以不用</p><p>main.py：主函数代码</p><p>data: 数据</p><pre><code>|---Fonts : 字库文件|---picture：主题图片素材|---CityCode.txt：全国城市编码file: 用于存放系统文件    |---wifi.txt: 记录WiFi账户密码    |---mode.txt: 系统状态文件    |---set.txt: 系统状态文件(use for ui)    |---state.txt: 系统状态记录</code></pre><p>lib: 服务</p><pre><code>|---develop    |---devmode.py: 开发者模式(还没开发完)|---service    |---service.py:系统服务(core)    |---led.py: 用于控制led灯    |---system.py: 用于pyshell(待开发)</code></pre><p>libs: 项目Micropython库</p><pre><code>urllib: urequest库    |---parse.py    |---urequest.py: 爬虫库|---ap.py: AP热点配网|---global_var.py：全局变量定义ui：UI主题库     |---dial.py: 极简表盘    |---default.py: 默认表盘</code></pre><p>其中service.py是相当于这个程序的核心，大部分功能从这里调用</p><p><code>注：因为system.py和devmode.py文件里的功能尚未开发或未开发完，使用时可以删除，不影响现有功能及稳定性，dial.py也可以删除，这是个表盘，如果要用这个表盘我后面会讲如何更换表盘</code></p><h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><h3 id="结构分析"><a href="#结构分析" class="headerlink" title="结构分析"></a>结构分析</h3><p>首先<code>data</code>文件夹用于存放主题图片、字库、编码以及系统运行时所需的文件。</p><p><code>lib</code>文件夹中就是用于调试的<code>devmode.py</code>文件及用于系统大部分基础功能<code>service.py</code>文件，还有控制led的文件，最后还有一个是计划开发的<code>system.py</code>文件，我打算再这个开源硬件PyClock这个板子上实现一个终端功能，也就是pyshell。</p><p>而<code>libs</code>里面就是各种所需的库了，还有表盘，也就是UI。</p><h3 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h3><p>这个天气时钟的主要功能：</p><ul><li>查看天气</li><li>查看温湿度</li><li>查看时间</li><li>可以熄屏</li><li>开机自动校准时间（把原项目的获取时间优化了）</li><li>手机web配网</li></ul><h3 id="service-py和led-py文件的调用说明"><a href="#service-py和led-py文件的调用说明" class="headerlink" title="service.py和led.py文件的调用说明"></a>service.py和led.py文件的调用说明</h3><p>使用<code>from lib.service import led</code>从而调用led.py，使用<code>led.on()</code>即可开启板子上自带的led指示灯，使用<code>led.off()</code>即可关闭。</p><p>使用<code>from lib.service.service import server</code>导入server库</p><p>这两行代码用于联网</p><p>while not server.WIFI_Connect()&#x3D;&#x3D;True:<br>    pass</p><p><code>server.sync_ntp()</code>用于同步网络时钟</p><p><code>server.city_get()</code>获取城市编码</p><p><code>city=server.re(&#39;city&#39;)</code>返回城市编码</p><p><code>datetime = server.re(&#39;rtc&#39;)</code>返回rtc时间</p><p><code>server.weather_get(datetime)</code>获取天气</p><p><code>weather=server.re(&#39;weather&#39;)</code>返回天气</p><p><code>server.info_print()</code>打印天气到调试台</p><p><code>server.check()</code>自检</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;PyClock&quot;&gt;&lt;a href=&quot;#PyClock&quot; class=&quot;headerlink&quot; title=&quot;PyClock&quot;&gt;&lt;/a&gt;PyClock&lt;/h1&gt;&lt;p&gt;一个基于micropython的esp32项目，项目地址&lt;a href=&quot;https://githu</summary>
-      
-    
-    
-    
-    <category term="开源" scheme="https://xuzijin.com/categories/%E5%BC%80%E6%BA%90/"/>
-    
-    
-    <category term="Python" scheme="https://xuzijin.com/tags/Python/"/>
     
   </entry>
   
