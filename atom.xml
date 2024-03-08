@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-03-03T06:14:41.691Z</updated>
+  <updated>2024-03-08T15:22:07.349Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -17,19 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>填坑日记</title>
+    <title>填坑日记(持续更新)</title>
     <link href="https://xuzijin.com/2024/03/03/%E5%A1%AB%E5%9D%91%E6%97%A5%E8%AE%B0/"/>
     <id>https://xuzijin.com/2024/03/03/%E5%A1%AB%E5%9D%91%E6%97%A5%E8%AE%B0/</id>
     <published>2024-03-03T06:12:57.000Z</published>
-    <updated>2024-03-03T06:14:41.691Z</updated>
+    <updated>2024-03-08T15:22:07.349Z</updated>
     
-    <content type="html"><![CDATA[<p>因为最近上学，所以我挖下的那些坑可能要暑假再来填了（悲）。</p>]]></content>
+    <content type="html"><![CDATA[<p>3.8 今天把PyClock更新了一下，具体可以看<a href="https://xuzijin.com/2024/01/23/PyClock/">https://xuzijin.com/2024/01/23/PyClock/</a>,顺便修改了下部分文章的错误。</p><p>2024.3.3 因为最近上学，所以我挖下的那些坑可能要暑假再来填了（悲）。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;因为最近上学，所以我挖下的那些坑可能要暑假再来填了（悲）。&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;p&gt;3.8 今天把PyClock更新了一下，具体可以看&lt;a href=&quot;https://xuzijin.com/2024/01/23/PyClock/&quot;&gt;https://xuzijin.com/2024/01/23/PyClock/&lt;/a&gt;,顺便修改了下部分文章的错误。&lt;/p&gt;</summary>
       
     
     
