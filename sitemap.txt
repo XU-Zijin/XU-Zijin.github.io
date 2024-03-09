@@ -1,5 +1,4 @@
 https://xuzijin.com/about/index.html
-https://xuzijin.com/2024/03/09/Solve-dpkg-error-processing-in-Ubuntu/
 https://xuzijin.com/2024/03/09/An-important-decision/
 https://xuzijin.com/2024/03/03/%E5%A1%AB%E5%9D%91%E6%97%A5%E8%AE%B0/
 https://xuzijin.com/2024/01/23/PyClock/
@@ -34,8 +33,8 @@ https://xuzijin.com/tags/hexo/
 https://xuzijin.com/tags/3-hexo/
 https://xuzijin.com/tags/404/
 https://xuzijin.com/tags/Python/
-https://xuzijin.com/tags/Ubuntu/
 https://xuzijin.com/tags/Linux/
+https://xuzijin.com/tags/Ubuntu/
 https://xuzijin.com/tags/Debian/
 https://xuzijin.com/tags/git/
 https://xuzijin.com/tags/GitHub/
