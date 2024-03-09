@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-03-09T09:57:39.514Z</updated>
+  <updated>2024-03-09T10:11:17.250Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>一个主要的决定</title>
+    <title>一个重要的决定</title>
     <link href="https://xuzijin.com/2024/03/09/An-important-decision/"/>
     <id>https://xuzijin.com/2024/03/09/An-important-decision/</id>
     <published>2024-03-09T09:50:47.000Z</published>
-    <updated>2024-03-09T09:57:39.514Z</updated>
+    <updated>2024-03-09T10:11:17.250Z</updated>
     
     <content type="html"><![CDATA[<p>我决定从这篇文章开始把以后所有的文章改为英文命名的文件。具体是为什么，你可以看到我以前的文章虽然浏览器看起来是中文名，很直观，可你把文章链接复制再粘贴时会发现在日期后的文章名字除英文外都是乱码，准确来说是url本身不支持中文需要对中文进行转码，转成url编码，这也就导致了你复制出来的网站链接很长而且看起来很乱的原因，而改为英文就不会这样，所以我才决定更改命名方式。</p>]]></content>
     
