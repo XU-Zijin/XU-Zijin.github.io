@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xuzijin.com/2024/03/09/Solve-dpkg-error-processing-in-Ubuntu/</loc>
+    
+    <lastmod>2024-03-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xuzijin.com/2024/03/09/An-important-decision/</loc>
     
     <lastmod>2024-03-09</lastmod>
@@ -309,14 +318,14 @@
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/Linux/</loc>
+    <loc>https://xuzijin.com/tags/Ubuntu/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/Ubuntu/</loc>
+    <loc>https://xuzijin.com/tags/Linux/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

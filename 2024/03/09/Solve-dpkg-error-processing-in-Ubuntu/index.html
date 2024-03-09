@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>怎么使用git(2)简约版教程 | 许子晋</title>
-  <meta name="keywords" content=" git ">
-  <meta name="description" content="怎么使用git(2)简约版教程 | 许子晋">
+  <title>Solve-dpkg-error-processing-in-Ubuntu | 许子晋</title>
+  <meta name="keywords" content=" Ubuntu ">
+  <meta name="description" content="Solve-dpkg-error-processing-in-Ubuntu | 许子晋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初二学生，爱好编程(python、c、c++、arduino、css、javascript、html)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 QQ: 3279388083 邮箱: &amp;#120;&amp;#x7a;&amp;#x6a;&amp;#64;&amp;#x78;&amp;#117;&amp;#x7a;&amp;#x69;&amp;#x6a;&amp;#x6">
 <meta property="og:type" content="website">
@@ -781,9 +781,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-怎么使用git(2)简约版" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Solve-dpkg-error-processing-in-Ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">怎么使用git(2)简约版教程</h1>
+        <h1 class="article-title">Solve-dpkg-error-processing-in-Ubuntu</h1>
     
     <div class="article-meta">
         
@@ -793,11 +793,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="工具">工具</a> > 
-            
-            <a  data-rel="工具&lt;---&gt;Git">Git</a> > 
-            
-            <a  data-rel="工具&lt;---&gt;Git&lt;---&gt;简约版">简约版</a>
+            <a  data-rel="工具">工具</a>
             
         </span>
         
@@ -805,19 +801,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color4">git</a>
+            <a class="color2">Ubuntu</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-01-30 23:28:34'>2024-01-29 20:20</time>
+            发布时间 : <time class="date" title='最后更新: 2024-03-09 20:36:52'>2024-03-09 20:31</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:238</span>
+        <span>字数:120</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -836,7 +832,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%86%8CGitHub%E8%B4%A6%E5%8F%B7"><span class="toc-text">注册GitHub账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-text">问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-text">解决办法</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -852,11 +848,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>上一张我们讲了Git的安装，这一章我们简单讲一下Git的使用。</p>
-<p>首先，大家通常都是使用git做版本管理，和把代码推送到GitHub、Gitlab、Gitee上面去，还有就是拉取代码合并分支之类的，那么我们本章将以GitHub为例子教大家怎么推送代码还有版本管理。</p>
-<h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><p>既然以GitHub为例子，那么首先得有一个GitHub账号（如果有了的话可以跳过这一步），注册前先向大家推荐一个可以用来提高GitHub访问速度的工具<a target="_blank" rel="noopener" href="https://steampp.net/">Watt Toolkit(Steam++)</a>，这个软件相信steam玩家都很熟悉，它既可以加速steam也可以加速GitHub，而且是免费的，这里真心推荐。</p>
-<p>然后注册账号可以看知乎的这篇文章<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/103268406">https://zhuanlan.zhihu.com/p/103268406</a>,或者是这篇来自CSDN的文章<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_67906358/article/details/128808210">https://blog.csdn.net/m0_67906358&#x2F;article&#x2F;details&#x2F;128808210</a></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>今天使用</p>
+<pre><code class="bash">apt update &amp;&amp; apt upgrade -y#root权限操作
+</code></pre>
+<p>命令时发生了报错，内容是<code>dpkg: error processing &lt;filename&gt;</code>，我去搜了下：在Ubuntu中出现 dpkg: error processing <filename> 错误通常表明有一个软件包处理问题。这个问题通常发生在使用dpkg来安装、配置或者删除一个软件包时。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>使用以下命令</p>
+<pre><code class="bash">sudo dpkg -i --force-overwrite &lt;filename&gt;
+sudo apt-get -f install
+</code></pre>
+<p>就可以解决了。</p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xzj@xuzijin.com </span>
     </div>
@@ -865,12 +866,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>怎么使用git(2)简约版教程</p>
-    <p><span class="copy-title">字数:</span><span class="post-count">238</span></p>
+    <p><span class="copy-title">文章标题:</span>Solve-dpkg-error-processing-in-Ubuntu</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">120</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
-    <p><span class="copy-title">发布时间:</span>2024-01-29, 20:20:12</p>
-    <p><span class="copy-title">最后更新:</span>2024-01-30, 23:28:34</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/" title="怎么使用git(2)简约版教程">https://xuzijin.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/</a>
+    <p><span class="copy-title">发布时间:</span>2024-03-09, 20:31:03</p>
+    <p><span class="copy-title">最后更新:</span>2024-03-09, 20:36:52</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/03/09/Solve-dpkg-error-processing-in-Ubuntu/" title="Solve-dpkg-error-processing-in-Ubuntu">https://xuzijin.com/2024/03/09/Solve-dpkg-error-processing-in-Ubuntu/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
     </p>
