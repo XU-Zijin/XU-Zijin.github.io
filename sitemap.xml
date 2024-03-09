@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xuzijin.com/2024/03/09/Solve-dpkg-error-processing-in-Ubuntu/</loc>
+    <loc>https://xuzijin.com/2024/03/09/dpkg-error-Ubuntu/</loc>
     
     <lastmod>2024-03-09</lastmod>
     
@@ -290,13 +290,6 @@
 
   
   <url>
-    <loc>https://xuzijin.com/tags/404/</loc>
-    <lastmod>2024-03-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xuzijin.com/tags/hexo/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -311,6 +304,13 @@
   </url>
   
   <url>
+    <loc>https://xuzijin.com/tags/404/</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://xuzijin.com/tags/Python/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -318,14 +318,14 @@
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/Ubuntu/</loc>
+    <loc>https://xuzijin.com/tags/Linux/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/Linux/</loc>
+    <loc>https://xuzijin.com/tags/Ubuntu/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -390,14 +390,14 @@
 
   
   <url>
-    <loc>https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/</loc>
+    <loc>https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
