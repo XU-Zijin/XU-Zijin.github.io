@@ -1,5 +1,5 @@
-https://xuzijin.com/2024/03/03/%E5%A1%AB%E5%9D%91%E6%97%A5%E8%AE%B0/
 https://xuzijin.com/2024/01/23/PyClock/
+https://xuzijin.com/2024/03/03/%E5%A1%AB%E5%9D%91%E6%97%A5%E8%AE%B0/
 https://xuzijin.com/2024/03/09/dpkg-error-Ubuntu/
 https://xuzijin.com/about/index.html
 https://xuzijin.com/2024/03/09/An-important-decision/
@@ -47,7 +47,7 @@ https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/
 https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/
 https://xuzijin.com/categories/%E5%BC%80%E6%BA%90/
 https://xuzijin.com/categories/Linux/
-https://xuzijin.com/categories/%E6%97%A5%E5%B8%B8/
 https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/
-https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E7%AE%80%E7%BA%A6%E7%89%88/
+https://xuzijin.com/categories/%E6%97%A5%E5%B8%B8/
 https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E8%AF%A6%E7%BB%86%E7%89%88/
+https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E7%AE%80%E7%BA%A6%E7%89%88/
