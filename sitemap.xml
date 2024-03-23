@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xuzijin.com/2024/03/23/every-day-a-linux-command-2/</loc>
+    <loc>https://xuzijin.com/2024/03/23/8b1t/</loc>
+    
+    <lastmod>2024-03-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzijin.com/about/index.html</loc>
     
     <lastmod>2024-03-23</lastmod>
     
@@ -12,6 +21,15 @@
   
   <url>
     <loc>https://xuzijin.com/2024/03/03/%E5%A1%AB%E5%9D%91%E6%97%A5%E8%AE%B0/</loc>
+    
+    <lastmod>2024-03-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzijin.com/2024/03/23/every-day-a-linux-command-2/</loc>
     
     <lastmod>2024-03-23</lastmod>
     
@@ -30,15 +48,6 @@
   
   <url>
     <loc>https://xuzijin.com/2024/03/09/dpkg-error-Ubuntu/</loc>
-    
-    <lastmod>2024-03-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzijin.com/about/index.html</loc>
     
     <lastmod>2024-03-09</lastmod>
     
@@ -305,6 +314,13 @@
   
   <url>
     <loc>https://xuzijin.com/tags/404/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzijin.com/tags/8B1T/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
