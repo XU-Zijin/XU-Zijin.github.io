@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xuzijin.com/2024/03/03/diary/</loc>
+    
+    <lastmod>2024-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xuzijin.com/about/index.html</loc>
     
     <lastmod>2024-07-01</lastmod>
@@ -48,15 +57,6 @@
   
   <url>
     <loc>https://xuzijin.com/2024/03/09/An-important-decision/</loc>
-    
-    <lastmod>2024-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzijin.com/2024/03/03/diary/</loc>
     
     <lastmod>2024-07-01</lastmod>
     
@@ -385,13 +385,6 @@
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2024-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xuzijin.com/tags/Pages/</loc>
     <lastmod>2024-07-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -407,6 +400,13 @@
   
   <url>
     <loc>https://xuzijin.com/tags/Minecraft/</loc>
+    <lastmod>2024-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2024-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

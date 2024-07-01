@@ -1,10 +1,10 @@
+https://xuzijin.com/2024/03/03/diary/
 https://xuzijin.com/about/index.html
 https://xuzijin.com/2023/03/26/3-hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/
 https://xuzijin.com/2023/09/17/404%E7%BD%91%E9%A1%B5/
 https://xuzijin.com/2024/02/25/404%E9%A1%B5%E9%9D%A2%E6%A1%A3%E6%A1%88%E9%A6%86/
 https://xuzijin.com/2024/03/23/8b1t/
 https://xuzijin.com/2024/03/09/An-important-decision/
-https://xuzijin.com/2024/03/03/diary/
 https://xuzijin.com/2024/03/09/dpkg-error-Ubuntu/
 https://xuzijin.com/2024/03/23/every-day-a-linux-command-2/
 https://xuzijin.com/2024/05/18/git-updateforwindows/
@@ -43,10 +43,10 @@ https://xuzijin.com/tags/Debian/
 https://xuzijin.com/tags/git/
 https://xuzijin.com/tags/GitHub/
 https://xuzijin.com/tags/Git/
-https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/
 https://xuzijin.com/tags/Pages/
 https://xuzijin.com/tags/html/
 https://xuzijin.com/tags/Minecraft/
+https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/
 https://xuzijin.com/tags/%E5%BC%80%E6%BA%90/
 https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/
 https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/
