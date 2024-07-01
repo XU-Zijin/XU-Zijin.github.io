@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>解决Ubuntu报错dpkg error processing | 许子晋</title>
+  <meta name="keywords" content=" Ubuntu ">
+  <meta name="description" content="解决Ubuntu报错dpkg error processing | 许子晋">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初二学生，爱好编程(python、c、c++、arduino、css、js、html)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 QQ: 3279388083 邮箱: &amp;#x78;&amp;#x7a;&amp;#106;&amp;#x40;&amp;#120;&amp;#117;&amp;#122;&amp;#x69;&amp;#x6a;&amp;#x69;&amp;#110">
+<meta property="og:type" content="website">
+<meta property="og:title" content="许子晋">
+<meta property="og:url" content="https://xuzijin.com/about/index.html">
+<meta property="og:site_name" content="许子晋">
+<meta property="og:description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初二学生，爱好编程(python、c、c++、arduino、css、js、html)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 QQ: 3279388083 邮箱: &amp;#x78;&amp;#x7a;&amp;#106;&amp;#x40;&amp;#120;&amp;#117;&amp;#122;&amp;#x69;&amp;#x6a;&amp;#x69;&amp;#110">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://static.ipw.cn/icon/ipv6-s1.svg">
+<meta property="article:published_time" content="2024-07-01T04:04:59.125Z">
+<meta property="article:modified_time" content="2024-07-01T04:04:59.125Z">
+<meta property="article:author" content="许子晋">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://static.ipw.cn/icon/ipv6-s1.svg">
+
+
+<link rel="icon" href="/img/favicon.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/github.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+<script src="/js/custom-iconfont.js?v=1.1.0" ></script>
+<script src="/js/gitlab.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="许子晋" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>许子晋</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/XU-Zijin"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/profile.php?id=61556121692006"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="twitter"
+               href="https://twitter.com/ZijinXu510514"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/xzj-zh"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="csdn"
+               href="https://blog.csdn.net/apple_71925917?spm=1000.2115.3001.5343"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-csdn"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="oschina"
+               href="https://www.oschina.net/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:xzj@xuzijin.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=3279388083&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="gitee"
+               href="https://gitee.com/xzj0512"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-gitee"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="gitlab"
+               href="https://gitlab.com/XU-Zijin"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-gitlab"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+    <a class="more-menus">更多菜单</a>
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(32)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="工具">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        工具
+                        <small>(13)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="工具<--->Git">
+                                        <i class="fold iconfont icon-right"></i>
+                                        
+                                        Git
+                                        
+                                            <small>(4
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                        <ul class="sub hide">
+                                            
+                                                <li>
+                                                    <div data-rel="工具<--->Git简约版">
+                                                        
+                                                        简约版
+                                                        
+                                                            <small>(1)</small>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li>
+                                                    <div data-rel="工具<--->Git详细版">
+                                                        
+                                                        详细版
+                                                        
+                                                            <small>(1)</small>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="开源">
+                        
+                        开源
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="日常">
+                        
+                        日常
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="网页">
+                        
+                        网页
+                        <small>(8)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        
+                        Linux
+                        <small>(5)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+                <a class="dynamic-menu "
+                   target="_self"
+                   
+                   href="https://xuzijin.com/en">English</a>
+        
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="32">
+<input type="hidden" id="yelog_site_word_count" value="15.8k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://github.com/XU-Zijin/XU-Zijin.github.io">github page仓库地址</a></li>
+            
+            <li><a target="_blank" href="https://xuzijin.com/zxl%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B.html">zxl的个人简介</a></li>
+            
+            <li><a target="_blank" href="https://rtz.8b1t.top">LinXi的个人站</a></li>
+            
+            <li><a target="_blank" href="https://xuzijin.com/404-archive.html">404档案馆</a></li>
+            
+            <li><a target="_blank" href="https://xuzijin.com/register.html">Pages页面申请</a></li>
+            
+            <li><a target="_blank" href="https://www.8b1t.top">8B1T MC服务器官网</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>3-hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>404</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>8B1T</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开源</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>网站</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Debian</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>GitHub</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>html</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Minecraft</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Pages</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ubuntu</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="全部文章 日常 "
+           href="/2024/03/03/diary/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="填坑日记(持续更新)">填坑日记(持续更新)</span>
+            <span class="post-date" title="2024-03-03 14:12:57">2024/03/03</span>
+        </a>
+        
+        
+        <a id="top" class="全部文章 工具 "
+           href="/2023/03/26/3-hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"
+           data-tag="hexo,3-hexo"
+           data-author="" >
+            <span class="post-title" title="3-hexo使用说明">3-hexo使用说明</span>
+            <span class="post-date" title="2023-03-26 12:11:27">2023/03/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/07/01/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2024-07-01 12:04:58">2024/07/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 Git "
+           href="/2024/05/18/git-updateforwindows/"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Windows更新git">Windows更新git</span>
+            <span class="post-date" title="2024-05-18 23:27:44">2024/05/18</span>
+        </a>
+        
+        
+        <a  class="全部文章 网页 "
+           href="/2024/03/23/8b1t/"
+           data-tag="8B1T"
+           data-author="" >
+            <span class="post-title" title="8b1t">8b1t</span>
+            <span class="post-date" title="2024-03-23 22:32:58">2024/03/23</span>
+        </a>
+        
+        
+        <a  class="全部文章 Linux "
+           href="/2024/03/23/every-day-a-linux-command-2/"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="每日一个Linux命令（2）:使用apt/yum更新系统">每日一个Linux命令（2）:使用apt/yum更新系统</span>
+            <span class="post-date" title="2024-03-23 19:01:12">2024/03/23</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/2024/03/09/dpkg-error-Ubuntu/"
+           data-tag="Ubuntu"
+           data-author="" >
+            <span class="post-title" title="解决Ubuntu报错dpkg error processing">解决Ubuntu报错dpkg error processing</span>
+            <span class="post-date" title="2024-03-09 20:31:03">2024/03/09</span>
+        </a>
+        
+        
+        <a  class="全部文章 网页 "
+           href="/2024/03/09/An-important-decision/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="一个重要的决定">一个重要的决定</span>
+            <span class="post-date" title="2024-03-09 17:50:47">2024/03/09</span>
+        </a>
+        
+        
+        <a  class="全部文章 网页 "
+           href="/2024/03/02/%E7%AC%AC%E4%B8%80%E4%BD%8D%E4%BD%BF%E7%94%A8Pages/"
+           data-tag="Pages"
+           data-author="" >
+            <span class="post-title" title="第一位使用Pages">第一位使用Pages</span>
+            <span class="post-date" title="2024-03-02 17:15:29">2024/03/02</span>
+        </a>
+        
+        
+        <a  class="全部文章 网页 "
+           href="/2024/03/01/pages%E6%89%98%E7%AE%A1%E5%BC%80%E5%A7%8B%E6%B5%8B%E8%AF%95/"
+           data-tag="Pages"
+           data-author="" >
+            <span class="post-title" title="pages托管开始测试">pages托管开始测试</span>
+            <span class="post-date" title="2024-03-01 19:24:24">2024/03/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 网页 "
+           href="/2024/02/25/404%E9%A1%B5%E9%9D%A2%E6%A1%A3%E6%A1%88%E9%A6%86/"
+           data-tag="404"
+           data-author="" >
+            <span class="post-title" title="404页面档案馆">404页面档案馆</span>
+            <span class="post-date" title="2024-02-25 12:55:46">2024/02/25</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/02/24/%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E7%BB%9F%E8%AE%A1%E8%B2%8C%E4%BC%BC%E5%87%BA%E7%8E%B0bug%E4%BA%86/"
+           data-tag="网站"
+           data-author="" >
+            <span class="post-title" title="网站计数统计貌似出现bug了">网站计数统计貌似出现bug了</span>
+            <span class="post-date" title="2024-02-24 16:48:18">2024/02/24</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/02/24/%E6%90%AD%E5%BB%BA%E4%BA%86%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9/"
+           data-tag="hexo,网站"
+           data-author="" >
+            <span class="post-title" title="搭建了备用站点">搭建了备用站点</span>
+            <span class="post-date" title="2024-02-24 16:33:44">2024/02/24</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/02/24/%E5%88%9B%E5%BB%BA%E8%8B%B1%E6%96%87%E7%AB%99%E7%82%B9/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="创建英文站点">创建英文站点</span>
+            <span class="post-date" title="2024-02-24 14:39:18">2024/02/24</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/2024/02/15/GitHub%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E8%AE%BF%E9%97%AE%E4%BA%86/"
+           data-tag="GitHub,开源"
+           data-author="" >
+            <span class="post-title" title="GitHub可以正常访问了">GitHub可以正常访问了</span>
+            <span class="post-date" title="2024-02-15 23:27:44">2024/02/15</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/2024/01/31/Ubuntu-Debian%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="Ubuntu/Debian从0开始搭建hexo博客">Ubuntu/Debian从0开始搭建hexo博客</span>
+            <span class="post-date" title="2024-01-31 20:21:38">2024/01/31</span>
+        </a>
+        
+        
+        <a  class="全部文章 Linux "
+           href="/2024/01/31/%E6%AF%8F%E6%97%A5%E4%B8%80%E4%B8%AALinux%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%86%85%E6%A0%B8%E4%B8%8E%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="每日一个Linux命令（1）:查看当前系统的内核与发行版本信息">每日一个Linux命令（1）:查看当前系统的内核与发行版本信息</span>
+            <span class="post-date" title="2024-01-31 19:27:00">2024/01/31</span>
+        </a>
+        
+        
+        <a  class="全部文章 Linux "
+           href="/2024/01/30/%E5%9C%A8Ubuntu%E4%B8%8A%E4%BD%BF%E7%94%A8wine%E6%9D%A5%E8%BF%90%E8%A1%8CWindows%E4%B8%8A%E7%9A%84%E8%BD%AF%E4%BB%B6/"
+           data-tag="Linux,Ubuntu"
+           data-author="" >
+            <span class="post-title" title="在Ubuntu上使用wine来运行Windows上的软件">在Ubuntu上使用wine来运行Windows上的软件</span>
+            <span class="post-date" title="2024-01-30 21:22:56">2024/01/30</span>
+        </a>
+        
+        
+        <a  class="全部文章 网页 "
+           href="/2024/01/30/%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%94%A8html%E5%86%99%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"
+           data-tag="html"
+           data-author="" >
+            <span class="post-title" title="一个好看的用html写的个人简介">一个好看的用html写的个人简介</span>
+            <span class="post-date" title="2024-01-30 16:28:21">2024/01/30</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 Git 详细版 "
+           href="/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(3)%E8%AF%A6%E7%BB%86%E7%89%88/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="怎么使用git(3)详细版教程">怎么使用git(3)详细版教程</span>
+            <span class="post-date" title="2024-01-29 20:30:09">2024/01/29</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 Git 简约版 "
+           href="/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="怎么使用git(2)简约版教程">怎么使用git(2)简约版教程</span>
+            <span class="post-date" title="2024-01-29 20:20:12">2024/01/29</span>
+        </a>
+        
+        
+        <a  class="全部文章 Linux "
+           href="/2024/01/28/Ubuntu-Debian%E6%8D%A2%E6%BA%90/"
+           data-tag="Linux,Ubuntu,Debian"
+           data-author="" >
+            <span class="post-title" title="Ubuntu/Debian换源">Ubuntu/Debian换源</span>
+            <span class="post-date" title="2024-01-28 10:28:27">2024/01/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 Linux "
+           href="/2024/01/27/Ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1%E5%B9%B6%E4%B8%94%E8%BF%90%E8%A1%8Croot%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/"
+           data-tag="Linux,Ubuntu,Debian"
+           data-author="" >
+            <span class="post-title" title="Ubuntu/Debian开启ssh服务并且允许root用户登录">Ubuntu/Debian开启ssh服务并且允许root用户登录</span>
+            <span class="post-date" title="2024-01-27 21:27:00">2024/01/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/2024/01/27/Ubuntu%E8%A7%A3%E5%86%B3GitHub%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98/"
+           data-tag="git,GitHub"
+           data-author="" >
+            <span class="post-title" title="Ubuntu解决GitHub无法访问的问题">Ubuntu解决GitHub无法访问的问题</span>
+            <span class="post-date" title="2024-01-27 20:40:09">2024/01/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/2024/01/27/hexo%E6%9B%B4%E6%94%B9%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="hexo更改网站图标">hexo更改网站图标</span>
+            <span class="post-date" title="2024-01-27 18:01:35">2024/01/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 Git "
+           href="/2024/01/23/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(1)/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="怎么使用git(1)">怎么使用git(1)</span>
+            <span class="post-date" title="2024-01-23 20:01:17">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="全部文章 开源 "
+           href="/2024/01/23/PyClock/"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="PyClock">PyClock</span>
+            <span class="post-date" title="2024-01-23 15:30:47">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/2023/12/09/%E4%BD%BF%E7%94%A8MCSM%E9%9D%A2%E6%9D%BF%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAMC%E6%9C%8D%E5%8A%A1%E5%99%A8/"
+           data-tag="Minecraft"
+           data-author="" >
+            <span class="post-title" title="使用MCSM面板快速搭建MC服务器">使用MCSM面板快速搭建MC服务器</span>
+            <span class="post-date" title="2023-12-09 16:16:07">2023/12/09</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/2023/11/25/hexo-%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/"
+           data-tag="hexo,3-hexo"
+           data-author="" >
+            <span class="post-title" title="hexo 添加音乐插件">hexo 添加音乐插件</span>
+            <span class="post-date" title="2023-11-25 16:42:45">2023/11/25</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/2023/11/25/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"
+           data-tag="hexo,3-hexo"
+           data-author="" >
+            <span class="post-title" title="hexo的使用">hexo的使用</span>
+            <span class="post-date" title="2023-11-25 15:51:32">2023/11/25</span>
+        </a>
+        
+        
+        <a  class="全部文章 网页 "
+           href="/2023/11/19/%E6%9B%B4%E6%8D%A2%E6%96%B0%E5%9F%9F%E5%90%8D%E4%BA%86/"
+           data-tag="hexo,3-hexo"
+           data-author="" >
+            <span class="post-title" title="更换新域名了">更换新域名了</span>
+            <span class="post-date" title="2023-11-19 11:31:05">2023/11/19</span>
+        </a>
+        
+        
+        <a  class="全部文章 网页 "
+           href="/2023/09/17/404%E7%BD%91%E9%A1%B5/"
+           data-tag="hexo,3-hexo"
+           data-author="" >
+            <span class="post-title" title="404网页">404网页</span>
+            <span class="post-date" title="2023-09-17 13:31:52">2023/09/17</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-dpkg-error-Ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">解决Ubuntu报错dpkg error processing</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="工具">工具</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color2">Ubuntu</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-07-01 12:04:58'>2024-03-09 20:31</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:120</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-text">问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-text">解决办法</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>今天使用</p>
+<pre><code class="bash">apt update &amp;&amp; apt upgrade -y#root权限操作
+</code></pre>
+<p>命令时发生了报错，内容是<code>dpkg: error processing &lt;filename&gt;</code>，我去搜了下：在Ubuntu中出现 dpkg: error processing <filename> 错误通常表明有一个软件包处理问题。这个问题通常发生在使用dpkg来安装、配置或者删除一个软件包时。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>使用以下命令</p>
+<pre><code class="bash">sudo dpkg -i --force-overwrite &lt;filename&gt;
+sudo apt-get -f install
+</code></pre>
+<p>就可以解决了。</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xzj@xuzijin.com </span>
+    </div>
+</article>
+
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>解决Ubuntu报错dpkg error processing</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">120</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
+    <p><span class="copy-title">发布时间:</span>2024-03-09, 20:31:03</p>
+    <p><span class="copy-title">最后更新:</span>2024-07-01, 12:04:58</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/03/09/dpkg-error-Ubuntu/" title="解决Ubuntu报错dpkg error processing">https://xuzijin.com/2024/03/09/dpkg-error-Ubuntu/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2019-2024 XuZijin
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+<div class="mobile-menus-out" >
+
+</div>
+<div class="mobile-menus">
+    
+    
+    
+    
+    <a class="dynamic-menu " target="_self"   href="https://xuzijin.com/en">English</a>
+    
+</div>
+
+
+
+</html>

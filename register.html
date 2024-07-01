@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息登记</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            padding: 5%;
+            margin: 0;
+            line-height: 1.6;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+        #registration-form {
+            background-color: white;
+            max-width: 100%;
+            padding: 5%;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            color: #666;
+            margin: 15px 0 5px;
+        }
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=button] {
+            background-color: #4285f4;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+            display: block;
+            margin-top: 20px;
+        }
+        input[type=button]:hover {
+            background-color: #357ae8;
+        }
+
+        /* 响应式布局配置 */
+        @media (max-width: 600px) {
+            body {
+                padding: 5%;
+                font-size: 17px;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            #registration-form {
+                padding: 8%;
+            }
+            label, input[type=text], textarea, input[type=button] {
+                font-size: 1em;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 992px) {
+            #registration-form {
+                padding: 4%;
+            }
+            label, input[type=text], textarea {
+                font-size: 1em;
+            }
+            input[type=button] {
+                font-size: 0.9em;
+            }
+            h2 {
+                font-size: 2.25em;
+            }
+        }
+        @media (min-width: 993px) {
+            #registration-form {
+                padding: 2%;
+                max-width: 600px; /* 设置表单的最大宽度 */
+            }
+            label {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: 2.5em;
+            }
+            input[type=text], textarea {
+                font-size: 1em;
+            }
+            input[type=button] {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>信息登记</h2>
+    <form id="registration-form">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="domain">域名:</label>
+        <input type="text" id="domain" name="domain">
+
+        <label for="message">申请理由/拿这个网站干什么:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="button" value="提交" onclick="sendEmail()">
+    </form>
+
+    <script>
+        function sendEmail() {
+            var name = document.getElementById('name').value;
+            var domain = document.getElementById('domain').value;
+            var message = document.getElementById('message').value;
+            
+            var mailto_link = 'mailto:xzj@xuzijin.com' +
+                              '?Subject=' + encodeURIComponent("来自" + name + "的信息登记") +
+                              '&Body=' + encodeURIComponent(
+                                "姓名: " + name + "\n域名: " + domain + "\n申请理由/拿这个网站干什么: " + message
+                              );
+            
+            window.location.href = mailto_link;
+        }
+    </script>
+</body>
+</html>
