@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xuzijin.com/2024/07/01/npminstall/</loc>
+    
+    <lastmod>2024-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xuzijin.com/2024/03/03/diary/</loc>
     
     <lastmod>2024-07-01</lastmod>
@@ -378,14 +387,14 @@
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/Pages/</loc>
+    <loc>https://xuzijin.com/tags/Git/</loc>
     <lastmod>2024-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/Minecraft/</loc>
+    <loc>https://xuzijin.com/tags/Pages/</loc>
     <lastmod>2024-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -399,14 +408,14 @@
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://xuzijin.com/tags/Minecraft/</loc>
     <lastmod>2024-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/Git/</loc>
+    <loc>https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2024-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -464,14 +473,14 @@
   </url>
   
   <url>
-    <loc>https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E7%AE%80%E7%BA%A6%E7%89%88/</loc>
+    <loc>https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E8%AF%A6%E7%BB%86%E7%89%88/</loc>
     <lastmod>2024-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E8%AF%A6%E7%BB%86%E7%89%88/</loc>
+    <loc>https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E7%AE%80%E7%BA%A6%E7%89%88/</loc>
     <lastmod>2024-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

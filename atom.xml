@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-07-01T04:04:58.649Z</updated>
+  <updated>2024-07-01T07:19:51.588Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客的迁移</title>
+    <link href="https://xuzijin.com/2024/07/01/npminstall/"/>
+    <id>https://xuzijin.com/2024/07/01/npminstall/</id>
+    <published>2024-07-01T07:04:36.000Z</published>
+    <updated>2024-07-01T07:19:51.588Z</updated>
+    
+    <content type="html"><![CDATA[<p>我的hexo博客一直在我自己的那台服务器上，然而每次写一篇博客都要开一次服务器，可谓特别麻烦。正好最近手头上有一台阿里云2C2T 2G的云服务器，这个性能用来放放博客绝对够用，而且才不到100一年。</p><h2 id="一、迁移主题文章"><a href="#一、迁移主题文章" class="headerlink" title="一、迁移主题文章"></a>一、迁移主题文章</h2><p>在Ubuntu&#x2F;Debian服务器上搭建新的hexo可以看我这篇文章<a href="https://xuzijin.com/2024/01/31/Ubuntu-Debian%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">Ubuntu&#x2F;Debian从0开始搭建hexo博客</a>。</p><p>搭建好之后把目录下的<code>source</code>、<code>themes</code>文件夹删除，把<code>_config.yml</code>配置文件删掉，把你原来的这几个文件复制过来。</p><p>你的主题、文章、配置文件就迁移成功了。</p><h2 id="二、安装npm包"><a href="#二、安装npm包" class="headerlink" title="二、安装npm包"></a>二、安装npm包</h2><p>把目录下的<code>package.json</code>文件删掉，同样也是换成原来的<code>package.json</code>文件，然后执行</p><pre><code class="bash">npm install</code></pre><p>命令，这样就把你原来安装过的npm包安装过来了。</p><h2 id="三、测试"><a href="#三、测试" class="headerlink" title="三、测试"></a>三、测试</h2><p>输入以下指令测试是否迁移成功</p><pre><code class="bash">hexo g &amp;&amp; hexo s</code></pre><p>用浏览器打开<a href="http://服务器ipv4地址:4000/">http:&#x2F;&#x2F;服务器IPV4地址:4000</a>，如果你的云服务器是需要放行安全组的话记得去放行。</p><p>如果你觉得这样太麻烦，可以直接看看hexo目录下有没有public这个文件夹，有的话一般问题不大。</p><h2 id="四、最后一步就是去部署你的博客，原来怎么部署的就怎么部署"><a href="#四、最后一步就是去部署你的博客，原来怎么部署的就怎么部署" class="headerlink" title="四、最后一步就是去部署你的博客，原来怎么部署的就怎么部署"></a>四、最后一步就是去部署你的博客，原来怎么部署的就怎么部署</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我的hexo博客一直在我自己的那台服务器上，然而每次写一篇博客都要开一次服务器，可谓特别麻烦。正好最近手头上有一台阿里云2C2T 2G的云服务器，这个性能用来放放博客绝对够用，而且才不到100一年。&lt;/p&gt;
+&lt;h2 id=&quot;一、迁移主题文章&quot;&gt;&lt;a href=&quot;#一、迁移主</summary>
+      
+    
+    
+    
+    <category term="工具" scheme="https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="hexo" scheme="https://xuzijin.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -479,35 +504,6 @@
     <category term="Git" scheme="https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/"/>
     
     <category term="详细版" scheme="https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E8%AF%A6%E7%BB%86%E7%89%88/"/>
-    
-    
-    <category term="git" scheme="https://xuzijin.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>怎么使用git(2)简约版教程</title>
-    <link href="https://xuzijin.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/"/>
-    <id>https://xuzijin.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/</id>
-    <published>2024-01-29T12:20:12.000Z</published>
-    <updated>2024-07-01T04:04:58.233Z</updated>
-    
-    <content type="html"><![CDATA[<p>上一张我们讲了Git的安装，这一章我们简单讲一下Git的使用。</p><p>首先，大家通常都是使用git做版本管理，和把代码推送到GitHub、Gitlab、Gitee上面去，还有就是拉取代码合并分支之类的，那么我们本章将以GitHub为例子教大家怎么推送代码还有版本管理。</p><h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><p>既然以GitHub为例子，那么首先得有一个GitHub账号（如果有了的话可以跳过这一步），注册前先向大家推荐一个可以用来提高GitHub访问速度的工具<a href="https://steampp.net/">Watt Toolkit(Steam++)</a>，这个软件相信steam玩家都很熟悉，它既可以加速steam也可以加速GitHub，而且是免费的，这里真心推荐。</p><p>然后注册账号可以看知乎的这篇文章<a href="https://zhuanlan.zhihu.com/p/103268406">https://zhuanlan.zhihu.com/p/103268406</a>,或者是这篇来自CSDN的文章<a href="https://blog.csdn.net/m0_67906358/article/details/128808210">https://blog.csdn.net/m0_67906358&#x2F;article&#x2F;details&#x2F;128808210</a></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;上一张我们讲了Git的安装，这一章我们简单讲一下Git的使用。&lt;/p&gt;
-&lt;p&gt;首先，大家通常都是使用git做版本管理，和把代码推送到GitHub、Gitlab、Gitee上面去，还有就是拉取代码合并分支之类的，那么我们本章将以GitHub为例子教大家怎么推送代码还有版本管理</summary>
-      
-    
-    
-    
-    <category term="工具" scheme="https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="Git" scheme="https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/"/>
-    
-    <category term="简约版" scheme="https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E7%AE%80%E7%BA%A6%E7%89%88/"/>
     
     
     <category term="git" scheme="https://xuzijin.com/tags/git/"/>
