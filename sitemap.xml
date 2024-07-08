@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xuzijin.com/2024/07/08/hexo-on-centos7/</loc>
+    <loc>https://xuzijin.com/2024/07/08/hexo-on-centos7-failed/</loc>
     
     <lastmod>2024-07-08</lastmod>
     
@@ -349,14 +349,14 @@
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/8B1T/</loc>
+    <loc>https://xuzijin.com/tags/404/</loc>
     <lastmod>2024-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/404/</loc>
+    <loc>https://xuzijin.com/tags/8B1T/</loc>
     <lastmod>2024-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
