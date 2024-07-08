@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-07-01T07:19:51.588Z</updated>
+  <updated>2024-07-08T13:01:04.134Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在Centos7上部署hexo</title>
+    <link href="https://xuzijin.com/2024/07/08/hexo-on-centos7/"/>
+    <id>https://xuzijin.com/2024/07/08/hexo-on-centos7/</id>
+    <published>2024-07-08T11:53:12.000Z</published>
+    <updated>2024-07-08T13:01:04.134Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1、更新"><a href="#1、更新" class="headerlink" title="1、更新"></a>1、更新</h2><p>使用以下指令进行Centos7系统的更新</p><pre><code class="bash">sudo yum update -y</code></pre><h2 id="2、安装依赖"><a href="#2、安装依赖" class="headerlink" title="2、安装依赖"></a>2、安装依赖</h2><h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><pre><code class="bash">yum -y install git</code></pre><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><pre><code class="bash">wget https://npmmirror.com/mirrors/node/v20.15.0/node-v20.15.0-linux-x64.tar.xz #获取源码tar -xvf node-v20.15.0-linux-x64.tar.xz #解压缩mkdir -p /usr/local/nodejsmv node-v20.15.0-linux-x64/* /usr/local/nodejs/# 建立node软链接ln -s /usr/local/nodejs/bin/node /usr/local/bin# 建立npm 软链接ln -s /usr/local/nodejs/bin/npm /usr/local/bin# 设置国内淘宝镜像源npm config set registry https://registry.npm.taobao.org# 查看设置信息npm config list</code></pre><p>然而我本来还想继续写下去，当我看了一眼终端，发现。。。。报错了居然</p><pre><code class="error">node: /lib64/libm.so.6: version `GLIBC_2.27&#39; not found (required by node)node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20&#39; not found (required by node)node: /lib64/libstdc++.so.6: version `CXXABI_1.3.9&#39; not found (required by node)node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21&#39; not found (required by node)node: /lib64/libc.so.6: version `GLIBC_2.28&#39; not found (required by node)node: /lib64/libc.so.6: version `GLIBC_2.25&#39; not found (required by node)</code></pre><p>我去查发现这个是Centos7系统安装node.js18以上的版本都会出现的通病，新版的node v18开始需要GLIBC_2.27支持，可是目前系统内却没有那么高的版本。然后我开始去查教程、资料，并且我先在我的服务器上试了一遍我才写上来，然而并没有成功，所有我便决定不接着往下写了，毕竟没有经过实践一味地照搬别人的博文对于我来说是没有任何意义的，只是水了一篇文章而已。</p><p>我会把我所有查过的资料放在下面，希望对其他人有点用。如果有大佬读了我这篇文章我希望您可以发邮件到<code>xzj@xuzijin.com</code>给我指点一下。</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://blog.csdn.net/qq_45861317/article/details/119992366">centos7搭建hexo博客步骤</a></p><p><a href="https://www.jianshu.com/p/d4a78b27fe83">CentOS7安装最新版NodeJS</a></p><p><a href="https://blog.csdn.net/qq_37955704/article/details/113395046">CentOS7 安装NodeJS详细教程（附带安装步骤）</a></p><p>[centos7 node: &#x2F;lib64&#x2F;libm.so.6: version &#96;GLIBC_2.27‘ not found问题解决方案](<a href="https://blog.csdn.net/qq_39287495/article/details/139964001">https://blog.csdn.net/qq_39287495/article/details/139964001</a>)</p><p>[node: &#x2F;lib64&#x2F;libm.so.6: version &#96;GLIBC_2.27‘ not found问题解决方案](<a href="https://www.cnblogs.com/yuwen01/p/18067005">https://www.cnblogs.com/yuwen01/p/18067005</a>)</p><p><a href="https://nodejs.cn/en/learn/getting-started/how-to-install-nodejs">如何安装 Node.js</a></p><p><a href="https://xuzijin.com/2024/01/31/Ubuntu-Debian%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">Ubuntu&#x2F;Debian从0开始搭建hexo博客</a>(ps:这个是参照了Ubuntu系统安装的思路，想把apt换成yum)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;1、更新&quot;&gt;&lt;a href=&quot;#1、更新&quot; class=&quot;headerlink&quot; title=&quot;1、更新&quot;&gt;&lt;/a&gt;1、更新&lt;/h2&gt;&lt;p&gt;使用以下指令进行Centos7系统的更新&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;sudo yum upda</summary>
+      
+    
+    
+    
+    <category term="工具" scheme="https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Hexo" scheme="https://xuzijin.com/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo博客的迁移</title>
@@ -478,35 +503,6 @@
     <category term="Linux" scheme="https://xuzijin.com/tags/Linux/"/>
     
     <category term="Ubuntu" scheme="https://xuzijin.com/tags/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个好看的用html写的个人简介</title>
-    <link href="https://xuzijin.com/2024/01/30/%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%94%A8html%E5%86%99%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
-    <id>https://xuzijin.com/2024/01/30/%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%94%A8html%E5%86%99%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/</id>
-    <published>2024-01-30T08:28:21.000Z</published>
-    <updated>2024-07-01T04:04:58.425Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天想帮兄弟写一个个人简介，然后去网上转了一圈，发现了一个比较好看而且简单的html个人简介，然后就想把它记录一下。</p><p>源码</p><pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;    &lt;head&gt;        &lt;meta charset=&quot;utf-8&quot;&gt;        &lt;title&gt;网页标题&lt;/title&gt;        &lt;style&gt;        body         &#123;            background-image: url(img/背景.jpg);            background-size: cover;        &#125;        div.transbox        &#123;          width: 1050px;          height: 420px;          margin: 90px 90px;          background-color: #ffffff;          border: 1px solid #FFFFFF;          opacity:0.8;        &#125;                h1 &#123;text-align: center;&#125;        h2.ex1 &#123;margin-left:5cm;&#125;        h3.ex1 &#123;margin-left:5cm;&#125;        img.ex1&#123;margin-left:5cm;&#125;        p&#123;text-align: right;&#125;        p.ex1&#123;margin-right: 2cm;&#125;        p&#123;color:mediumpurple&#125;                /*cc:change color*/        a.cc:visited &#123;color:#0000ff;&#125;        a.cc:hover &#123;color:#ffcc00;&#125;        &lt;/style&gt;    &lt;/head&gt;    &lt;body&gt;        &lt;div class=&quot;background&quot;&gt;        &lt;div class=&quot;transbox&quot;&gt;                        &lt;h1&gt;个人简介&lt;/h1&gt;            &lt;img src=&quot;img/头像.jpg&quot; height=&quot;50px&quot; width=&quot;50px&quot; class=&quot;ex1&quot; /&gt;            &lt;h2 class=&quot;ex1&quot;&gt;名字&lt;/h2&gt;            &lt;h3 class=&quot;ex1&quot;&gt;想说的话或者是兴趣爱好，学校&lt;/h3&gt;            &lt;h3 class=&quot;ex1&quot;&gt;想说的话或者是兴趣爱好，学校&lt;/h3&gt;            &lt;h3 class=&quot;ex1&quot;&gt;想说的话或者是兴趣爱好，学校&lt;/h3&gt;            &lt;h3 class=&quot;ex1&quot;&gt;想说的话或者是兴趣爱好，学校&lt;/h3&gt;            &lt;p class=&quot;ex1&quot;&gt;想说的话&lt;/p&gt;        &lt;/div&gt;        &lt;/div&gt;        &lt;embed height=&quot;50&quot; width=&quot;100&quot; src=&quot;bgm/Sunburst.mp3&quot;&gt;    &lt;/body&gt;&lt;/html&gt;</code></pre><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>首先先建一个文件夹，名字随便。然后进入这个文件夹，新建一个<code>html</code>文件（像<code>个人简介.html</code>这样的），然后把上面的代码复制进这个文件里面。然后再在这个文件夹里面新建一个名为<code>img</code>的文件夹，里面需要放两张图片，一张命名为<code>头像.jpg</code>这个是你的头像，一张命名为<code>背景.jpg</code>，然后用edge浏览器打开你刚刚写好的html文件，就可以看到一个属于你的个人简介了。</p><h2 id="把它放进hexo里面"><a href="#把它放进hexo里面" class="headerlink" title="把它放进hexo里面"></a>把它放进hexo里面</h2><p>当你搞好这个个人简介给你一个朋友看的时候，他可能会说：“欸那你这个只能本地浏览，也没什么用啊，我电脑上又没有，难不成又要弄一个？”</p><p>那这个时候，假设你有一个域名和一个hexo的GitHub Pages，那你可以打开hexo根目录下的<code>_config.yml</code>文件，找到<code>skip_render:</code>这行代码按按照下面的格式进行编辑，目的就是告诉hexo让它不要渲染此页面，这样才能正常显示你的个人简介。</p><pre><code class="yml">skip_render:  - &quot;个人简介.html&quot;</code></pre><p>然后你就可以打开你的GitHub Pages&#x2F;个人简介.html看到你的个人简介了。</p><h2 id="demo预览"><a href="#demo预览" class="headerlink" title="demo预览"></a>demo预览</h2><p>用刚刚上面的代码以及方法制作出来的效果(头像是我博客的头像，背景是Windows10壁纸，然后html文件叫<code>个人简介demo.html</code>)</p><p>demo演示代码</p><pre><code class="html">&lt;!DOCTYPE html&gt;&lt;html&gt;    &lt;head&gt;        &lt;meta charset=&quot;utf-8&quot;&gt;        &lt;title&gt;网页标题&lt;/title&gt;        &lt;style&gt;        body         &#123;            background-image: url(img/demo背景.jpg);            background-size: cover;        &#125;        div.transbox        &#123;          width: 1050px;          height: 420px;          margin: 90px 90px;          background-color: #ffffff;          border: 1px solid #FFFFFF;          opacity:0.8;        &#125;                h1 &#123;text-align: center;&#125;        h2.ex1 &#123;margin-left:5cm;&#125;        h3.ex1 &#123;margin-left:5cm;&#125;        img.ex1&#123;margin-left:5cm;&#125;        p&#123;text-align: right;&#125;        p.ex1&#123;margin-right: 2cm;&#125;        p&#123;color:mediumpurple&#125;                /*cc:change color*/        a.cc:visited &#123;color:#0000ff;&#125;        a.cc:hover &#123;color:#ffcc00;&#125;        &lt;/style&gt;    &lt;/head&gt;    &lt;body&gt;        &lt;div class=&quot;background&quot;&gt;        &lt;div class=&quot;transbox&quot;&gt;                        &lt;h1&gt;个人简介&lt;/h1&gt;            &lt;img src=&quot;img/demo头像.jpg&quot; height=&quot;50px&quot; width=&quot;50px&quot; class=&quot;ex1&quot; /&gt;            &lt;h2 class=&quot;ex1&quot;&gt;许子晋&lt;/h2&gt;            &lt;h3 class=&quot;ex1&quot;&gt;爱好：编程&lt;/h3&gt;            &lt;h3 class=&quot;ex1&quot;&gt;会什么编程语言：python c c++ html&lt;/h3&gt;            &lt;h3 class=&quot;ex1&quot;&gt;学校：&lt;/h3&gt;            &lt;h3 class=&quot;ex1&quot;&gt;所在地区：广东&lt;/h3&gt;            &lt;p class=&quot;ex1&quot;&gt;想说的话&lt;/p&gt;        &lt;/div&gt;        &lt;/div&gt;    &lt;/body&gt;&lt;/html&gt;</code></pre><p><code>注：这个文件一定要用uft-8格式保存，不然会出现乱码。</code></p><p>demo演示：<a href="https://xuzijin.com/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8Bdemo.html">https://xuzijin.com/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8Bdemo.html</a></p><p>原文出处:<a href="https://blog.csdn.net/weixin_54919878/article/details/114532752#:~:text=%E7%94%A8HTML%2FCSS%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E7%BE%8E%E8%A7%82%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B%E7%BD%91%E9%A1%B5%E2%80%94%E2%80%94%E5%AD%A6%E4%B9%A0%E5%91%A8%E8%AE%B01%201%20Step%201%EF%BC%9A%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%20%E9%80%9A%E8%BF%87%E9%A1%B9%E7%9B%AE%20Test1%20%E7%9A%84%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84%EF%BC%8C%E6%89%BE%E5%88%B0%20Test1,5%EF%BC%9A%E8%AE%BE%E7%BD%AE%E9%9F%B3%E9%A2%91%20%E9%80%9A%E8%BF%87%E9%A1%B9%E7%9B%AE%20Test1%20%E7%9A%84%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84%EF%BC%8C%E6%89%BE%E5%88%B0%20Test1%20%E6%96%87%E4%BB%B6%E5%A4%B9%E5%B9%B6%E5%9C%A8%E5%85%B6%E4%B8%AD%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E5%90%8D%E4%B8%BA%20bgm%EF%BC%8C%E7%94%A8%E6%9D%A5%E4%BF%9D%E5%AD%98%E5%9C%A8%E5%88%B6%E4%BD%9C%E7%BD%91%E9%A1%B5%E6%97%B6%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%89%80%E6%9C%89%E9%9F%B3%E9%A2%91%E3%80%82%20">用HTML&#x2F;CSS制作一个美观的个人简介网页——学习周记1</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;今天想帮兄弟写一个个人简介，然后去网上转了一圈，发现了一个比较好看而且简单的html个人简介，然后就想把它记录一下。&lt;/p&gt;
-&lt;p&gt;源码&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
- </summary>
-      
-    
-    
-    
-    <category term="网页" scheme="https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/"/>
-    
-    
-    <category term="html" scheme="https://xuzijin.com/tags/html/"/>
     
   </entry>
   
