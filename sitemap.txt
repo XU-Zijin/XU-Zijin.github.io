@@ -1,7 +1,7 @@
+https://xuzijin.com/2024/03/03/diary/
 https://xuzijin.com/2024/07/08/hexo-on-centos7-failed/
 https://xuzijin.com/2024/07/01/Celebrating-the-27th-anniversary-of-Hong-Kong-s-return-to-China/
 https://xuzijin.com/2024/07/01/npminstall/
-https://xuzijin.com/2024/03/03/diary/
 https://xuzijin.com/about/index.html
 https://xuzijin.com/2023/03/26/3-hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/
 https://xuzijin.com/2023/09/17/404%E7%BD%91%E9%A1%B5/
