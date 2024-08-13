@@ -6,12 +6,12 @@
   <meta name="keywords" content=" Linux , Ubuntu ">
   <meta name="description" content="在Ubuntu上配置链路聚合 | 许子晋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初三学生，爱好编程(python、c&#x2F;c++、arduino、css、js、html)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 邮箱: &amp;#120;&amp;#x7a;&amp;#x6a;&amp;#64;&amp;#x78;&amp;#117;&amp;#x7a;&amp;#x69;&amp;#106;&amp;#105;&amp;#110;&amp;#46;&amp;#99;">
+<meta name="description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初三学生，爱好编程(python、c&#x2F;c++、arduino、css、js、html)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 邮箱: &amp;#x78;&amp;#x7a;&amp;#x6a;&amp;#x40;&amp;#120;&amp;#x75;&amp;#x7a;&amp;#105;&amp;#x6a;&amp;#x69;&amp;#x6e;&amp;#46;&amp;#x6">
 <meta property="og:type" content="website">
 <meta property="og:title" content="许子晋">
 <meta property="og:url" content="https://xuzijin.com/about/index.html">
 <meta property="og:site_name" content="许子晋">
-<meta property="og:description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初三学生，爱好编程(python、c&#x2F;c++、arduino、css、js、html)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 邮箱: &amp;#120;&amp;#x7a;&amp;#x6a;&amp;#64;&amp;#x78;&amp;#117;&amp;#x7a;&amp;#x69;&amp;#106;&amp;#105;&amp;#110;&amp;#46;&amp;#99;">
+<meta property="og:description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初三学生，爱好编程(python、c&#x2F;c++、arduino、css、js、html)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 邮箱: &amp;#x78;&amp;#x7a;&amp;#x6a;&amp;#x40;&amp;#120;&amp;#x75;&amp;#x7a;&amp;#105;&amp;#x6a;&amp;#x69;&amp;#x6e;&amp;#46;&amp;#x6">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://static.ipw.cn/icon/ipv6-s1.svg">
 <meta property="article:published_time" content="2024-07-01T06:47:28.848Z">
@@ -354,7 +354,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="36">
-<input type="hidden" id="yelog_site_word_count" value="18.2k">
+<input type="hidden" id="yelog_site_word_count" value="18k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -859,12 +859,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-08-13 19:51:19'>2024-08-13 19:23</time>
+            发布时间 : <time class="date" title='最后更新: 2024-08-13 19:55:28'>2024-08-13 19:23</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.1k</span>
+        <span>字数:917</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -931,8 +931,6 @@
 <th>负载均衡</th>
 <th>冗余</th>
 <th>交换机支持</th>
-<th>优点</th>
-<th>缺点</th>
 <th>场景</th>
 </tr>
 </thead>
@@ -943,8 +941,6 @@
 <td>是</td>
 <td>否</td>
 <td>否</td>
-<td>提高带宽利用率，简单实现负载均衡</td>
-<td>丢包后可能导致数据包乱序</td>
 <td>多数场景下的负载均衡</td>
 </tr>
 <tr>
@@ -954,8 +950,6 @@
 <td>否</td>
 <td>是</td>
 <td>否</td>
-<td>实现冗余，主链路故障时自动切换至备用链路</td>
-<td>无法提高带宽利用率</td>
 <td>需要高可用的场景</td>
 </tr>
 <tr>
@@ -965,8 +959,6 @@
 <td>是</td>
 <td>否</td>
 <td>是</td>
-<td>提高带宽利用率，适合特定场景下的负载均衡</td>
-<td>需要交换机支持</td>
 <td>多数场景下的负载均衡</td>
 </tr>
 <tr>
@@ -976,8 +968,6 @@
 <td>否</td>
 <td>是</td>
 <td>否</td>
-<td>提供高冗余度，确保数据包到达</td>
-<td>占用更多带宽，适合小型网络</td>
 <td>需要极高冗余度的场景</td>
 </tr>
 <tr>
@@ -987,8 +977,6 @@
 <td>是</td>
 <td>是</td>
 <td>是</td>
-<td>提供冗余和带宽利用率，并且与标准兼容</td>
-<td>需要交换机支持并配置</td>
 <td>企业级环境、需要动态链路聚合的场景</td>
 </tr>
 <tr>
@@ -998,8 +986,6 @@
 <td>是</td>
 <td>否</td>
 <td>否</td>
-<td>不需要特殊交换机支持，能动态调整链路负载</td>
-<td>接收方向上无法负载均衡，使用单一链路</td>
 <td>客户端较多且接收流量较少的场景</td>
 </tr>
 <tr>
@@ -1009,8 +995,6 @@
 <td>是</td>
 <td>是</td>
 <td>否</td>
-<td>不需要特殊交换机支持，能动态调整传输和接收的链路负载</td>
-<td>实现较复杂，适合非对称流量场景</td>
 <td>接收和发送流量都较多的场景</td>
 </tr>
 </tbody></table>
@@ -1024,10 +1008,10 @@
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>在Ubuntu上配置链路聚合</p>
-    <p><span class="copy-title">字数:</span><span class="post-count">1.1k</span></p>
+    <p><span class="copy-title">字数:</span><span class="post-count">917</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
     <p><span class="copy-title">发布时间:</span>2024-08-13, 19:23:30</p>
-    <p><span class="copy-title">最后更新:</span>2024-08-13, 19:51:19</p>
+    <p><span class="copy-title">最后更新:</span>2024-08-13, 19:55:28</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/08/13/Link-aggregation-on-Ubuntu/" title="在Ubuntu上配置链路聚合">https://xuzijin.com/2024/08/13/Link-aggregation-on-Ubuntu/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。

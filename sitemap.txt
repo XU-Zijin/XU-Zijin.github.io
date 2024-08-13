@@ -38,10 +38,10 @@ https://xuzijin.com/2024/02/24/%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E7%BB%9F%E8%
 https://xuzijin.com/
 https://xuzijin.com/tags/hexo/
 https://xuzijin.com/tags/3-hexo/
-https://xuzijin.com/tags/Linux/
-https://xuzijin.com/tags/Ubuntu/
 https://xuzijin.com/tags/404/
 https://xuzijin.com/tags/8B1T/
+https://xuzijin.com/tags/Linux/
+https://xuzijin.com/tags/Ubuntu/
 https://xuzijin.com/tags/Python/
 https://xuzijin.com/tags/Debian/
 https://xuzijin.com/tags/git/
