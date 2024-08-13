@@ -414,13 +414,6 @@
   </url>
   
   <url>
-    <loc>https://xuzijin.com/tags/Git/</loc>
-    <lastmod>2024-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xuzijin.com/tags/Hexo/</loc>
     <lastmod>2024-08-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -450,6 +443,13 @@
   
   <url>
     <loc>https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2024-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzijin.com/tags/Git/</loc>
     <lastmod>2024-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
