@@ -1,3 +1,4 @@
+https://xuzijin.com/2024/08/13/Link-aggregation-on-Ubuntu/
 https://xuzijin.com/2024/03/03/diary/
 https://xuzijin.com/2024/07/08/hexo-on-centos7-failed/
 https://xuzijin.com/2024/07/01/Celebrating-the-27th-anniversary-of-Hong-Kong-s-return-to-China/
@@ -39,9 +40,9 @@ https://xuzijin.com/tags/hexo/
 https://xuzijin.com/tags/3-hexo/
 https://xuzijin.com/tags/404/
 https://xuzijin.com/tags/8B1T/
-https://xuzijin.com/tags/Python/
 https://xuzijin.com/tags/Linux/
 https://xuzijin.com/tags/Ubuntu/
+https://xuzijin.com/tags/Python/
 https://xuzijin.com/tags/Debian/
 https://xuzijin.com/tags/git/
 https://xuzijin.com/tags/GitHub/
@@ -54,8 +55,8 @@ https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/
 https://xuzijin.com/tags/%E5%BC%80%E6%BA%90/
 https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/
 https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/
-https://xuzijin.com/categories/%E5%BC%80%E6%BA%90/
 https://xuzijin.com/categories/Linux/
+https://xuzijin.com/categories/%E5%BC%80%E6%BA%90/
 https://xuzijin.com/categories/%E6%97%A5%E5%B8%B8/
 https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/
 https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E7%AE%80%E7%BA%A6%E7%89%88/

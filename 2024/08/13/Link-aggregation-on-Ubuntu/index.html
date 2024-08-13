@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>许子晋</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="许子晋">
+  <title>在Ubuntu上配置链路聚合 | 许子晋</title>
+  <meta name="keywords" content=" Linux , Ubuntu ">
+  <meta name="description" content="在Ubuntu上配置链路聚合 | 许子晋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于|About 阅读量:   个人简介本站站长（XZJ）， 一位初三学生，爱好编程(python、c&#x2F;c++、arduino、css、js、html)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 邮箱: &amp;#x78;&amp;#122;&amp;#x6a;&amp;#x40;&amp;#120;&amp;#117;&amp;#x7a;&amp;#105;&amp;#106;&amp;#105;&amp;#110;&amp;#x2e;&amp;#9">
 <meta property="og:type" content="website">
@@ -62,7 +62,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -828,12 +828,62 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-Link-aggregation-on-Ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%9A%E5%AE%A2"><span class="toc-text">什么是博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9%E5%86%99%E5%8D%9A%E5%AE%A2"><span class="toc-text">为什么选择写博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%88%91"><span class="toc-text">关于我</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">在Ubuntu上配置链路聚合</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Linux">Linux</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">Linux</a>
+            
+            <a class="color2">Ubuntu</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-08-13 19:48:39'>2024-08-13 19:23</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:1.1k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E4%B8%8A%E7%9A%846%E7%A7%8D%E9%93%BE%E8%B7%AF%E8%81%9A%E5%90%88%E6%A8%A1%E5%BC%8F"><span class="toc-text">Linux上的6种链路聚合模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-mode-0-balance-rr"><span class="toc-text">1. mode&#x3D;0 (balance-rr)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A"><span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A"><span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-mode-1-active-backup"><span class="toc-text">2. mode&#x3D;1 (active-backup)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A-1"><span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A-1"><span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-mode-2-balance-xor"><span class="toc-text">3. mode&#x3D;2 (balance-xor)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A-2"><span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A-2"><span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-mode-3-broadcast"><span class="toc-text">4. mode&#x3D;3 (broadcast)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A-3"><span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A-3"><span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-mode-4-802-3ad"><span class="toc-text">5. mode&#x3D;4 (802.3ad)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A-4"><span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A-4"><span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-mode-5-balance-tlb"><span class="toc-text">6. mode&#x3D;5 (balance-tlb)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A-5"><span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A-5"><span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-mode-6-balance-alb"><span class="toc-text">7. mode&#x3D;6 (balance-alb)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A-6"><span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A-6"><span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%AF%94%E5%9B%BE"><span class="toc-text">对比图</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -846,32 +896,153 @@
     }
 </style>
 </div>
-            <h1 id="什么是博客"><a href="#什么是博客" class="headerlink" title="什么是博客"></a>什么是博客</h1><h2 id="为什么选择写博客"><a href="#为什么选择写博客" class="headerlink" title="为什么选择写博客"></a>为什么选择写博客</h2><p>从一开始到现在，我经历了三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着自己搭建一个博客平台，这时候还没有域名，只能内网访问。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现只能内网访问，其他人看不到，于是购买了域名和云服务器。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，服务器要备案，而且云服务器也不便宜，于是转向了GitHub Pages。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。我们在网上学习过的知识也越来越多，这些东西也值得我们认真对待。但是它们被分散分布在各个网站上，很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p><strong>这个是</strong> 许子晋的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，部署在 <a target="_blank" rel="noopener" href="https://xu-zijin.github.io/">GitHub Pages</a>，使用主题 <a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> </p>
-<p>这个主题的主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad&#x2F;手机等移动端适配</li>
-<li>页面全局快捷键 <a target="_blank" rel="noopener" href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
-</ul>
-<p><a href="https://ipw.cn/ipv6webcheck/?site=ipw.cn" title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s1.svg"></a></p>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>前文：</p>
+<p>今天想着给服务器弄个链路聚合，把服务器的几个网口利用上，然后顺便写一篇博文记录一下。</p>
+<h2 id="Linux上的6种链路聚合模式"><a href="#Linux上的6种链路聚合模式" class="headerlink" title="Linux上的6种链路聚合模式"></a>Linux上的6种链路聚合模式</h2><h3 id="1-mode-0-balance-rr"><a href="#1-mode-0-balance-rr" class="headerlink" title="1. mode&#x3D;0 (balance-rr)"></a>1. mode&#x3D;0 (balance-rr)</h3><p>描述：该模式使用循环算法（Round-robin）发送数据包，顺序地将每个数据包发送到每个接口。</p>
+<h4 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h4><p>提供了负载均衡和故障冗余。<br>所有接口带宽可以被同时使用。</p>
+<h4 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h4><p>需要交换机支持且配置成适当的模式。<br>数据包顺序可能会被打乱，这对某些应用可能有问题。</p>
+<h3 id="2-mode-1-active-backup"><a href="#2-mode-1-active-backup" class="headerlink" title="2. mode&#x3D;1 (active-backup)"></a>2. mode&#x3D;1 (active-backup)</h3><p>描述：只有一个活动接口，其他接口处于备用状态。当活动接口发生故障时，备用接口会被激活。</p>
+<h4 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h4><p>简单可靠，适用于任何网络设备，不需要特殊交换机支持。<br>提供故障冗余。</p>
+<h4 id="缺点：-1"><a href="#缺点：-1" class="headerlink" title="缺点："></a>缺点：</h4><p>不能增加带宽，只有一个接口是活动的。</p>
+<h3 id="3-mode-2-balance-xor"><a href="#3-mode-2-balance-xor" class="headerlink" title="3. mode&#x3D;2 (balance-xor)"></a>3. mode&#x3D;2 (balance-xor)</h3><p>描述：根据源MAC地址和目标MAC地址的异或结果选择接口发送数据包，从而实现负载均衡。</p>
+<h4 id="优点：-2"><a href="#优点：-2" class="headerlink" title="优点："></a>优点：</h4><p>提供负载均衡和故障冗余。<br>能够增加带宽使用效率。</p>
+<h4 id="缺点：-2"><a href="#缺点：-2" class="headerlink" title="缺点："></a>缺点：</h4><p>需要交换机支持且配置成适当的模式。</p>
+<h3 id="4-mode-3-broadcast"><a href="#4-mode-3-broadcast" class="headerlink" title="4. mode&#x3D;3 (broadcast)"></a>4. mode&#x3D;3 (broadcast)</h3><p>描述：将所有数据包广播到所有接口。</p>
+<h4 id="优点：-3"><a href="#优点：-3" class="headerlink" title="优点："></a>优点：</h4><p>提供冗余。</p>
+<h4 id="缺点：-3"><a href="#缺点：-3" class="headerlink" title="缺点："></a>缺点：</h4><p>网络流量增加，效率低。<br>不适合需要高效带宽使用的场景。</p>
+<h3 id="5-mode-4-802-3ad"><a href="#5-mode-4-802-3ad" class="headerlink" title="5. mode&#x3D;4 (802.3ad)"></a>5. mode&#x3D;4 (802.3ad)</h3><p>描述：使用IEEE 802.3ad 动态链路聚合协议（LACP）。动态协商和管理聚合链路。</p>
+<h4 id="优点：-4"><a href="#优点：-4" class="headerlink" title="优点："></a>优点：</h4><p>动态协商，自动配置链路聚合。<br>提供负载均衡和故障冗余。<br>增加带宽使用效率。</p>
+<h4 id="缺点：-4"><a href="#缺点：-4" class="headerlink" title="缺点："></a>缺点：</h4><p>需要交换机支持IEEE 802.3ad并配置成LACP模式。</p>
+<h3 id="6-mode-5-balance-tlb"><a href="#6-mode-5-balance-tlb" class="headerlink" title="6. mode&#x3D;5 (balance-tlb)"></a>6. mode&#x3D;5 (balance-tlb)</h3><p>描述：基于传输负载（传输负载均衡，TLB）自动地在接口之间分配出站流量。接收流量由当前接口处理。</p>
+<h4 id="优点：-5"><a href="#优点：-5" class="headerlink" title="优点："></a>优点：</h4><p>不需要特殊交换机支持。<br>提供负载均衡和故障冗余。</p>
+<h4 id="缺点：-5"><a href="#缺点：-5" class="headerlink" title="缺点："></a>缺点：</h4><p>接收流量不能负载均衡。</p>
+<h3 id="7-mode-6-balance-alb"><a href="#7-mode-6-balance-alb" class="headerlink" title="7. mode&#x3D;6 (balance-alb)"></a>7. mode&#x3D;6 (balance-alb)</h3><p>描述：基于适应性负载均衡（自适应负载均衡，ALB），包括传输负载均衡（TLB）和接收负载均衡（RLB）。</p>
+<h4 id="优点：-6"><a href="#优点：-6" class="headerlink" title="优点："></a>优点：</h4><p>提供负载均衡和故障冗余。<br>不需要特殊交换机支持。<br>增加传输和接收的带宽利用率。</p>
+<h4 id="缺点：-6"><a href="#缺点：-6" class="headerlink" title="缺点："></a>缺点：</h4><p>实现相对复杂。</p>
+<h3 id="对比图"><a href="#对比图" class="headerlink" title="对比图"></a>对比图</h3><table>
+<thead>
+<tr>
+<th>模式编号</th>
+<th>模式名称</th>
+<th>描述</th>
+<th>负载均衡</th>
+<th>冗余</th>
+<th>交换机支持</th>
+<th>优点</th>
+<th>缺点</th>
+<th>场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>balance-rr</td>
+<td>轮询方式 (Round-Robin)，依次发送数据包</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+<td>提高带宽利用率，简单实现负载均衡</td>
+<td>丢包后可能导致数据包乱序</td>
+<td>多数场景下的负载均衡</td>
+</tr>
+<tr>
+<td>1</td>
+<td>active-backup</td>
+<td>主备模式 (Active-Backup)，一个接口工作，另一个备用</td>
+<td>否</td>
+<td>是</td>
+<td>否</td>
+<td>实现冗余，主链路故障时自动切换至备用链路</td>
+<td>无法提高带宽利用率</td>
+<td>需要高可用的场景</td>
+</tr>
+<tr>
+<td>2</td>
+<td>balance-xor</td>
+<td>根据 MAC 地址对流量进行散列</td>
+<td>是</td>
+<td>否</td>
+<td>是</td>
+<td>提高带宽利用率，适合特定场景下的负载均衡</td>
+<td>需要交换机支持</td>
+<td>多数场景下的负载均衡</td>
+</tr>
+<tr>
+<td>3</td>
+<td>broadcast</td>
+<td>广播模式，所有数据包在所有链路上发送</td>
+<td>否</td>
+<td>是</td>
+<td>否</td>
+<td>提供高冗余度，确保数据包到达</td>
+<td>占用更多带宽，适合小型网络</td>
+<td>需要极高冗余度的场景</td>
+</tr>
+<tr>
+<td>4</td>
+<td>802.3ad (LACP)</td>
+<td>IEEE 802.3ad 动态链路聚合 (Link Aggregation Control Protocol)，自动协商多条链路为一条逻辑链路</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>提供冗余和带宽利用率，并且与标准兼容</td>
+<td>需要交换机支持并配置</td>
+<td>企业级环境、需要动态链路聚合的场景</td>
+</tr>
+<tr>
+<td>5</td>
+<td>balance-tlb</td>
+<td>自适应传输负载均衡 (Adaptive Transmit Load Balancing)，基于流量自动平衡传输负载</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+<td>不需要特殊交换机支持，能动态调整链路负载</td>
+<td>接收方向上无法负载均衡，使用单一链路</td>
+<td>客户端较多且接收流量较少的场景</td>
+</tr>
+<tr>
+<td>6</td>
+<td>balance-alb</td>
+<td>自适应负载均衡 (Adaptive Load Balancing)，在 TLB 基础上增加了接收负载均衡</td>
+<td>是</td>
+<td>是</td>
+<td>否</td>
+<td>不需要特殊交换机支持，能动态调整传输和接收的链路负载</td>
+<td>实现较复杂，适合非对称流量场景</td>
+<td>接收和发送流量都较多的场景</td>
+</tr>
+</tbody></table>
 
-        </article>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xzj@xuzijin.com </span>
+    </div>
+</article>
+
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>在Ubuntu上配置链路聚合</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">1.1k</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
+    <p><span class="copy-title">发布时间:</span>2024-08-13, 19:23:30</p>
+    <p><span class="copy-title">最后更新:</span>2024-08-13, 19:48:39</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/08/13/Link-aggregation-on-Ubuntu/" title="在Ubuntu上配置链路聚合">https://xuzijin.com/2024/08/13/Link-aggregation-on-Ubuntu/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -880,11 +1051,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 </body>
