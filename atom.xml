@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-08-13T12:22:07.065Z</updated>
+  <updated>2024-08-20T04:02:45.238Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu24.04LTS换源</title>
+    <link href="https://xuzijin.com/2024/08/20/Change-source-with-Ubuntu24-04LTS/"/>
+    <id>https://xuzijin.com/2024/08/20/Change-source-with-Ubuntu24-04LTS/</id>
+    <published>2024-08-20T03:35:49.000Z</published>
+    <updated>2024-08-20T04:02:45.238Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天给服务器重装了Ubuntu24.04LTS系统想着来尝尝鲜。</p><p>相信在座的各位安装好Ubuntu的第一件事一定是换源，那我也是这么想的。</p><p>按照Ubuntu22.04的老办法是行不通的，为啥呢，因为原来的 <code>/etc/apt/sources.list</code> 文件已经不管用了。</p><p><img src="/img/1.png" alt="文件已迁移"></p><p>真正管用的文件是这个 <code>/etc/apt/sources.list.d/ubuntu.sources</code> </p><p>使用</p><pre><code class="bash">sudo vim /etc/apt/sources.list.d/ubuntu</code></pre><p>命令去打开它</p><p>把默认的代码注释掉</p><p>可以换成以下的源</p><pre><code># 阿里云Types: debURIs: http://mirrors.aliyun.com/ubuntu/Suites: noble noble-updates noble-securityComponents: main restricted universe multiverseSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre><pre><code>#清华源# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释Types: debURIs: http://mirrors.tuna.tsinghua.edu.cn/ubuntu/Suites: noble noble-updates noble-securityComponents: main restricted universe multiverseSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre><pre><code>#中科大源Types: debURIs: http://mirrors.ustc.edu.cn/ubuntu/Suites: noble noble-updates noble-securityComponents: main restricted universe multiverseSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre><pre><code>#网易163源Types: debURIs: http://mirrors.163.com/ubuntu/Suites: noble noble-updates noble-securityComponents: main restricted universe multiverseSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre><p>随后按<code>ESC</code>键，按<code>：</code>，输入<code>wq</code>保存关闭。</p><p>使用 <code>sudo apt-get update &amp;&amp; sudo apt-get upgrade -y</code> 命令测试有无问题。</p><p>完事</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天给服务器重装了Ubuntu24.04LTS系统想着来尝尝鲜。&lt;/p&gt;
+&lt;p&gt;相信在座的各位安装好Ubuntu的第一件事一定是换源，那我也是这么想的。&lt;/p&gt;
+&lt;p&gt;按照Ubuntu22.04的老办法是行不通的，为啥呢，因为原来的 &lt;code&gt;/etc/apt/sourc</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://xuzijin.com/categories/Linux/"/>
+    
+    
+    <category term="Ubuntu" scheme="https://xuzijin.com/tags/Ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>在Ubuntu上配置链路聚合</title>
@@ -38,9 +64,9 @@
     <category term="Linux" scheme="https://xuzijin.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://xuzijin.com/tags/Linux/"/>
-    
     <category term="Ubuntu" scheme="https://xuzijin.com/tags/Ubuntu/"/>
+    
+    <category term="Linux" scheme="https://xuzijin.com/tags/Linux/"/>
     
   </entry>
   
@@ -481,30 +507,6 @@
     
     
     <category term="hexo" scheme="https://xuzijin.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一个Linux命令（1）:查看当前系统的内核与发行版本信息</title>
-    <link href="https://xuzijin.com/2024/01/31/%E6%AF%8F%E6%97%A5%E4%B8%80%E4%B8%AALinux%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%86%85%E6%A0%B8%E4%B8%8E%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/"/>
-    <id>https://xuzijin.com/2024/01/31/%E6%AF%8F%E6%97%A5%E4%B8%80%E4%B8%AALinux%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%86%85%E6%A0%B8%E4%B8%8E%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</id>
-    <published>2024-01-31T11:27:00.000Z</published>
-    <updated>2024-07-01T04:04:58.165Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Linux中查看当前系统的内核与发行版本信息"><a href="#Linux中查看当前系统的内核与发行版本信息" class="headerlink" title="Linux中查看当前系统的内核与发行版本信息"></a>Linux中查看当前系统的内核与发行版本信息</h2><h3 id="命令1-uname-a-（内核与发行版信息）"><a href="#命令1-uname-a-（内核与发行版信息）" class="headerlink" title="命令1 uname -a （内核与发行版信息）"></a>命令1 <code>uname -a</code> （内核与发行版信息）</h3><p>像我的服务器就是(HP GL360 Gen9)</p><p><code>Linux hpgl360g9 5.15.0-92-generic #102-Ubuntu SMP Wed Jan 10 09:33:48 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux</code></p><h3 id="命令2-lsb-release-a（只能查看发行版信息）"><a href="#命令2-lsb-release-a（只能查看发行版信息）" class="headerlink" title="命令2 lsb_release -a（只能查看发行版信息）"></a>命令2 <code>lsb_release -a</code>（只能查看发行版信息）</h3><p>我的服务器显示的是</p><pre><code>No LSB modules are available.Distributor ID: UbuntuDescription:    Ubuntu 22.04.3 LTSRelease:        22.04Codename:       jammy</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Linux中查看当前系统的内核与发行版本信息&quot;&gt;&lt;a href=&quot;#Linux中查看当前系统的内核与发行版本信息&quot; class=&quot;headerlink&quot; title=&quot;Linux中查看当前系统的内核与发行版本信息&quot;&gt;&lt;/a&gt;Linux中查看当前系统的内核与发行版本</summary>
-      
-    
-    
-    
-    <category term="Linux" scheme="https://xuzijin.com/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://xuzijin.com/tags/Linux/"/>
     
   </entry>
   

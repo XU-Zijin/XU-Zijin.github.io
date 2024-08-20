@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>pages托管开始测试 | 许子晋</title>
-  <meta name="keywords" content=" Pages ">
-  <meta name="description" content="pages托管开始测试 | 许子晋">
+  <title>Ubuntu24.04LTS换源 | 许子晋</title>
+  <meta name="keywords" content=" Ubuntu ">
+  <meta name="description" content="Ubuntu24.04LTS换源 | 许子晋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于|About 阅读量:   个人简介本站站长（许子晋）， 一位初三学生，爱好编程(python、c&#x2F;c++、arduino、css、js、html)，喜欢研究硬件、装洋垃圾、弄服务器，喜欢玩单片机&#x2F;开发板。 联系方式 邮箱: &amp;#120;&amp;#x7a;&amp;#106;&amp;#64;&amp;#x78;&amp;#x75;&amp;#x7a;&amp;#105;&amp;#106;&amp;#x69;&amp;#110;&amp;#x2e;&amp;#x6">
 <meta property="og:type" content="website">
@@ -803,9 +803,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-pages托管开始测试" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Change-source-with-Ubuntu24-04LTS" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">pages托管开始测试</h1>
+        <h1 class="article-title">Ubuntu24.04LTS换源</h1>
     
     <div class="article-meta">
         
@@ -815,7 +815,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="网页">网页</a>
+            <a  data-rel="Linux">Linux</a>
             
         </span>
         
@@ -823,19 +823,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color1">Pages</a>
+            <a class="color2">Ubuntu</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-07-01 12:04:58'>2024-03-01 19:24</time>
+            发布时间 : <time class="date" title='最后更新: 2024-08-20 12:02:45'>2024-08-20 11:35</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:143</span>
+        <span>字数:323</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -870,9 +870,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这几天突然有了个想法，前几天我有个朋友想搞个网站，但一没技术二没服务器，于是我就诞生了这个想法，跟GitHub Pages是一个东西，但是我这个是一个静态网站，而且本身就在GitHub Pages上，所以只能是发送邮件申请我手动审批，然后再手动添加域名解析。现在还在测试阶段，所以只有拿到内测资格的人才能审批通过。</p>
-<p><a href="https://xuzijin.com/register.html">申请地址</a></p>
-<p>或者是点击友链那里进去也行</p>
+        <p>今天给服务器重装了Ubuntu24.04LTS系统想着来尝尝鲜。</p>
+<p>相信在座的各位安装好Ubuntu的第一件事一定是换源，那我也是这么想的。</p>
+<p>按照Ubuntu22.04的老办法是行不通的，为啥呢，因为原来的 <code>/etc/apt/sources.list</code> 文件已经不管用了。</p>
+<p><img src="/img/1.png" alt="文件已迁移"></p>
+<p>真正管用的文件是这个 <code>/etc/apt/sources.list.d/ubuntu.sources</code> </p>
+<p>使用</p>
+<pre><code class="bash">sudo vim /etc/apt/sources.list.d/ubuntu
+</code></pre>
+<p>命令去打开它</p>
+<p>把默认的代码注释掉</p>
+<p>可以换成以下的源</p>
+<pre><code># 阿里云
+Types: deb
+URIs: http://mirrors.aliyun.com/ubuntu/
+Suites: noble noble-updates noble-security
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+</code></pre>
+<pre><code>#清华源
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+Types: deb
+URIs: http://mirrors.tuna.tsinghua.edu.cn/ubuntu/
+Suites: noble noble-updates noble-security
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+</code></pre>
+<pre><code>#中科大源
+Types: deb
+URIs: http://mirrors.ustc.edu.cn/ubuntu/
+Suites: noble noble-updates noble-security
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+</code></pre>
+<pre><code>#网易163源
+Types: deb
+URIs: http://mirrors.163.com/ubuntu/
+Suites: noble noble-updates noble-security
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+</code></pre>
+<p>随后按<code>ESC</code>键，按<code>：</code>，输入<code>wq</code>保存关闭。</p>
+<p>使用 <code>sudo apt-get update &amp;&amp; sudo apt-get upgrade -y</code> 命令测试有无问题。</p>
+<p>完事</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xzj@xuzijin.com </span>
@@ -882,12 +922,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>pages托管开始测试</p>
-    <p><span class="copy-title">字数:</span><span class="post-count">143</span></p>
+    <p><span class="copy-title">文章标题:</span>Ubuntu24.04LTS换源</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">323</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
-    <p><span class="copy-title">发布时间:</span>2024-03-01, 19:24:24</p>
-    <p><span class="copy-title">最后更新:</span>2024-07-01, 12:04:58</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/03/01/pages%E6%89%98%E7%AE%A1%E5%BC%80%E5%A7%8B%E6%B5%8B%E8%AF%95/" title="pages托管开始测试">https://xuzijin.com/2024/03/01/pages%E6%89%98%E7%AE%A1%E5%BC%80%E5%A7%8B%E6%B5%8B%E8%AF%95/</a>
+    <p><span class="copy-title">发布时间:</span>2024-08-20, 11:35:49</p>
+    <p><span class="copy-title">最后更新:</span>2024-08-20, 12:02:45</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/08/20/Change-source-with-Ubuntu24-04LTS/" title="Ubuntu24.04LTS换源">https://xuzijin.com/2024/08/20/Change-source-with-Ubuntu24-04LTS/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
     </p>

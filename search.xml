@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Ubuntu24.04LTS换源</title>
+      <link href="/2024/08/20/Change-source-with-Ubuntu24-04LTS/"/>
+      <url>/2024/08/20/Change-source-with-Ubuntu24-04LTS/</url>
+      
+        <content type="html"><![CDATA[<p>今天给服务器重装了Ubuntu24.04LTS系统想着来尝尝鲜。</p><p>相信在座的各位安装好Ubuntu的第一件事一定是换源，那我也是这么想的。</p><p>按照Ubuntu22.04的老办法是行不通的，为啥呢，因为原来的 <code>/etc/apt/sources.list</code> 文件已经不管用了。</p><p><img src="/img/1.png" alt="文件已迁移"></p><p>真正管用的文件是这个 <code>/etc/apt/sources.list.d/ubuntu.sources</code> </p><p>使用</p><pre><code class="bash">sudo vim /etc/apt/sources.list.d/ubuntu</code></pre><p>命令去打开它</p><p>把默认的代码注释掉</p><p>可以换成以下的源</p><pre><code># 阿里云Types: debURIs: http://mirrors.aliyun.com/ubuntu/Suites: noble noble-updates noble-securityComponents: main restricted universe multiverseSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre><pre><code>#清华源# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释Types: debURIs: http://mirrors.tuna.tsinghua.edu.cn/ubuntu/Suites: noble noble-updates noble-securityComponents: main restricted universe multiverseSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre><pre><code>#中科大源Types: debURIs: http://mirrors.ustc.edu.cn/ubuntu/Suites: noble noble-updates noble-securityComponents: main restricted universe multiverseSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre><pre><code>#网易163源Types: debURIs: http://mirrors.163.com/ubuntu/Suites: noble noble-updates noble-securityComponents: main restricted universe multiverseSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg</code></pre><p>随后按<code>ESC</code>键，按<code>：</code>，输入<code>wq</code>保存关闭。</p><p>使用 <code>sudo apt-get update &amp;&amp; sudo apt-get upgrade -y</code> 命令测试有无问题。</p><p>完事</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在Ubuntu上配置链路聚合</title>
       <link href="/2024/08/13/Link-aggregation-on-Ubuntu/"/>
       <url>/2024/08/13/Link-aggregation-on-Ubuntu/</url>
@@ -20,9 +45,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Ubuntu </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -480,9 +505,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Ubuntu </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -590,9 +615,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Ubuntu </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Debian </tag>
             
@@ -619,9 +644,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Ubuntu </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Debian </tag>
             
