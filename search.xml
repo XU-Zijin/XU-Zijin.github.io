@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>reading(2)</title>
+      <link href="/2024/09/15/reading-2/"/>
+      <url>/2024/09/15/reading-2/</url>
+      
+        <content type="html"><![CDATA[<p>想多了都是问题，</p><p>想开了就是答案。</p><p>我的座右铭</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 读书 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>reading(1)</title>
+      <link href="/2024/09/15/reading-1/"/>
+      <url>/2024/09/15/reading-1/</url>
+      
+        <content type="html"><![CDATA[<p>错过了晨曦，你可以欣赏暮霭；</p><p>错过了太阳，你可以欣赏星月；</p><p>错过了昨天，你可以拥抱今天；</p><p>错过了明年今日，请不要再失眠。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 读书 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ubuntu24.04LTS换源</title>
       <link href="/2024/08/20/Change-source-with-Ubuntu24-04LTS/"/>
       <url>/2024/08/20/Change-source-with-Ubuntu24-04LTS/</url>
@@ -263,7 +301,7 @@
       <link href="/2024/03/03/diary/"/>
       <url>/2024/03/03/diary/</url>
       
-        <content type="html"><![CDATA[<ul><li>2024年</li></ul><blockquote><p>8.6 回归一波，最近去了内蒙古和宁夏玩什么事都抛一边去了。说回正事，今天给我的HP DL360 GEN9升级了一下iLO和BIOS，本来想写一篇博文的，结果忘了而且已经安装完了，所以就索性不写了。还有刚刚apt upgrade 遇到的问题这个我打算现在来写一篇博文。</p></blockquote><blockquote><p>7.1 最近准备升初三了，事特别多；一个是要生地会考，二个是作业特别多，每周做完作业没多少时间干别的了，三是考试特别多，一个E听说考试，全科模拟考，期末考；好在生物地理考了个AB回来，E听说差0.6分满分，不然要吃藤条焖猪肉了。<br>还要一个决定就是我要关闭英文站了，因为随着学业越来越繁忙，也没那么多的精力去写一个英文的博文了。不过网站我会保留，就是在主站的入口关闭了而已。</p></blockquote><blockquote><p>5.19 失踪人口回归，今天凌晨干完活闲的没事干更新一下git，顺便写了一篇博文，英文站先停止更新，最近实在是没什么精力。</p></blockquote><blockquote><p>4.21 这段时间去参加了几个编程比赛，然后给8b1t主服务器更换核心，添加了插件，现在Javamc和基岩版mc都可以进来玩了，把官网重写了，还要准备下期中考试。文章最近就先不写了，有空再搞。</p></blockquote><blockquote><p>4.14 修复了PyClock的几个bug</p></blockquote><blockquote><p>4.12 不知不觉4月了，回顾一下3月，把cpp的考级过了，PyClock也更新了不少东西，8b1t服务器也开服了，服务器官网也上线了，确实干了不少事，虽说坑还没填上……</p></blockquote><blockquote><p>3.30 今天8b1t服务器开服，各种问题出现（悲）…</p></blockquote><blockquote><p>3.23 刚刚把8B1T服务器官网上线了，今日发量-2，收获同学nb*100</p></blockquote><blockquote><p>3.23 今天刚刚把c++的等级考试搞完，顺便给PyClock大更新，还更新了main和develop两个分支，发量-1</p></blockquote><blockquote><p>3.15 今天在给PyClock测试新的功能……</p></blockquote><blockquote><p>3.9 今天在翻译英文网站，同步英文站点(麻)。</p></blockquote><blockquote><p>3.8 今天把PyClock更新了一下，具体可以看<a href="https://xuzijin.com/2024/01/23/PyClock/">https://xuzijin.com/2024/01/23/PyClock/</a>,顺便修改了下部分文章的错误。</p></blockquote><blockquote><p>2024.3.3 因为最近上学，所以我挖下的那些坑可能要暑假再来填了（悲）。</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<ul><li>2024年</li></ul><blockquote><p>9.15 升了初三，好家伙每天都有7个主科要上，3节晚自习，时间挺充足的，在学校超负荷运载在家就休息，怎么快乐怎么来，作业选择性写点有意义的，没有意义的作业不写。然后最近8b1t服务器受到了种种的挑战不过都被小伙伴们解决了，以及工作室的经营问题也顺利解决了当务之急，并且我们技术部又新添了一名大将，现在有包括我在内的5名技术人员来保障我们的所有服务器正常运转。</p></blockquote><blockquote><p>8.6 回归一波，最近去了内蒙古和宁夏玩什么事都抛一边去了。说回正事，今天给我的HP DL360 GEN9升级了一下iLO和BIOS，本来想写一篇博文的，结果忘了而且已经安装完了，所以就索性不写了。还有刚刚apt upgrade 遇到的问题这个我打算现在来写一篇博文。</p></blockquote><blockquote><p>7.1 最近准备升初三了，事特别多；一个是要生地会考，二个是作业特别多，每周做完作业没多少时间干别的了，三是考试特别多，一个E听说考试，全科模拟考，期末考；好在生物地理考了个AB回来，E听说差0.6分满分，不然要吃藤条焖猪肉了。<br>还要一个决定就是我要关闭英文站了，因为随着学业越来越繁忙，也没那么多的精力去写一个英文的博文了。不过网站我会保留，就是在主站的入口关闭了而已。</p></blockquote><blockquote><p>5.19 失踪人口回归，今天凌晨干完活闲的没事干更新一下git，顺便写了一篇博文，英文站先停止更新，最近实在是没什么精力。</p></blockquote><blockquote><p>4.21 这段时间去参加了几个编程比赛，然后给8b1t主服务器更换核心，添加了插件，现在Javamc和基岩版mc都可以进来玩了，把官网重写了，还要准备下期中考试。文章最近就先不写了，有空再搞。</p></blockquote><blockquote><p>4.14 修复了PyClock的几个bug</p></blockquote><blockquote><p>4.12 不知不觉4月了，回顾一下3月，把cpp的考级过了，PyClock也更新了不少东西，8b1t服务器也开服了，服务器官网也上线了，确实干了不少事，虽说坑还没填上……</p></blockquote><blockquote><p>3.30 今天8b1t服务器开服，各种问题出现（悲）…</p></blockquote><blockquote><p>3.23 刚刚把8B1T服务器官网上线了，今日发量-2，收获同学nb*100</p></blockquote><blockquote><p>3.23 今天刚刚把c++的等级考试搞完，顺便给PyClock大更新，还更新了main和develop两个分支，发量-1</p></blockquote><blockquote><p>3.15 今天在给PyClock测试新的功能……</p></blockquote><blockquote><p>3.9 今天在翻译英文网站，同步英文站点(麻)。</p></blockquote><blockquote><p>3.8 今天把PyClock更新了一下，具体可以看<a href="https://xuzijin.com/2024/01/23/PyClock/">https://xuzijin.com/2024/01/23/PyClock/</a>,顺便修改了下部分文章的错误。</p></blockquote><blockquote><p>2024.3.3 因为最近上学，所以我挖下的那些坑可能要暑假再来填了（悲）。</p></blockquote>]]></content>
       
       
       <categories>
