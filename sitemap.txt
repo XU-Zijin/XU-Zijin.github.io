@@ -1,3 +1,4 @@
+https://xuzijin.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)-%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E8%87%B3%E4%BB%93%E5%BA%93/
 https://xuzijin.com/2024/10/01/241001/
 https://xuzijin.com/2024/03/03/diary/
 https://xuzijin.com/2024/09/15/reading-2/
@@ -32,7 +33,6 @@ https://xuzijin.com/2023/12/09/%E4%BD%BF%E7%94%A8MCSM%E9%9D%A2%E6%9D%BF%E5%BF%AB
 https://xuzijin.com/2024/02/24/%E5%88%9B%E5%BB%BA%E8%8B%B1%E6%96%87%E7%AB%99%E7%82%B9/
 https://xuzijin.com/2024/01/30/%E5%9C%A8Ubuntu%E4%B8%8A%E4%BD%BF%E7%94%A8wine%E6%9D%A5%E8%BF%90%E8%A1%8CWindows%E4%B8%8A%E7%9A%84%E8%BD%AF%E4%BB%B6/
 https://xuzijin.com/2024/01/23/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(1)/
-https://xuzijin.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/
 https://xuzijin.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(3)%E8%AF%A6%E7%BB%86%E7%89%88/
 https://xuzijin.com/2024/02/24/%E6%90%AD%E5%BB%BA%E4%BA%86%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9/
 https://xuzijin.com/2023/11/19/%E6%9B%B4%E6%8D%A2%E6%96%B0%E5%9F%9F%E5%90%8D%E4%BA%86/
@@ -64,5 +64,4 @@ https://xuzijin.com/categories/%E5%BC%80%E6%BA%90/
 https://xuzijin.com/categories/%E6%97%A5%E5%B8%B8/
 https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/
 https://xuzijin.com/categories/%E8%AF%BB%E4%B9%A6/
-https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E7%AE%80%E7%BA%A6%E7%89%88/
 https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/Git/%E8%AF%A6%E7%BB%86%E7%89%88/

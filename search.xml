@@ -621,11 +621,11 @@
     
     
     <entry>
-      <title>怎么使用git(2)简约版教程</title>
-      <link href="/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/"/>
-      <url>/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)%E7%AE%80%E7%BA%A6%E7%89%88/</url>
+      <title>怎么使用git(2)-如何提交至仓库</title>
+      <link href="/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)-%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E8%87%B3%E4%BB%93%E5%BA%93/"/>
+      <url>/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)-%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E8%87%B3%E4%BB%93%E5%BA%93/</url>
       
-        <content type="html"><![CDATA[<p>上一张我们讲了Git的安装，这一章我们简单讲一下Git的使用。</p><p>首先，大家通常都是使用git做版本管理，和把代码推送到GitHub、Gitlab、Gitee上面去，还有就是拉取代码合并分支之类的，那么我们本章将以GitHub为例子教大家怎么推送代码还有版本管理。</p><h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><p>既然以GitHub为例子，那么首先得有一个GitHub账号（如果有了的话可以跳过这一步），注册前先向大家推荐一个可以用来提高GitHub访问速度的工具<a href="https://steampp.net/">Watt Toolkit(Steam++)</a>，这个软件相信steam玩家都很熟悉，它既可以加速steam也可以加速GitHub，而且是免费的，这里真心推荐。</p><p>然后注册账号可以看知乎的这篇文章<a href="https://zhuanlan.zhihu.com/p/103268406">https://zhuanlan.zhihu.com/p/103268406</a>,或者是这篇来自CSDN的文章<a href="https://blog.csdn.net/m0_67906358/article/details/128808210">https://blog.csdn.net/m0_67906358&#x2F;article&#x2F;details&#x2F;128808210</a></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+        <content type="html"><![CDATA[<p>上一张我们讲了Git的安装，这一章我们简单讲一下怎么使用Git向GitHub上的仓库提交。</p><p>首先，大家通常都是使用git做版本管理，和把代码推送到GitHub、Gitlab、Gitee上面去，还有就是拉取代码合并分支之类的，那么我们本章将以GitHub为例子教大家怎么推送代码。</p><h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><p>既然以GitHub为例子，那么首先得有一个GitHub账号（如果有了的话可以跳过这一步），注册前先向大家推荐一个可以用来提高GitHub访问速度的工具<a href="https://steampp.net/">Watt Toolkit(Steam++)</a>，这个软件相信steam玩家都很熟悉，它既可以加速steam也可以加速GitHub，而且是免费的，这里真心推荐。</p><p>然后注册账号可以看知乎的这篇文章<a href="https://zhuanlan.zhihu.com/p/103268406">https://zhuanlan.zhihu.com/p/103268406</a>,或者是这篇来自CSDN的文章<a href="https://blog.csdn.net/m0_67906358/article/details/128808210">https://blog.csdn.net/m0_67906358&#x2F;article&#x2F;details&#x2F;128808210</a></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
       
       
       <categories>
@@ -633,8 +633,6 @@
           <category> 工具 </category>
           
           <category> Git </category>
-          
-          <category> 简约版 </category>
           
       </categories>
       
