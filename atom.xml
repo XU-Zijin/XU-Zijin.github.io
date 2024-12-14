@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-10-01T17:58:44.059Z</updated>
+  <updated>2024-12-14T15:13:05.315Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Reading 2</title>
+    <link href="https://xuzijin.com/2024/12/14/reading-4/"/>
+    <id>https://xuzijin.com/2024/12/14/reading-4/</id>
+    <published>2024-12-14T15:11:27.000Z</published>
+    <updated>2024-12-14T15:13:05.315Z</updated>
+    
+    <content type="html"><![CDATA[<p>愿此行，终抵群星！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;愿此行，终抵群星！&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="读书" scheme="https://xuzijin.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《双城记》</title>
+    <link href="https://xuzijin.com/2024/12/14/reading-3/"/>
+    <id>https://xuzijin.com/2024/12/14/reading-3/</id>
+    <published>2024-12-14T15:04:38.000Z</published>
+    <updated>2024-12-14T15:10:23.829Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是最好的时代，这是最坏的时代。</p><p>-查尔斯·狄更斯 《双城记》</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这是最好的时代，这是最坏的时代。&lt;/p&gt;
+&lt;p&gt;-查尔斯·狄更斯 《双城记》&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="读书" scheme="https://xuzijin.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>祝祖国母亲节日快乐</title>
@@ -455,54 +502,6 @@
     
     
     <category term="404" scheme="https://xuzijin.com/tags/404/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网站计数统计貌似出现bug了</title>
-    <link href="https://xuzijin.com/2024/02/24/%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E7%BB%9F%E8%AE%A1%E8%B2%8C%E4%BC%BC%E5%87%BA%E7%8E%B0bug%E4%BA%86/"/>
-    <id>https://xuzijin.com/2024/02/24/%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E7%BB%9F%E8%AE%A1%E8%B2%8C%E4%BC%BC%E5%87%BA%E7%8E%B0bug%E4%BA%86/</id>
-    <published>2024-02-24T08:48:18.000Z</published>
-    <updated>2024-07-01T04:04:58.129Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天用手机正欣赏自己的博客发现手机和iPad上这个文章阅读量统计有bug，就是每篇文章的阅读量都一样，随便点开一篇文章然后可以看到文章阅读量+1，然后再打开一篇文章会发现就比刚刚看到那篇文章的阅读量+1，也就是每篇文章都是一样的阅读量，人麻了。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;今天用手机正欣赏自己的博客发现手机和iPad上这个文章阅读量统计有bug，就是每篇文章的阅读量都一样，随便点开一篇文章然后可以看到文章阅读量+1，然后再打开一篇文章会发现就比刚刚看到那篇文章的阅读量+1，也就是每篇文章都是一样的阅读量，人麻了。&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-    <category term="网站" scheme="https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建了备用站点</title>
-    <link href="https://xuzijin.com/2024/02/24/%E6%90%AD%E5%BB%BA%E4%BA%86%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9/"/>
-    <id>https://xuzijin.com/2024/02/24/%E6%90%AD%E5%BB%BA%E4%BA%86%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9/</id>
-    <published>2024-02-24T08:33:44.000Z</published>
-    <updated>2024-07-01T04:04:58.201Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天闲来无事用gitlab pages搭建了一个备用的站点<a href="https://cn.xuzijin.com/">cn.xuzijin.com</a>，到时顺便出一期怎么搭建gitlab pages的教程。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;今天闲来无事用gitlab pages搭建了一个备用的站点&lt;a href=&quot;https://cn.xuzijin.com/&quot;&gt;cn.xuzijin.com&lt;/a&gt;，到时顺便出一期怎么搭建gitlab pages的教程。&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-    <category term="hexo" scheme="https://xuzijin.com/tags/hexo/"/>
-    
-    <category term="网站" scheme="https://xuzijin.com/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
