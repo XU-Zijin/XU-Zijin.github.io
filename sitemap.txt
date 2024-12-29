@@ -1,3 +1,4 @@
+https://xuzijin.com/about/index.html
 https://xuzijin.com/2024/08/13/Link-aggregation-on-Ubuntu/
 https://xuzijin.com/2024/03/03/diary/
 https://xuzijin.com/2024/12/14/reading-4/
@@ -7,7 +8,6 @@ https://xuzijin.com/2024/10/01/241001/
 https://xuzijin.com/2024/09/15/reading-2/
 https://xuzijin.com/2024/09/15/reading-1/
 https://xuzijin.com/2024/08/20/Change-source-with-Ubuntu24-04LTS/
-https://xuzijin.com/about/index.html
 https://xuzijin.com/2024/07/08/hexo-on-centos7-failed/
 https://xuzijin.com/2024/07/01/Celebrating-the-27th-anniversary-of-Hong-Kong-s-return-to-China/
 https://xuzijin.com/2024/07/01/npminstall/
