@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-12-29T05:42:14.680Z</updated>
+  <updated>2024-12-29T05:42:12.112Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,19 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Ubuntu-install-nginx</title>
-    <link href="https://xuzijin.com/2024/12/29/Ubuntu-install-nginx-1/"/>
-    <id>https://xuzijin.com/2024/12/29/Ubuntu-install-nginx-1/</id>
-    <published>2024-12-29T05:42:14.000Z</published>
-    <updated>2024-12-29T05:42:14.680Z</updated>
-    
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Ubuntu编译安装Nginx</title>
@@ -485,6 +472,30 @@
       
       
     <summary type="html">&lt;p&gt;经过几天的测试，我让我朋友试了下，测试非常成功。这是他的个人站&lt;a href=&quot;https://rtz.8b1t.top/&quot;&gt;rtz.8b1t.top&lt;/a&gt;，这个8b1t.top是我minecraft服务器的地址，也是我自己创建的工作室。不过这个功能我不打算开放给大众，所</summary>
+      
+    
+    
+    
+    <category term="网页" scheme="https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/"/>
+    
+    
+    <category term="Pages" scheme="https://xuzijin.com/tags/Pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pages托管开始测试</title>
+    <link href="https://xuzijin.com/2024/03/01/pages%E6%89%98%E7%AE%A1%E5%BC%80%E5%A7%8B%E6%B5%8B%E8%AF%95/"/>
+    <id>https://xuzijin.com/2024/03/01/pages%E6%89%98%E7%AE%A1%E5%BC%80%E5%A7%8B%E6%B5%8B%E8%AF%95/</id>
+    <published>2024-03-01T11:24:24.000Z</published>
+    <updated>2024-07-01T04:04:58.589Z</updated>
+    
+    <content type="html"><![CDATA[<p>这几天突然有了个想法，前几天我有个朋友想搞个网站，但一没技术二没服务器，于是我就诞生了这个想法，跟GitHub Pages是一个东西，但是我这个是一个静态网站，而且本身就在GitHub Pages上，所以只能是发送邮件申请我手动审批，然后再手动添加域名解析。现在还在测试阶段，所以只有拿到内测资格的人才能审批通过。</p><p><a href="https://xuzijin.com/register.html">申请地址</a></p><p>或者是点击友链那里进去也行</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这几天突然有了个想法，前几天我有个朋友想搞个网站，但一没技术二没服务器，于是我就诞生了这个想法，跟GitHub Pages是一个东西，但是我这个是一个静态网站，而且本身就在GitHub Pages上，所以只能是发送邮件申请我手动审批，然后再手动添加域名解析。现在还在测试阶段</summary>
       
     
     

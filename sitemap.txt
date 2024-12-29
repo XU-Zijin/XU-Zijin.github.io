@@ -1,4 +1,3 @@
-https://xuzijin.com/2024/12/29/Ubuntu-install-nginx-1/
 https://xuzijin.com/2024/12/29/Ubuntu-install-nginx/
 https://xuzijin.com/about/index.html
 https://xuzijin.com/2024/08/13/Link-aggregation-on-Ubuntu/
