@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>PyClock | 许子晋</title>
-  <meta name="keywords" content=" Python ">
-  <meta name="description" content="PyClock | 许子晋">
+  <title>Ubuntu-install-nginx | 许子晋</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="Ubuntu-install-nginx | 许子晋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="郑熙乐的个人介绍 		 		body  		{ 			background-image: url(img&#x2F;背景.jpg); 			background-size: cover; 		} 		div.transbox 		{ 		  width: 1050px; 		  height: 420px; 		  margin: 90px 90px; 		  background-col">
 <meta property="og:type" content="website">
@@ -868,39 +868,24 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-PyClock" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Ubuntu-install-nginx-1" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">PyClock</h1>
+        <h1 class="article-title">Ubuntu-install-nginx</h1>
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="开源">开源</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color2">Python</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-07-01 12:04:58'>2024-01-23 15:30</time>
+            发布时间 : <time class="date" title='最后更新: 2024-12-29 13:42:14'>2024-12-29 13:42</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.2k</span>
+        <span>字数:0</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -919,7 +904,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PyClock"><span class="toc-text">PyClock</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84"><span class="toc-text">代码结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90"><span class="toc-text">代码分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90"><span class="toc-text">结构分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D"><span class="toc-text">功能介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#service-py%E5%92%8Cled-py%E6%96%87%E4%BB%B6%E7%9A%84%E8%B0%83%E7%94%A8%E8%AF%B4%E6%98%8E"><span class="toc-text">service.py和led.py文件的调用说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8"><span class="toc-text">怎么使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E"><span class="toc-text">版本说明</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -935,80 +920,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="PyClock"><a href="#PyClock" class="headerlink" title="PyClock"></a>PyClock</h1><p>一个基于esp32的micropython项目，项目地址<a target="_blank" rel="noopener" href="https://github.com/XU-Zijin/PyClock">https://github.com/XU-Zijin/PyClock</a>（注：以下内容为develop分支中的内容，main分支请查看github项目地址）</p>
-<p>这是一个开源项目,原项目地址<a target="_blank" rel="noopener" href="https://github.com/01studio-lab/pyClock">https://github.com/01studio-lab/pyClock</a>，也可以点击这里直接下载<a target="_blank" rel="noopener" href="https://github.com/XU-Zijin/PyClock/archive/refs/heads/main.zip">PyClock main分支版本</a> <a target="_blank" rel="noopener" href="https://github.com/XU-Zijin/PyClock/archive/refs/heads/develop.zip">develop分支版本</a>，使用我这个项目的前提是要有原项目的硬件以及固件，后面我会考虑适配没有这个固件的板子。</p>
-<p>我重写了这个开源项目的软件部分(不包括固件)PS: 代码水平不高，有待优化和待修复bug的地方请指出</p>
-<p><code>注：本文为develop分支的README文档，主分支的README</code><a target="_blank" rel="noopener" href="https://github.com/XU-Zijin/PyClock/blob/main/README.md">在这</a></p>
-<h2 id="代码结构"><a href="#代码结构" class="headerlink" title="代码结构"></a>代码结构</h2><p>boot.py ：启动参数配置，可以不用</p>
-<p>main.py：主函数代码</p>
-<p>data: 数据</p>
-<pre><code>|---Fonts : 字库文件
-|---picture：主题图片素材
-|---CityCode.txt：全国城市编码
-file: 用于存放系统文件
-    |---wifi.txt: 记录WiFi账户密码
-    |---mode.txt: 系统状态文件
-    |---set.txt: 系统状态文件
-    |---ui.txt: 记录上次关机表盘
-    |---datetime.txt: 存储rtc时间
-    |---weather.txt: 存储天气数据
-</code></pre>
-<p>lib: 服务</p>
-<pre><code>|---service
-    |---service.py:系统服务(core)
-    |---led.py: 用于控制led灯
-    |---ip.py: 自动获取城市
-</code></pre>
-<p>libs: 项目Micropython库</p>
-<pre><code>urllib: urequest库
-    |---urequest.py: 爬虫库
-|---ap.py: AP热点配网
-|---global_var.py：全局变量定义
-ui：UI主题库 
-    |---dial.py: 极简表盘
-    |---default.py: 默认表盘
-    |---ticlock.py: 极简时钟表盘
-</code></pre>
-<p>其中service.py是相当于这个程序的核心，大部分功能从这里调用</p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><h3 id="结构分析"><a href="#结构分析" class="headerlink" title="结构分析"></a>结构分析</h3><p>首先<code>data</code>文件夹用于存放主题图片、字库、编码以及系统运行时所需的文件。</p>
-<p><code>lib</code>文件夹中就是用于调试的<code>devmode.py</code>文件及用于系统大部分基础功能<code>service.py</code>文件，还有控制led的文件，我打算用<code>devmode.py</code>这个文件在PyClock这个板子上实现一个终端功能，也就是pyshell。</p>
-<p>而<code>libs</code>里面就是各种所需的库了，还有表盘，也就是UI。</p>
-<h3 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h3><p>这个天气时钟的主要功能：</p>
-<ul>
-<li>查看天气</li>
-<li>查看温湿度</li>
-<li>查看时间</li>
-<li>可以息屏</li>
-<li>可以切换表盘</li>
-<li>开机自动校准时间</li>
-<li>手机web配网</li>
-<li>自动获取城市</li>
-<li>表盘记忆</li>
-<li>离线使用（仅限天气，原理是把上次联网时获取的天气存储，离线时读取使用）</li>
-</ul>
-<h3 id="service-py和led-py文件的调用说明"><a href="#service-py和led-py文件的调用说明" class="headerlink" title="service.py和led.py文件的调用说明"></a>service.py和led.py文件的调用说明</h3><p>使用<code>from lib.service import led</code>从而调用led.py，使用<code>led.on()</code>即可开启板子上自带的led指示灯，使用<code>led.off()</code>即可关闭。</p>
-<p>使用<code>from lib.service.service import server</code>导入server库</p>
-<p>使用<code>server=Server()</code>来创建对象</p>
-<p><code>server.WIFI_Connect()</code>用于联网      </p>
-<p><code>server.sync_ntp()</code>用于同步网络时钟</p>
-<p><code>server.city_get()</code>获取城市编码</p>
-<p><code>city=server.re(&#39;city&#39;)</code>返回城市编码</p>
-<p><code>datetime = server.re(&#39;rtc&#39;)</code>返回rtc时间</p>
-<p><code>server.weather_get(datetime)</code>获取天气</p>
-<p><code>weather=server.re(&#39;weather&#39;)</code>返回天气</p>
-<p><code>server.info_print()</code>打印天气到调试台</p>
-<p><code>server.check()</code>自检</p>
-<h2 id="怎么使用"><a href="#怎么使用" class="headerlink" title="怎么使用"></a>怎么使用</h2><p>首次开机按照屏幕上显示的步骤进行配网，然后首次开机会进入到默认的太空人表盘，若不是首次开机，则会进入上次关机时的表盘，短按切换表盘，目前有三个表盘，按2秒息屏，长按5秒进入出厂设置。</p>
-<h2 id="版本说明"><a href="#版本说明" class="headerlink" title="版本说明"></a>版本说明</h2><p>V3.0.0重写service.py，规范代码格式，添加注释说明，优化了性能，删除devlop模式</p>
-<p>V2.3.2调整ticlock表盘渲染顺序</p>
-<p>V2.3.1修复2个bug，添加串口输出内存剩余情况、CPU频率、WiFi信号强度、表盘使用情况等方便的调试功能</p>
-<p>V2.3.0支持离线使用（原理是把上次联网时获取的天气和时间存储，离线时读取使用，所以数据并不准确，只是一个demo），把开机画面写入函数，只有调用时才显示开机画面；加快开机速度，提速10%，把开机画面提前；只导入需要的表盘，开机时不导入其他表盘，使用时再导入，增加开机速度；增加稳定性</p>
-<p>V2.2.0修复1个已知bug，添加表盘记忆功能，新增1个表盘</p>
-<p>V2.1.0修复已知的3个bug，添加新的表盘，删除不必要文件，在息屏超过15分钟时CPU频率为80MHz</p>
-<p>V2.0.1添加自动调整esp32的CPU频率以节省功耗，在正常情况下CPU频率为160MHz，在息屏时为80MHz，在息屏超过15分钟时为20MHz</p>
-<p>V2.0.0修改默认表盘，修改AP配网文件，可以自动检测城市，新增加两个功能：短按切换表盘、按两秒息屏</p>
-<p>V1.0.0开源，重写主要代码（除表盘，AP配网）</p>
-
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xzj@xuzijin.com </span>
     </div>
@@ -1017,12 +929,12 @@ ui：UI主题库
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>PyClock</p>
-    <p><span class="copy-title">字数:</span><span class="post-count">1.2k</span></p>
+    <p><span class="copy-title">文章标题:</span>Ubuntu-install-nginx</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">0</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
-    <p><span class="copy-title">发布时间:</span>2024-01-23, 15:30:47</p>
-    <p><span class="copy-title">最后更新:</span>2024-07-01, 12:04:58</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/01/23/PyClock/" title="PyClock">https://xuzijin.com/2024/01/23/PyClock/</a>
+    <p><span class="copy-title">发布时间:</span>2024-12-29, 13:42:14</p>
+    <p><span class="copy-title">最后更新:</span>2024-12-29, 13:42:14</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/12/29/Ubuntu-install-nginx-1/" title="Ubuntu-install-nginx">https://xuzijin.com/2024/12/29/Ubuntu-install-nginx-1/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
     </p>

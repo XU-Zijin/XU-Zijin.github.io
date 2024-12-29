@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>Ubuntu-install-nginx</title>
+      <link href="/2024/12/29/Ubuntu-install-nginx-1/"/>
+      <url>/2024/12/29/Ubuntu-install-nginx-1/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ubuntu编译安装Nginx</title>
+      <link href="/2024/12/29/Ubuntu-install-nginx/"/>
+      <url>/2024/12/29/Ubuntu-install-nginx/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Ubuntu24-04LTS编译安装nginx"><a href="#Ubuntu24-04LTS编译安装nginx" class="headerlink" title="Ubuntu24.04LTS编译安装nginx"></a>Ubuntu24.04LTS编译安装nginx</h2><p>###1、下载&amp;&amp;编译&amp;安装</p><p>nginx官网中<code>Mainline version</code>和<code>Stable version</code>两个版本的区别就是前者是最新的版本，适合个人使用，后者为长期支持的主线版本适合商业，稳定性高。这里我选择了<code>Stable version</code>版本的最新版本。</p><p>使用以下命令从Nginx官网下载压缩包</p><pre><code>sudo wget https://nginx.org/download/nginx-1.26.2.tar.gztar xf nginx-1.26.2.tar.gz&amp;&amp;cd nginx-1.26.2./configure --prefix=/usr/local/nginxmake -j #使用全核心进行编译make install </code></pre><p>先鸽着，上学去。。。。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nginx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Reading 2</title>
       <link href="/2024/12/14/reading-4/"/>
       <url>/2024/12/14/reading-4/</url>

@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2024-12-14T15:13:05.315Z</updated>
+  <updated>2024-12-29T05:42:14.680Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu-install-nginx</title>
+    <link href="https://xuzijin.com/2024/12/29/Ubuntu-install-nginx-1/"/>
+    <id>https://xuzijin.com/2024/12/29/Ubuntu-install-nginx-1/</id>
+    <published>2024-12-29T05:42:14.000Z</published>
+    <updated>2024-12-29T05:42:14.680Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu编译安装Nginx</title>
+    <link href="https://xuzijin.com/2024/12/29/Ubuntu-install-nginx/"/>
+    <id>https://xuzijin.com/2024/12/29/Ubuntu-install-nginx/</id>
+    <published>2024-12-29T05:28:09.000Z</published>
+    <updated>2024-12-29T05:42:12.112Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Ubuntu24-04LTS编译安装nginx"><a href="#Ubuntu24-04LTS编译安装nginx" class="headerlink" title="Ubuntu24.04LTS编译安装nginx"></a>Ubuntu24.04LTS编译安装nginx</h2><p>###1、下载&amp;&amp;编译&amp;安装</p><p>nginx官网中<code>Mainline version</code>和<code>Stable version</code>两个版本的区别就是前者是最新的版本，适合个人使用，后者为长期支持的主线版本适合商业，稳定性高。这里我选择了<code>Stable version</code>版本的最新版本。</p><p>使用以下命令从Nginx官网下载压缩包</p><pre><code>sudo wget https://nginx.org/download/nginx-1.26.2.tar.gztar xf nginx-1.26.2.tar.gz&amp;&amp;cd nginx-1.26.2./configure --prefix=/usr/local/nginxmake -j #使用全核心进行编译make install </code></pre><p>先鸽着，上学去。。。。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Ubuntu24-04LTS编译安装nginx&quot;&gt;&lt;a href=&quot;#Ubuntu24-04LTS编译安装nginx&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu24.04LTS编译安装nginx&quot;&gt;&lt;/a&gt;Ubuntu24.04LTS编译安</summary>
+      
+    
+    
+    
+    <category term="工具" scheme="https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Nginx" scheme="https://xuzijin.com/tags/Nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>Reading 2</title>
@@ -456,54 +493,6 @@
     
     
     <category term="Pages" scheme="https://xuzijin.com/tags/Pages/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pages托管开始测试</title>
-    <link href="https://xuzijin.com/2024/03/01/pages%E6%89%98%E7%AE%A1%E5%BC%80%E5%A7%8B%E6%B5%8B%E8%AF%95/"/>
-    <id>https://xuzijin.com/2024/03/01/pages%E6%89%98%E7%AE%A1%E5%BC%80%E5%A7%8B%E6%B5%8B%E8%AF%95/</id>
-    <published>2024-03-01T11:24:24.000Z</published>
-    <updated>2024-07-01T04:04:58.589Z</updated>
-    
-    <content type="html"><![CDATA[<p>这几天突然有了个想法，前几天我有个朋友想搞个网站，但一没技术二没服务器，于是我就诞生了这个想法，跟GitHub Pages是一个东西，但是我这个是一个静态网站，而且本身就在GitHub Pages上，所以只能是发送邮件申请我手动审批，然后再手动添加域名解析。现在还在测试阶段，所以只有拿到内测资格的人才能审批通过。</p><p><a href="https://xuzijin.com/register.html">申请地址</a></p><p>或者是点击友链那里进去也行</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;这几天突然有了个想法，前几天我有个朋友想搞个网站，但一没技术二没服务器，于是我就诞生了这个想法，跟GitHub Pages是一个东西，但是我这个是一个静态网站，而且本身就在GitHub Pages上，所以只能是发送邮件申请我手动审批，然后再手动添加域名解析。现在还在测试阶段</summary>
-      
-    
-    
-    
-    <category term="网页" scheme="https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/"/>
-    
-    
-    <category term="Pages" scheme="https://xuzijin.com/tags/Pages/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>404页面档案馆</title>
-    <link href="https://xuzijin.com/2024/02/25/404%E9%A1%B5%E9%9D%A2%E6%A1%A3%E6%A1%88%E9%A6%86/"/>
-    <id>https://xuzijin.com/2024/02/25/404%E9%A1%B5%E9%9D%A2%E6%A1%A3%E6%A1%88%E9%A6%86/</id>
-    <published>2024-02-25T04:55:46.000Z</published>
-    <updated>2024-07-01T04:04:58.813Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天像往常一样用ssh登进了服务器，然后我看着几个躺在hexo里的404页面陷入了沉思，这都是我这个博客成立以来用过的404页面。于是我就在想，为什么不像<a href="https://archive.org/">Internet Archive</a>那样搞一个专属于404页面的档案馆，于是<a href="https://xuzijin.com/404-archive.html">404 Archive</a>这个404页面档案馆便诞生了。如果有机会的话我也想做一个类似于<code>Internet Archive</code>这样的网站。</p><p>404页面集<a href="https://github.com/XU-Zijin/404-history/archive/refs/heads/main.zip">zip下载</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;今天像往常一样用ssh登进了服务器，然后我看着几个躺在hexo里的404页面陷入了沉思，这都是我这个博客成立以来用过的404页面。于是我就在想，为什么不像&lt;a href=&quot;https://archive.org/&quot;&gt;Internet Archive&lt;/a&gt;那样搞一个专属于4</summary>
-      
-    
-    
-    
-    <category term="网页" scheme="https://xuzijin.com/categories/%E7%BD%91%E9%A1%B5/"/>
-    
-    
-    <category term="404" scheme="https://xuzijin.com/tags/404/"/>
     
   </entry>
   

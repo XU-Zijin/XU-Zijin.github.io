@@ -1,3 +1,5 @@
+https://xuzijin.com/2024/12/29/Ubuntu-install-nginx-1/
+https://xuzijin.com/2024/12/29/Ubuntu-install-nginx/
 https://xuzijin.com/about/index.html
 https://xuzijin.com/2024/08/13/Link-aggregation-on-Ubuntu/
 https://xuzijin.com/2024/03/03/diary/
@@ -51,6 +53,7 @@ https://xuzijin.com/tags/Ubuntu/
 https://xuzijin.com/tags/Linux/
 https://xuzijin.com/tags/Python/
 https://xuzijin.com/tags/Debian/
+https://xuzijin.com/tags/Nginx/
 https://xuzijin.com/tags/git/
 https://xuzijin.com/tags/GitHub/
 https://xuzijin.com/tags/Git/
