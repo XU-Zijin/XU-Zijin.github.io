@@ -8,7 +8,7 @@
       <link href="/2024/12/29/Ubuntu-install-nginx/"/>
       <url>/2024/12/29/Ubuntu-install-nginx/</url>
       
-        <content type="html"><![CDATA[<h2 id="Ubuntu24-04LTS编译安装nginx"><a href="#Ubuntu24-04LTS编译安装nginx" class="headerlink" title="Ubuntu24.04LTS编译安装nginx"></a>Ubuntu24.04LTS编译安装nginx</h2><p>###1、下载&amp;&amp;编译&amp;安装</p><p>nginx官网中<code>Mainline version</code>和<code>Stable version</code>两个版本的区别就是前者是最新的版本，适合个人使用，后者为长期支持的主线版本适合商业，稳定性高。这里我选择了<code>Stable version</code>版本的最新版本。</p><p>使用以下命令从Nginx官网下载压缩包</p><pre><code>sudo wget https://nginx.org/download/nginx-1.26.2.tar.gztar xf nginx-1.26.2.tar.gz&amp;&amp;cd nginx-1.26.2./configure --prefix=/usr/local/nginxmake -j #使用全核心进行编译make install </code></pre><p>先鸽着，上学去。。。。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Ubuntu24-04LTS编译安装nginx"><a href="#Ubuntu24-04LTS编译安装nginx" class="headerlink" title="Ubuntu24.04LTS编译安装nginx"></a>Ubuntu24.04LTS编译安装nginx</h2><h3 id="1、下载"><a href="#1、下载" class="headerlink" title="1、下载"></a>1、下载</h3><p>nginx官网中<code>Mainline version</code>和<code>Stable version</code>两个版本的区别就是前者是最新的版本，适合个人使用，后者为长期支持的主线版本适合商业，稳定性高。这里我选择了<code>Stable version</code>版本的最新版本。</p><p>使用以下命令从Nginx官网下载压缩包</p><pre><code>sudo wget https://nginx.org/download/nginx-1.26.2.tar.gztar xf nginx-1.26.2.tar.gz&amp;&amp;cd nginx-1.26.2</code></pre><h3 id="2、安装"><a href="#2、安装" class="headerlink" title="2、安装"></a>2、安装</h3><pre><code>sudo apt update &amp;&amp; sudo apt-get upgrade -y #更新sudo apt-get install gcc libpcre3-dev zlib1g zlib1g-dev openssl libssl-dev -y #安装依赖./configure --prefix=/usr/local/nginxmake -j #使用全核心进行编译make install </code></pre><p>未完待续</p>]]></content>
       
       
       <categories>

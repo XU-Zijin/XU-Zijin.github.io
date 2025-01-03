@@ -886,12 +886,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-12-29 13:42:12'>2024-12-29 13:28</time>
+            发布时间 : <time class="date" title='最后更新: 2025-01-03 21:01:54'>2024-12-29 13:28</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:147</span>
+        <span>字数:170</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -910,7 +910,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ubuntu24-04LTS%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85nginx"><span class="toc-text">Ubuntu24.04LTS编译安装nginx</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ubuntu24-04LTS%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85nginx"><span class="toc-text">Ubuntu24.04LTS编译安装nginx</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E4%B8%8B%E8%BD%BD"><span class="toc-text">1、下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E5%AE%89%E8%A3%85"><span class="toc-text">2、安装</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -926,13 +926,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Ubuntu24-04LTS编译安装nginx"><a href="#Ubuntu24-04LTS编译安装nginx" class="headerlink" title="Ubuntu24.04LTS编译安装nginx"></a>Ubuntu24.04LTS编译安装nginx</h2><p>###1、下载&amp;&amp;编译&amp;安装</p>
-<p>nginx官网中<code>Mainline version</code>和<code>Stable version</code>两个版本的区别就是前者是最新的版本，适合个人使用，后者为长期支持的主线版本适合商业，稳定性高。这里我选择了<code>Stable version</code>版本的最新版本。</p>
+        <h2 id="Ubuntu24-04LTS编译安装nginx"><a href="#Ubuntu24-04LTS编译安装nginx" class="headerlink" title="Ubuntu24.04LTS编译安装nginx"></a>Ubuntu24.04LTS编译安装nginx</h2><h3 id="1、下载"><a href="#1、下载" class="headerlink" title="1、下载"></a>1、下载</h3><p>nginx官网中<code>Mainline version</code>和<code>Stable version</code>两个版本的区别就是前者是最新的版本，适合个人使用，后者为长期支持的主线版本适合商业，稳定性高。这里我选择了<code>Stable version</code>版本的最新版本。</p>
 <p>使用以下命令从Nginx官网下载压缩包</p>
 <pre><code>
 sudo wget https://nginx.org/download/nginx-1.26.2.tar.gz
 
 tar xf nginx-1.26.2.tar.gz&amp;&amp;cd nginx-1.26.2
+
+</code></pre>
+<h3 id="2、安装"><a href="#2、安装" class="headerlink" title="2、安装"></a>2、安装</h3><pre><code>sudo apt update &amp;&amp; sudo apt-get upgrade -y #更新
+
+sudo apt-get install gcc libpcre3-dev zlib1g zlib1g-dev openssl libssl-dev -y #安装依赖
 
 ./configure --prefix=/usr/local/nginx
 
@@ -940,7 +944,7 @@ make -j #使用全核心进行编译
 
 make install 
 </code></pre>
-<p>先鸽着，上学去。。。。</p>
+<p>未完待续</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xzj@xuzijin.com </span>
@@ -951,10 +955,10 @@ make install
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>Ubuntu编译安装Nginx</p>
-    <p><span class="copy-title">字数:</span><span class="post-count">147</span></p>
+    <p><span class="copy-title">字数:</span><span class="post-count">170</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="许子晋">许子晋</a></p>
     <p><span class="copy-title">发布时间:</span>2024-12-29, 13:28:09</p>
-    <p><span class="copy-title">最后更新:</span>2024-12-29, 13:42:12</p>
+    <p><span class="copy-title">最后更新:</span>2025-01-03, 21:01:54</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/12/29/Ubuntu-install-nginx/" title="Ubuntu编译安装Nginx">https://xuzijin.com/2024/12/29/Ubuntu-install-nginx/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
