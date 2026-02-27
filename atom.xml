@@ -6,7 +6,7 @@
   <link href="https://xuzijin.com/atom.xml" rel="self"/>
   
   <link href="https://xuzijin.com/"/>
-  <updated>2025-06-08T05:09:22.768Z</updated>
+  <updated>2026-02-27T06:52:24.187Z</updated>
   <id>https://xuzijin.com/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SmallNotesRainyDay</title>
+    <link href="https://xuzijin.com/2026/02/27/SmallNotesRainyDay/"/>
+    <id>https://xuzijin.com/2026/02/27/SmallNotesRainyDay/</id>
+    <published>2026-02-27T06:52:24.000Z</published>
+    <updated>2026-02-27T06:52:24.187Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -464,31 +477,6 @@
     
     
     <category term="Linux" scheme="https://xuzijin.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Ubuntu报错dpkg error processing</title>
-    <link href="https://xuzijin.com/2024/03/09/dpkg-error-Ubuntu/"/>
-    <id>https://xuzijin.com/2024/03/09/dpkg-error-Ubuntu/</id>
-    <published>2024-03-09T12:31:03.000Z</published>
-    <updated>2025-06-08T05:09:21.440Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>今天使用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update &amp;&amp; apt upgrade -y#root权限操作</span><br></pre></td></tr></table></figure><p>命令时发生了报错，内容是<code>dpkg: error processing &lt;filename&gt;</code>，我去搜了下：在Ubuntu中出现 dpkg: error processing <filename> 错误通常表明有一个软件包处理问题。这个问题通常发生在使用dpkg来安装、配置或者删除一个软件包时。</p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>使用以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> dpkg -i --force-overwrite &lt;filename&gt;</span><br><span class="line"><span class="built_in">sudo</span> apt-get -f install</span><br></pre></td></tr></table></figure><p>就可以解决了。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;今天使用&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;</summary>
-      
-    
-    
-    
-    <category term="工具" scheme="https://xuzijin.com/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="Ubuntu" scheme="https://xuzijin.com/tags/Ubuntu/"/>
     
   </entry>
   
