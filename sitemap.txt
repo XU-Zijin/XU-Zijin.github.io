@@ -1,5 +1,6 @@
-https://xuzijin.com/about/index.html
+https://xuzijin.com/2024/03/03/diary/
 https://xuzijin.com/2026/02/27/SmallNotesRainyDay/
+https://xuzijin.com/about/index.html
 https://xuzijin.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(3)%E8%AF%A6%E7%BB%86%E7%89%88/
 https://xuzijin.com/2024/01/29/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(2)-%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E8%87%B3%E4%BB%93%E5%BA%93/
 https://xuzijin.com/2024/01/23/%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8git(1)/
@@ -34,7 +35,6 @@ https://xuzijin.com/2024/02/15/GitHub%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E8%AE%
 https://xuzijin.com/2024/05/18/git-updateforwindows/
 https://xuzijin.com/2024/03/23/every-day-a-linux-command-2/
 https://xuzijin.com/2024/03/09/dpkg-error-Ubuntu/
-https://xuzijin.com/2024/03/03/diary/
 https://xuzijin.com/2024/08/20/Change-source-with-Ubuntu24-04LTS/
 https://xuzijin.com/2024/07/01/Celebrating-the-27th-anniversary-of-Hong-Kong-s-return-to-China/
 https://xuzijin.com/2024/03/09/An-important-decision/
